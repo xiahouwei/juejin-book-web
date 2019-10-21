@@ -1,0 +1,1840 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book Introduction -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>实战 1 | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../03.Vue.js 组件精讲/05_组件的通信 3：找到任意组件实例——findComponents 系列方法.html" />
+    
+    
+    <link rel="prev" href="../03.Vue.js 组件精讲/03_组件的通信 2：派发与广播——自行实现 dispatch 和 broadcast 方法.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="3.4"
+        data-chapter-title="实战 1"
+        data-filepath="03.Vue.js 组件精讲/04_实战 1：具有数据校验功能的表单组件——Form.md"
+        data-basepath=".."
+        data-revision="Mon Oct 21 2019 19:04:10 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        引言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01.React组合式开发/09_以史为鉴：前端开发的四个时代.html">
+            
+                
+                    <a href="../01.React组合式开发/09_以史为鉴：前端开发的四个时代.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        React组合式开发实践
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01.React组合式开发/08_似水流年：企业管理系统的前世今生.html">
+            
+                
+                    <a href="../01.React组合式开发/08_似水流年：企业管理系统的前世今生.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        似水流年
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01.React组合式开发/00_继往开来：可视化页面搭建工具.html">
+            
+                
+                    <a href="../01.React组合式开发/00_继往开来：可视化页面搭建工具.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        继往开来
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01.React组合式开发/01_实战篇 01：开发前准备.html">
+            
+                
+                    <a href="../01.React组合式开发/01_实战篇 01：开发前准备.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        实战篇 01
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01.React组合式开发/02_实战篇 02：项目脚手架.html">
+            
+                
+                    <a href="../01.React组合式开发/02_实战篇 02：项目脚手架.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        实战篇 02
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="01.React组合式开发/03_实战篇 03：页面布局方案.html">
+            
+                
+                    <a href="../01.React组合式开发/03_实战篇 03：页面布局方案.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        实战篇 03
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="01.React组合式开发/04_实战篇 04：权限管理机制.html">
+            
+                
+                    <a href="../01.React组合式开发/04_实战篇 04：权限管理机制.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        实战篇 04
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="01.React组合式开发/05_实战篇 05：菜单匹配逻辑.html">
+            
+                
+                    <a href="../01.React组合式开发/05_实战篇 05：菜单匹配逻辑.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        实战篇 05
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="01.React组合式开发/06_实战篇 06：消息通知设计.html">
+            
+                
+                    <a href="../01.React组合式开发/06_实战篇 06：消息通知设计.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        实战篇 06
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="01.React组合式开发/07_实战篇 07：多语言支持.html">
+            
+                
+                    <a href="../01.React组合式开发/07_实战篇 07：多语言支持.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        实战篇 07
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="01.React组合式开发/10_总结.html">
+            
+                
+                    <a href="../01.React组合式开发/10_总结.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02.Vue项目构建与开发入门/00_开篇：Vue CLI 3 项目构建基础.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/00_开篇：Vue CLI 3 项目构建基础.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Vue项目构建与开发入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02.Vue项目构建与开发入门/01_构建基础篇 1：你需要了解的包管理工具与配置项.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/01_构建基础篇 1：你需要了解的包管理工具与配置项.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        构建基础篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02.Vue项目构建与开发入门/02_构建基础篇 2：webpack 在 CLI 3 中的应用.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/02_构建基础篇 2：webpack 在 CLI 3 中的应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        构建基础篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02.Vue项目构建与开发入门/03_构建基础篇 3：env 文件与环境设置.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/03_构建基础篇 3：env 文件与环境设置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        构建基础篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02.Vue项目构建与开发入门/04_构建实战篇 1：单页应用的基本配置.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/04_构建实战篇 1：单页应用的基本配置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        构建实战篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02.Vue项目构建与开发入门/05_构建实战篇 2：使用 pages 构建多页应用.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/05_构建实战篇 2：使用 pages 构建多页应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        构建实战篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="02.Vue项目构建与开发入门/06_构建实战篇 3：多页路由与模板解析.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/06_构建实战篇 3：多页路由与模板解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        构建实战篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="02.Vue项目构建与开发入门/07_构建实战篇 4：项目整合与优化.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/07_构建实战篇 4：项目整合与优化.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        构建实战篇 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="02.Vue项目构建与开发入门/08_开发拓展篇 1：扩充你的开发工具.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/08_开发拓展篇 1：扩充你的开发工具.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        开发拓展篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="02.Vue项目构建与开发入门/09_开发拓展篇 2：将 UI 界面交给第三方库.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/09_开发拓展篇 2：将 UI 界面交给第三方库.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        开发拓展篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="02.Vue项目构建与开发入门/10_开发拓展篇 3：尝试使用外部数据.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/10_开发拓展篇 3：尝试使用外部数据.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        开发拓展篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="02.Vue项目构建与开发入门/11_开发指南篇 1：从编码技巧与规范开始.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/11_开发指南篇 1：从编码技巧与规范开始.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        开发指南篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="02.Vue项目构建与开发入门/12_开发指南篇 2：学会编写可复用性模块.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/12_开发指南篇 2：学会编写可复用性模块.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        开发指南篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="02.Vue项目构建与开发入门/13_开发指南篇 3：合理划分容器组件与展示组件.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/13_开发指南篇 3：合理划分容器组件与展示组件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        开发指南篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="02.Vue项目构建与开发入门/14_开发指南篇 4：数据驱动与拼图游戏.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/14_开发指南篇 4：数据驱动与拼图游戏.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.14.</b>
+                        
+                        开发指南篇 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="02.Vue项目构建与开发入门/15_开发指南篇 5：Vue API 盲点解析.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/15_开发指南篇 5：Vue API 盲点解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                        开发指南篇 5
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="02.Vue项目构建与开发入门/16_总结篇：写在最后.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/16_总结篇：写在最后.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.16.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03.Vue.js 组件精讲/00_开篇：Vue.js 的精髓——组件.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/00_开篇：Vue.js 的精髓——组件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Vue.js 组件精讲
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03.Vue.js 组件精讲/01_基础：Vue.js 组件的三个 API：prop、event、slot.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/01_基础：Vue.js 组件的三个 API：prop、event、slot.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03.Vue.js 组件精讲/02_组件的通信 1：provide   inject.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/02_组件的通信 1：provide   inject.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        组件的通信 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03.Vue.js 组件精讲/03_组件的通信 2：派发与广播——自行实现 dispatch 和 broadcast 方法.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/03_组件的通信 2：派发与广播——自行实现 dispatch 和 broadcast 方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        组件的通信 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="03.Vue.js 组件精讲/04_实战 1：具有数据校验功能的表单组件——Form.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/04_实战 1：具有数据校验功能的表单组件——Form.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        实战 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03.Vue.js 组件精讲/05_组件的通信 3：找到任意组件实例——findComponents 系列方法.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/05_组件的通信 3：找到任意组件实例——findComponents 系列方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        组件的通信 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="03.Vue.js 组件精讲/06_实战 2：组合多选框组件——CheckboxGroup &amp; Checkbox.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/06_实战 2：组合多选框组件——CheckboxGroup &amp; Checkbox.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        实战 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="03.Vue.js 组件精讲/07_Vue 的构造器——extend 与手动挂载——$mount.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/07_Vue 的构造器——extend 与手动挂载——$mount.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Vue 的构造器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="03.Vue.js 组件精讲/08_实战 3：动态渲染 .vue 文件的组件—— Display.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/08_实战 3：动态渲染 .vue 文件的组件—— Display.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        实战 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="03.Vue.js 组件精讲/09_实战 4：全局提示组件——$Alert.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/09_实战 4：全局提示组件——$Alert.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        实战 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="03.Vue.js 组件精讲/10_更灵活的组件：Render 函数与 Functional Render.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/10_更灵活的组件：Render 函数与 Functional Render.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        更灵活的组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="03.Vue.js 组件精讲/11_实战 5：可用 Render 自定义列的表格组件——Table.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/11_实战 5：可用 Render 自定义列的表格组件——Table.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                        实战 5
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="03.Vue.js 组件精讲/12_实战 6：可用 slot-scope 自定义列的表格组件——Table.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/12_实战 6：可用 slot-scope 自定义列的表格组件——Table.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.12.</b>
+                        
+                        实战 6
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="03.Vue.js 组件精讲/13_递归组件与动态组件.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/13_递归组件与动态组件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.13.</b>
+                        
+                        递归组件与动态组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="03.Vue.js 组件精讲/14_实战 7：树形控件——Tree.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/14_实战 7：树形控件——Tree.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.14.</b>
+                        
+                        实战 7
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="03.Vue.js 组件精讲/15_拓展：Vue.js 容易忽略的 API 详解.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/15_拓展：Vue.js 容易忽略的 API 详解.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.15.</b>
+                        
+                        拓展：Vue.js 容易忽略的 API 详解
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="03.Vue.js 组件精讲/16_拓展：Vue.js 面试、常见问题答疑.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/16_拓展：Vue.js 面试、常见问题答疑.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.16.</b>
+                        
+                        拓展：Vue.js 面试、常见问题答疑
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="03.Vue.js 组件精讲/17_拓展：如何做好一个开源项目（上篇）.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/17_拓展：如何做好一个开源项目（上篇）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.17.</b>
+                        
+                        拓展：如何做好一个开源项目（上篇）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18" data-path="03.Vue.js 组件精讲/18_拓展：如何做好一个开源项目（下篇）.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/18_拓展：如何做好一个开源项目（下篇）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.18.</b>
+                        
+                        拓展：如何做好一个开源项目（下篇）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19" data-path="03.Vue.js 组件精讲/19_写在最后.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/19_写在最后.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.19.</b>
+                        
+                        写在最后
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04.剖析 Vue.js 内部运行机制/00_Vue.js 运行机制全局概览.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/00_Vue.js 运行机制全局概览.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        剖析 Vue.js 内部运行机制
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04.剖析 Vue.js 内部运行机制/01_响应式系统的基本原理.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/01_响应式系统的基本原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        01_响应式系统的基本原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04.剖析 Vue.js 内部运行机制/02_响应式系统的依赖收集追踪原理.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/02_响应式系统的依赖收集追踪原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        02_响应式系统的依赖收集追踪原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04.剖析 Vue.js 内部运行机制/03_实现 Virtual DOM 下的一个 VNode 节点.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/03_实现 Virtual DOM 下的一个 VNode 节点.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        03_实现 Virtual DOM 下的一个 VNode 节点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04.剖析 Vue.js 内部运行机制/04_template 模板是怎样通过 Compile 编译的.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/04_template 模板是怎样通过 Compile 编译的.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        04_template 模板是怎样通过 Compile 编译的
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04.剖析 Vue.js 内部运行机制/05_数据状态更新时的差异 diff 及 patch 机制.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/05_数据状态更新时的差异 diff 及 patch 机制.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        05_数据状态更新时的差异 diff 及 patch 机制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04.剖析 Vue.js 内部运行机制/06_批量异步更新策略及 nextTick 原理.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/06_批量异步更新策略及 nextTick 原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        06_批量异步更新策略及 nextTick 原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04.剖析 Vue.js 内部运行机制/07_Vuex 状态管理的工作原理.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/07_Vuex 状态管理的工作原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        07_Vuex 状态管理的工作原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="04.剖析 Vue.js 内部运行机制/08_总结 &amp; 常见问题解答.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/08_总结 &amp; 常见问题解答.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        08_总结 &amp; 常见问题解答
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05.前端性能优化原理与实践/00_开篇：知识体系与小册格局.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/00_开篇：知识体系与小册格局.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        前端性能优化原理与实践
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05.前端性能优化原理与实践/01_网络篇 1：webpack 性能调优与 Gzip 原理.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/01_网络篇 1：webpack 性能调优与 Gzip 原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        网络篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05.前端性能优化原理与实践/02_网络篇 2：图片优化——质量与性能的博弈.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/02_网络篇 2：图片优化——质量与性能的博弈.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        网络篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05.前端性能优化原理与实践/03_存储篇 1：浏览器缓存机制介绍与缓存策略剖析.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/03_存储篇 1：浏览器缓存机制介绍与缓存策略剖析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        存储篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05.前端性能优化原理与实践/04_存储篇 2：本地存储——从 Cookie 到 Web Storage、IndexDB.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/04_存储篇 2：本地存储——从 Cookie 到 Web Storage、IndexDB.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        存储篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05.前端性能优化原理与实践/05_彩蛋篇：CDN 的缓存与回源机制解析.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/05_彩蛋篇：CDN 的缓存与回源机制解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        彩蛋篇
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05.前端性能优化原理与实践/06_渲染篇 1：服务端渲染的探索与实践.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/06_渲染篇 1：服务端渲染的探索与实践.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        渲染篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05.前端性能优化原理与实践/07_渲染篇 2：知己知彼——解锁浏览器背后的运行机制.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/07_渲染篇 2：知己知彼——解锁浏览器背后的运行机制.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        渲染篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05.前端性能优化原理与实践/08_渲染篇 3：对症下药——DOM 优化原理与基本实践.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/08_渲染篇 3：对症下药——DOM 优化原理与基本实践.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        渲染篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="05.前端性能优化原理与实践/09_渲染篇 4：千方百计——Event Loop 与异步更新策略.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/09_渲染篇 4：千方百计——Event Loop 与异步更新策略.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        渲染篇 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="05.前端性能优化原理与实践/10_渲染篇 5：最后一击——回流（Reflow）与重绘（Repaint）.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/10_渲染篇 5：最后一击——回流（Reflow）与重绘（Repaint）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        渲染篇 5
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="05.前端性能优化原理与实践/11_应用篇 1：优化首屏体验——Lazy-Load 初探.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/11_应用篇 1：优化首屏体验——Lazy-Load 初探.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        应用篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="05.前端性能优化原理与实践/12_应用篇 2：事件的节流（throttle）与防抖（debounce）.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/12_应用篇 2：事件的节流（throttle）与防抖（debounce）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                        应用篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="05.前端性能优化原理与实践/13_性能监测篇：Performance、LightHouse 与性能 API.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/13_性能监测篇：Performance、LightHouse 与性能 API.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.13.</b>
+                        
+                        性能监测篇
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="05.前端性能优化原理与实践/14_前方的路：希望以此为你的起点.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/14_前方的路：希望以此为你的起点.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.14.</b>
+                        
+                        前方的路
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x5B9E;&#x6218;-1&#xFF1A;&#x5177;&#x6709;&#x6570;&#x636E;&#x6821;&#x9A8C;&#x529F;&#x80FD;&#x7684;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x2014;&#x2014;form">&#x5B9E;&#x6218; 1&#xFF1A;&#x5177;&#x6709;&#x6570;&#x636E;&#x6821;&#x9A8C;&#x529F;&#x80FD;&#x7684;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x2014;&#x2014;Form</h1>
+<p>&#x5728;&#x7B2C; 3 &#x8282;&#x548C;&#x7B2C; 4 &#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x4E86;&#x7EC4;&#x4EF6;&#x95F4;&#x7684;&#x4E24;&#x79CD;&#x901A;&#x4FE1;&#x65B9;&#x6CD5;&#xFF1A;provide / inject &#x548C; dispatch / broadcast&#xFF0C;&#x524D;&#x8005;&#x662F; Vue.js &#x5185;&#x7F6E;&#x7684;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5B50;&#x7EC4;&#x4EF6;&#x83B7;&#x53D6;&#x7236;&#x7EC4;&#x4EF6;&#xFF08;&#x5305;&#x62EC;&#x8DE8;&#x7EA7;&#xFF09;&#x7684;&#x72B6;&#x6001;&#xFF1B;&#x540E;&#x8005;&#x662F;&#x81EA;&#x884C;&#x5B9E;&#x73B0;&#x7684;&#x4E00;&#x79CD;&#x6DF7;&#x5408;&#xFF0C;&#x7528;&#x4E8E;&#x7236;&#x5B50;&#x7EC4;&#x4EF6;&#xFF08;&#x5305;&#x62EC;&#x8DE8;&#x7EA7;&#xFF09;&#x95F4;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x901A;&#x4FE1;&#x3002;&#x672C;&#x5C0F;&#x8282;&#x5219;&#x57FA;&#x4E8E;&#x8FD9;&#x4E24;&#x79CD;&#x901A;&#x4FE1;&#x65B9;&#x6CD5;&#xFF0C;&#x6765;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x6570;&#x636E;&#x6821;&#x9A8C;&#x529F;&#x80FD;&#x7684;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x2014;&#x2014;Form&#x3002;</p>
+<h2 id="form-&#x7EC4;&#x4EF6;&#x6982;&#x89C8;">Form &#x7EC4;&#x4EF6;&#x6982;&#x89C8;</h2>
+<p>&#x8868;&#x5355;&#x7C7B;&#x7EC4;&#x4EF6;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F1A;&#x5927;&#x91CF;&#x4F7F;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#x8F93;&#x5165;&#x6846;&#xFF08;Input&#xFF09;&#x3001;&#x5355;&#x9009;&#xFF08;Radio&#xFF09;&#x3001;&#x591A;&#x9009;&#xFF08;Checkbox&#xFF09;&#x3001;&#x4E0B;&#x62C9;&#x9009;&#x62E9;&#x5668;&#xFF08;Select&#xFF09;&#x7B49;&#x3002;&#x5728;&#x4F7F;&#x7528;&#x8868;&#x5355;&#x7C7B;&#x7EC4;&#x4EF6;&#x65F6;&#xFF0C;&#x4E5F;&#x4F1A;&#x7ECF;&#x5E38;&#x7528;&#x5230;&#x6570;&#x636E;&#x6821;&#x9A8C;&#xFF0C;&#x5982;&#x679C;&#x6BCF;&#x6B21;&#x90FD;&#x5199;&#x6821;&#x9A8C;&#x7A0B;&#x5E8F;&#x6765;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x8868;&#x5355;&#x63A7;&#x4EF6;&#x6821;&#x9A8C;&#xFF0C;&#x4F1A;&#x5F88;&#x4F4E;&#x6548;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x6821;&#x9A8C;&#x57FA;&#x7840;&#x8868;&#x5355;&#x63A7;&#x4EF6;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x672C;&#x8282;&#x8981;&#x5B8C;&#x6210;&#x7684; Form &#x7EC4;&#x4EF6;&#x3002;&#x4E00;&#x822C;&#x7684;&#x7EC4;&#x4EF6;&#x5E93;&#x90FD;&#x63D0;&#x4F9B;&#x4E86;&#x8FD9;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982; iView&#xFF0C;&#x5B83;&#x80FD;&#x591F;&#x6821;&#x9A8C;&#x5185;&#x7F6E;&#x7684; 15 &#x79CD;&#x63A7;&#x4EF6;&#xFF0C;&#x4E14;&#x652F;&#x6301;&#x6821;&#x9A8C;&#x81EA;&#x5B9A;&#x4E49;&#x7EC4;&#x4EF6;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p>&#xFF08;&#x4E5F;&#x53EF;&#x4EE5;&#x5728;&#x7EBF;&#x8BBF;&#x95EE;&#x672C;&#x793A;&#x4F8B;&#x4F53;&#x9A8C;&#xFF1A;<a href="https://run.iviewui.com/jwrqnFss" target="_blank">https://run.iviewui.com/jwrqnFss</a>&#xFF09;</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/30/166c3b75c37ef9a8?w=900&amp;h=958&amp;f=gif&amp;s=1820338" alt=""></p>
+<p>Form &#x7EC4;&#x4EF6;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x5916;&#x5C42;&#x7684; <code>Form</code> &#x8868;&#x5355;&#x57DF;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E00;&#x7EC4;&#x8868;&#x5355;&#x63A7;&#x4EF6;&#x53EA;&#x6709;&#x4E00;&#x4E2A; Form&#xFF0C;&#x800C;&#x5185;&#x90E8;&#x5305;&#x542B;&#x4E86;&#x591A;&#x4E2A; <code>FormItem</code> &#x7EC4;&#x4EF6;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x8868;&#x5355;&#x63A7;&#x4EF6;&#x90FD;&#x88AB;&#x4E00;&#x4E2A; FormItem &#x5305;&#x88F9;&#x3002;&#x57FA;&#x672C;&#x7684;&#x7ED3;&#x6784;&#x770B;&#x8D77;&#x6765;&#x50CF;&#xFF1A;</p>
+<pre><code>&lt;i-form&gt;
+  &lt;i-form-item&gt;
+    &lt;i-input v-model=&quot;form.name&quot;&gt;&lt;/i-input&gt;
+  &lt;/i-form-item&gt;
+  &lt;i-form-item&gt;
+    &lt;i-input v-model=&quot;form.mail&quot;&gt;&lt;/i-input&gt;
+  &lt;/i-form-item&gt;
+&lt;/i-form&gt;
+</code></pre><p>Form &#x8981;&#x7528;&#x5230;&#x6570;&#x636E;&#x6821;&#x9A8C;&#xFF0C;&#x5E76;&#x5728;&#x5BF9;&#x5E94;&#x7684; FormItem &#x4E2D;&#x7ED9;&#x51FA;&#x6821;&#x9A8C;&#x5931;&#x8D25;&#x7684;&#x63D0;&#x793A;&#xFF0C;&#x6821;&#x9A8C;&#x6211;&#x4EEC;&#x4F1A;&#x7528;&#x5230;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x5E93;&#xFF1A;<a href="https://github.com/yiminghe/async-validator" target="_blank">async-validator</a>&#xFF0C;&#x57FA;&#x672C;&#x4E3B;&#x6D41;&#x7684;&#x7EC4;&#x4EF6;&#x5E93;&#x90FD;&#x662F;&#x57FA;&#x4E8E;&#x5B83;&#x505A;&#x7684;&#x6821;&#x9A8C;&#x3002;&#x4F7F;&#x7528;&#x5B83;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x53EA;&#x9700;&#x6309;&#x8981;&#x6C42;&#x5199;&#x597D;&#x4E00;&#x4E2A;&#x6821;&#x9A8C;&#x89C4;&#x5219;&#x5C31;&#x597D;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code>[
+  { required: true, message: &apos;&#x90AE;&#x7BB1;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&apos;, trigger: &apos;blur&apos; },
+  { type: &apos;email&apos;, message: &apos;&#x90AE;&#x7BB1;&#x683C;&#x5F0F;&#x4E0D;&#x6B63;&#x786E;&apos;, trigger: &apos;blur&apos; }
+]
+</code></pre><p>&#x8FD9;&#x4E2A;&#x4EE3;&#x8868;&#x8981;&#x6821;&#x9A8C;&#x7684;&#x6570;&#x636E;&#x5148;&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x7A7A;&#xFF08;required: true&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x63D0;&#x793A;&#x201C;&#x90AE;&#x7BB1;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#x201D;&#xFF0C;&#x89E6;&#x53D1;&#x6821;&#x9A8C;&#x7684;&#x4E8B;&#x4EF6;&#x4E3A;&#x5931;&#x7126;&#xFF08;trigger: &apos;blur&apos;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x7B2C;&#x4E00;&#x6761;&#x6EE1;&#x8DB3;&#x8981;&#x6C42;&#xFF0C;&#x518D;&#x8FDB;&#x884C;&#x7B2C;&#x4E8C;&#x6761;&#x7684;&#x9A8C;&#x8BC1;&#xFF0C;&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x90AE;&#x7BB1;&#x683C;&#x5F0F;&#xFF08;type: &apos;email&apos;&#xFF09;&#x7B49;&#x7B49;&#xFF0C;&#x8FD8;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#x6821;&#x9A8C;&#x89C4;&#x5219;&#x3002;&#x66F4;&#x8BE6;&#x7EC6;&#x7684;&#x7528;&#x6CD5;&#x53EF;&#x4EE5;&#x53C2;&#x770B;&#x5B83;&#x7684;&#x6587;&#x6863;&#x3002;</p>
+<h2 id="&#x63A5;&#x53E3;&#x8BBE;&#x8BA1;">&#x63A5;&#x53E3;&#x8BBE;&#x8BA1;</h2>
+<p>&#x6211;&#x4EEC;&#x5148;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684; Vue CLI 3 &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x767D;&#x7684;&#x9879;&#x76EE;&#xFF08;&#x5982;&#x679C;&#x4F60;&#x8FD8;&#x4E0D;&#x6E05;&#x695A; Vue CLI 3 &#x7684;&#x7528;&#x6CD5;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x8865;&#x4E60;&#x4E00;&#x4E0B;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x9605;&#x8BFB;&#x6587;&#x672B;&#x7684;&#x6269;&#x5C55;&#x9605;&#x8BFB; 1&#xFF09;&#xFF0C;&#x5E76;&#x4F7F;&#x7528; <code>vue-router</code> &#x63D2;&#x4EF6;&#xFF0C;&#x540C;&#x65F6;&#x5B89;&#x88C5;&#x597D; <code>async-validator</code> &#x5E93;&#x3002;</p>
+<p>&#x5728; <code>src/components</code> &#x4E0B;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A; <code>form</code> &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x521D;&#x59CB;&#x5316;&#x4E24;&#x4E2A;&#x7EC4;&#x4EF6; <code>form.vue</code> &#x548C; <code>form-item.vue</code>&#xFF0C;&#x7136;&#x540E;&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;&#xFF0C;&#x914D;&#x7F6E;&#x8DEF;&#x7531;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x80FD;&#x591F;&#x88AB;&#x8BBF;&#x95EE;&#x5230;&#x3002;</p>
+<blockquote>
+<p>&#x672C;&#x8282;&#x6240;&#x6709;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x5728; <a href="https://github.com/icarusion/vue-component-book" target="_blank">https://github.com/icarusion/vue-component-book</a> &#x4E2D;&#x67E5;&#x770B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4E00;&#x8FB9;&#x770B;&#x6E90;&#x7801;&#xFF0C;&#x4E00;&#x8FB9;&#x9605;&#x8BFB;&#x672C;&#x8282;&#xFF1B;&#x4E5F;&#x53EF;&#x4EE5;&#x8FB9;&#x9605;&#x8BFB;&#xFF0C;&#x8FB9;&#x52A8;&#x624B;&#x5B9E;&#x73B0;&#x4E00;&#x904D;&#xFF0C;&#x9047;&#x5230;&#x95EE;&#x9898;&#x518D;&#x53C2;&#x8003;&#x5B8C;&#x6574;&#x7684;&#x6E90;&#x7801;&#x3002;</p>
+</blockquote>
+<p>&#x7B2C; 2 &#x8282;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x5230;&#xFF0C;&#x7F16;&#x5199;&#x4E00;&#x4E2A; Vue.js &#x7EC4;&#x4EF6;&#xFF0C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x662F;&#x8BBE;&#x8BA1;&#x597D;&#x5B83;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x4E00;&#x4E2A; Vue.js &#x7EC4;&#x4EF6;&#x7684;&#x63A5;&#x53E3;&#x6765;&#x81EA;&#x4E09;&#x4E2A;&#x90E8;&#x5206;&#xFF1A;props&#x3001;slots&#x3001;events&#x3002;&#x800C; Form &#x548C; FormItem &#x4E24;&#x4E2A;&#x7EC4;&#x4EF6;&#x4E3B;&#x8981;&#x505A;&#x6570;&#x636E;&#x6821;&#x9A8C;&#xFF0C;&#x7528;&#x4E0D;&#x5230; events&#x3002;Form &#x7684; slot &#x5C31;&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x7684; FormItem&#xFF0C;FormItem &#x7684; slot &#x5C31;&#x662F;&#x5177;&#x4F53;&#x7684;&#x8868;&#x5355;&#x63A7;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;&#x8F93;&#x5165;&#x6846; <code>&lt;i-input&gt;</code> &#x3002;&#x90A3;&#x4E3B;&#x8981;&#x8BBE;&#x8BA1;&#x7684;&#x5C31;&#x662F; props &#x4E86;&#x3002;</p>
+<p>&#x5728; <code>Form</code> &#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x5B9A;&#x4E49;&#x4E24;&#x4E2A; props&#xFF1A;</p>
+<ul>
+<li>model&#xFF1A;&#x8868;&#x5355;&#x63A7;&#x4EF6;&#x7ED1;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x6821;&#x9A8C;&#x6216;&#x91CD;&#x7F6E;&#x65F6;&#x4F1A;&#x8BBF;&#x95EE;&#x8BE5;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x4E0B;&#x5BF9;&#x5E94;&#x7684;&#x8868;&#x5355;&#x6570;&#x636E;&#xFF0C;&#x7C7B;&#x578B;&#x4E3A; Object&#x3002;</li>
+<li>rules&#xFF1A;&#x8868;&#x5355;&#x9A8C;&#x8BC1;&#x89C4;&#x5219;&#xFF0C;&#x5373;&#x4E0A;&#x9762;&#x4ECB;&#x7ECD;&#x7684; async-validator &#x6240;&#x4F7F;&#x7528;&#x7684;&#x6821;&#x9A8C;&#x89C4;&#x5219;&#xFF0C;&#x7C7B;&#x578B;&#x4E3A; Object&#x3002;</li>
+</ul>
+<p>&#x5728; <code>FormItem</code> &#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E5F;&#x5B9A;&#x4E49;&#x4E24;&#x4E2A; props&#xFF1A;</p>
+<ul>
+<li>label&#xFF1A;&#x5355;&#x4E2A;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x7684;&#x6807;&#x7B7E;&#x6587;&#x672C;&#xFF0C;&#x7C7B;&#x4F3C;&#x539F;&#x751F;&#x7684; <code>&lt;label&gt;</code> &#x5143;&#x7D20;&#xFF0C;&#x7C7B;&#x578B;&#x4E3A; String&#x3002;</li>
+<li>prop&#xFF1A;&#x5BF9;&#x5E94;&#x8868;&#x5355;&#x57DF; Form &#x7EC4;&#x4EF6; model &#x91CC;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x7528;&#x4E8E;&#x5728;&#x6821;&#x9A8C;&#x6216;&#x91CD;&#x7F6E;&#x65F6;&#x8BBF;&#x95EE;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x7ED1;&#x5B9A;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x7C7B;&#x578B;&#x4E3A; String&#x3002;</li>
+</ul>
+<p>&#x5B9A;&#x4E49;&#x597D; props&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5199;&#x51FA;&#x5927;&#x6982;&#x7684;&#x7528;&#x4F8B;&#x4E86;&#xFF1A;</p>
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;i-form :model=&quot;formValidate&quot; :rules=&quot;ruleValidate&quot;&gt;
+      &lt;i-form-item label=&quot;&#x7528;&#x6237;&#x540D;&quot; prop=&quot;name&quot;&gt;
+        &lt;i-input v-model=&quot;formValidate.name&quot;&gt;&lt;/i-input&gt;
+      &lt;/i-form-item&gt;
+      &lt;i-form-item label=&quot;&#x90AE;&#x7BB1;&quot; prop=&quot;mail&quot;&gt;
+        &lt;i-input v-model=&quot;formValidate.mail&quot;&gt;&lt;/i-input&gt;
+      &lt;/i-form-item&gt;
+    &lt;/i-form&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  import iForm from &apos;../components/form/form.vue&apos;;
+  import iFormItem from &apos;../components/form/form-item.vue&apos;;
+  import iInput from &apos;../components/input/input.vue&apos;;
+
+  export default {
+    components: { iForm, iFormItem, iInput },
+    data () {
+      return {
+        formValidate: {
+          name: &apos;&apos;,
+          mail: &apos;&apos;
+        },
+        ruleValidate: {
+          name: [
+            { required: true, message: &apos;&#x7528;&#x6237;&#x540D;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&apos;, trigger: &apos;blur&apos; }
+          ],
+          mail: [
+            { required: true, message: &apos;&#x90AE;&#x7BB1;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&apos;, trigger: &apos;blur&apos; },
+            { type: &apos;email&apos;, message: &apos;&#x90AE;&#x7BB1;&#x683C;&#x5F0F;&#x4E0D;&#x6B63;&#x786E;&apos;, trigger: &apos;blur&apos; }
+          ],
+        }
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre><p>&#x6709;&#x4E24;&#x70B9;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x8FD9;&#x91CC;&#x7684; <code>&lt;i-input&gt;</code> &#x5E76;&#x4E0D;&#x662F;&#x539F;&#x751F;&#x7684; <code>&lt;input&gt;</code> &#x8F93;&#x5165;&#x6846;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x5236;&#x7684;&#x8F93;&#x5165;&#x6846;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E4B;&#x540E;&#x4F1A;&#x4ECB;&#x8BB2;&#x89E3;&#x7684;&#x529F;&#x80FD;&#x548C;&#x4EE3;&#x7801;&#xFF1B;</li>
+<li><code>&lt;i-form-item&gt;</code> &#x7684;&#x5C5E;&#x6027; <code>prop</code> &#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x524D;&#x9762;&#x6CA1;&#x6709;&#x5192;&#x53F7;&#xFF08;&#x5373;&#x4E0D;&#x662F; <code>:prop=&quot;name&quot;</code>&#xFF09;&#x3002;</li>
+</ol>
+<p>&#x5F53;&#x524D;&#x7684;&#x4E24;&#x4E2A;&#x7EC4;&#x4EF6;&#x53EA;&#x662F;&#x4E2A;&#x6846;&#x6846;&#xFF0C;&#x8FD8;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;&#x4EFB;&#x4F55;&#x529F;&#x80FD;&#xFF0C;&#x4E0D;&#x8FC7;&#x4E07;&#x4E8B;&#x5F00;&#x5934;&#x96BE;&#xFF0C;&#x5B9A;&#x4E49;&#x597D;&#x63A5;&#x53E3;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x5C31;&#x662F;&#x8865;&#x5168;&#x7EC4;&#x4EF6;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x800C;&#x5BF9;&#x4E8E;&#x4F7F;&#x7528;&#x8005;&#xFF0C;&#x77E5;&#x9053;&#x4E86; props&#x3001;events&#x3001;slots&#xFF0C;&#x5C31;&#x5DF2;&#x7ECF;&#x80FD;&#x5199;&#x51FA;&#x4E0A;&#x4F8B;&#x7684;&#x4F7F;&#x7528;&#x4EE3;&#x7801;&#x4E86;&#x3002;</p>
+<p>&#x5230;&#x6B64;&#xFF0C;Form &#x548C; FormItem &#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>&lt;!-- form.vue --&gt;
+&lt;template&gt;
+  &lt;form&gt;
+    &lt;slot&gt;&lt;/slot&gt;
+  &lt;/form&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  export default {
+    name: &apos;iForm&apos;,
+    props: {
+      model: {
+        type: Object
+      },
+      rules: {
+        type: Object
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre><pre><code>&lt;!-- form-item.vue --&gt;
+&lt;template&gt;
+  &lt;div&gt;
+    &lt;label v-if=&quot;label&quot;&gt;{{ label }}&lt;/label&gt;
+    &lt;div&gt;
+      &lt;slot&gt;&lt;/slot&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  export default {
+    name: &apos;iFormItem&apos;,
+    props: {
+      label: {
+        type: String,
+        default: &apos;&apos;
+      },
+      prop: {
+        type: String
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre><h2 id="&#x5728;-form-&#x4E2D;&#x7F13;&#x5B58;-formitem-&#x5B9E;&#x4F8B;">&#x5728; Form &#x4E2D;&#x7F13;&#x5B58; FormItem &#x5B9E;&#x4F8B;</h2>
+<p><code>Form</code> &#x7EC4;&#x4EF6;&#x7684;&#x6838;&#x5FC3;&#x529F;&#x80FD;&#x662F;&#x6570;&#x636E;&#x6821;&#x9A8C;&#xFF0C;&#x4E00;&#x4E2A; Form &#x4E2D;&#x5305;&#x542B;&#x4E86;&#x591A;&#x4E2A; FormItem&#xFF0C;&#x5F53;&#x70B9;&#x51FB;&#x63D0;&#x4EA4;&#x6309;&#x94AE;&#x65F6;&#xFF0C;&#x8981;&#x9010;&#x4E00;&#x5BF9;&#x6BCF;&#x4E2A; FormItem &#x5185;&#x7684;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x6821;&#x9A8C;&#xFF0C;&#x800C;&#x6821;&#x9A8C;&#x662F;&#x7531;&#x4F7F;&#x7528;&#x8005;&#x53D1;&#x8D77;&#xFF0C;&#x5E76;&#x901A;&#x8FC7; <code>Form</code> &#x6765;&#x8C03;&#x7528;&#x6BCF;&#x4E00;&#x4E2A; <code>FormItem</code> &#x7684;&#x9A8C;&#x8BC1;&#x65B9;&#x6CD5;&#xFF0C;&#x518D;&#x5C06;&#x6821;&#x9A8C;&#x7ED3;&#x679C;&#x6C47;&#x603B;&#x540E;&#xFF0C;&#x901A;&#x8FC7; <code>Form</code> &#x8FD4;&#x56DE;&#x51FA;&#x53BB;&#x3002;&#x5927;&#x81F4;&#x7684;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/30/166c3b7f124cb84a?w=1046&amp;h=610&amp;f=png&amp;s=42610" alt=""></p>
+<p>&#x56E0;&#x4E3A;&#x8981;&#x5728; Form &#x4E2D;&#x9010;&#x4E00;&#x8C03;&#x7528; FormItem &#x7684;&#x9A8C;&#x8BC1;&#x65B9;&#x6CD5;&#xFF0C;&#x800C; Form &#x548C; FormItem &#x662F;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x9700;&#x8981;&#x9884;&#x5148;&#x5C06; FormItem &#x7684;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x7F13;&#x5B58;&#x5728; Form &#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x5C31;&#x9700;&#x8981;&#x7528;&#x5230;&#x7B2C; 4 &#x8282;&#x7684;&#x7EC4;&#x4EF6;&#x901A;&#x4FE1;&#x65B9;&#x6CD5;&#x3002;&#x5F53;&#x6BCF;&#x4E2A; FormItem &#x6E32;&#x67D3;&#x65F6;&#xFF0C;&#x5C06;&#x5176;&#x81EA;&#x8EAB;&#xFF08;this&#xFF09;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x901A;&#x8FC7; <code>dispatch</code> &#x6D3E;&#x53D1;&#x5230; Form &#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7F13;&#x5B58;&#x8D77;&#x6765;&#xFF1B;&#x540C;&#x7406;&#x5F53; FormItem &#x9500;&#x6BC1;&#x65F6;&#xFF0C;&#x5C06;&#x5176;&#x4ECE; Form &#x7F13;&#x5B58;&#x7684;&#x6570;&#x7EC4;&#x4E2D;&#x79FB;&#x9664;&#x3002;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>// form-item.vue&#xFF0C;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x7701;&#x7565;
+
+import Emitter from &apos;../../mixins/emitter.js&apos;;
+
+export default {
+  name: &apos;iFormItem&apos;,
+  mixins: [ Emitter ],
+  // &#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x65F6;&#xFF0C;&#x5C06;&#x5B9E;&#x4F8B;&#x7F13;&#x5B58;&#x5728; Form &#x4E2D;
+  mounted () {
+    // &#x5982;&#x679C;&#x6CA1;&#x6709;&#x4F20;&#x5165; prop&#xFF0C;&#x5219;&#x65E0;&#x9700;&#x6821;&#x9A8C;&#xFF0C;&#x4E5F;&#x5C31;&#x65E0;&#x9700;&#x7F13;&#x5B58;
+    if (this.prop) {
+      this.dispatch(&apos;iForm&apos;, &apos;on-form-item-add&apos;, this);
+    }
+  },
+  // &#x7EC4;&#x4EF6;&#x9500;&#x6BC1;&#x524D;&#xFF0C;&#x5C06;&#x5B9E;&#x4F8B;&#x4ECE; Form &#x7684;&#x7F13;&#x5B58;&#x4E2D;&#x79FB;&#x9664;
+  beforeDestroy () {
+    this.dispatch(&apos;iForm&apos;, &apos;on-form-item-remove&apos;, this);
+  }
+}
+</code></pre><p>&#x6CE8;&#x610F;&#xFF0C;Vue.js &#x7684;&#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x987A;&#x5E8F;&#x662F;&#x7531;&#x5185;&#x800C;&#x5916;&#x7684;&#xFF0C;&#x6240;&#x4EE5; FormItem &#x8981;&#x5148;&#x4E8E; Form &#x6E32;&#x67D3;&#xFF0C;&#x5728; FormItem &#x7684; mounted &#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5411; Form &#x6D3E;&#x53D1;&#x4E86;&#x4E8B;&#x4EF6; <code>on-form-item-add</code>&#xFF0C;&#x5E76;&#x5C06;&#x5F53;&#x524D; FormItem &#x7684;&#x5B9E;&#x4F8B;&#xFF08;this&#xFF09;&#x4F20;&#x9012;&#x7ED9;&#x4E86; Form&#xFF0C;&#x800C;&#x6B64;&#x65F6;&#xFF0C;Form &#x7684; mounted &#x5C1A;&#x672A;&#x89E6;&#x53D1;&#xFF0C;&#x56E0;&#x4E3A; Form &#x5728;&#x6700;&#x5916;&#x5C42;&#xFF0C;&#x5982;&#x679C;&#x5728; Form &#x7684; mounted &#x91CC;&#x76D1;&#x542C;&#x4E8B;&#x4EF6;&#xFF0C;&#x662F;&#x4E0D;&#x53EF;&#x4EE5;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x5728;&#x5176; created &#x5185;&#x76D1;&#x542C;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#xFF0C;Form &#x7684; created &#x8981;&#x5148;&#x4E8E; FormItem &#x7684; mounted&#x3002;&#x6240;&#x4EE5; Form &#x7684;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x4E3A;&#xFF1A;</p>
+<pre><code>// form.vue&#xFF0C;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x7701;&#x7565;
+export default {
+  name: &apos;iForm&apos;,
+  data () {
+    return {
+      fields: []
+    };
+  },
+  created () {
+    this.$on(&apos;on-form-item-add&apos;, (field) =&gt; {
+      if (field) this.fields.push(field);
+    });
+    this.$on(&apos;on-form-item-remove&apos;, (field) =&gt; {
+      if (field.prop) this.fields.splice(this.fields.indexOf(field), 1);
+    });
+  }
+}
+</code></pre><p>&#x5B9A;&#x4E49;&#x7684;&#x6570;&#x636E; <code>fields</code> &#x5C31;&#x662F;&#x7528;&#x6765;&#x7F13;&#x5B58;&#x6240;&#x6709; FormItem &#x5B9E;&#x4F8B;&#x7684;&#x3002;</p>
+<h2 id="&#x89E6;&#x53D1;&#x6821;&#x9A8C;">&#x89E6;&#x53D1;&#x6821;&#x9A8C;</h2>
+<p>Form &#x652F;&#x6301;&#x4E24;&#x79CD;&#x4E8B;&#x4EF6;&#x6765;&#x89E6;&#x53D1;&#x6821;&#x9A8C;&#xFF1A;</p>
+<ul>
+<li><strong>blur</strong>&#xFF1A;&#x5931;&#x53BB;&#x7126;&#x70B9;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x6709;&#x8F93;&#x5165;&#x6846;&#x5931;&#x53BB;&#x7126;&#x70B9;&#x65F6;&#x89E6;&#x53D1;&#x6821;&#x9A8C;&#xFF1B;</li>
+<li><strong>change</strong>&#xFF1A;&#x5B9E;&#x65F6;&#x8F93;&#x5165;&#x65F6;&#x89E6;&#x53D1;&#x6216;&#x9009;&#x62E9;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x6709;&#x8F93;&#x5165;&#x6846;&#x5B9E;&#x65F6;&#x8F93;&#x5165;&#x65F6;&#x89E6;&#x53D1;&#x6821;&#x9A8C;&#x3001;&#x4E0B;&#x62C9;&#x9009;&#x62E9;&#x5668;&#x9009;&#x62E9;&#x9879;&#x76EE;&#x65F6;&#x89E6;&#x53D1;&#x6821;&#x9A8C;&#x7B49;&#x3002;</li>
+</ul>
+<p>&#x4EE5;&#x4E0A;&#x4E24;&#x4E2A;&#x4E8B;&#x4EF6;&#xFF0C;&#x90FD;&#x662F;&#x6709;&#x5177;&#x4F53;&#x7684;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x6765;&#x89E6;&#x53D1;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x6765;&#x7F16;&#x5199;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x8F93;&#x5165;&#x6846;&#x7EC4;&#x4EF6; <code>i-input</code>&#x3002;&#x5728; <code>components</code> &#x4E0B;&#x65B0;&#x5EFA;&#x76EE;&#x5F55; <code>input</code>&#xFF0C;&#x5E76;&#x521B;&#x5EFA;&#x6587;&#x4EF6; <code>input.vue</code>&#xFF1A;</p>
+<pre><code>&lt;!-- input.vue --&gt;
+&lt;template&gt;
+  &lt;input
+         type=&quot;text&quot;
+         :value=&quot;currentValue&quot;
+         @input=&quot;handleInput&quot;
+         @blur=&quot;handleBlur&quot;
+         /&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  import Emitter from &apos;../../mixins/emitter.js&apos;;
+
+  export default {
+    name: &apos;iInput&apos;,
+    mixins: [ Emitter ],
+    props: {
+      value: {
+        type: String,
+        default: &apos;&apos;
+      },
+    },
+    data () {
+      return {
+        currentValue: this.value
+      }
+    },
+    watch: {
+      value (val) {
+        this.currentValue = val;
+      }
+    },
+    methods: {
+      handleInput (event) {
+        const value = event.target.value;
+        this.currentValue = value;
+        this.$emit(&apos;input&apos;, value);
+        this.dispatch(&apos;iFormItem&apos;, &apos;on-form-change&apos;, value);
+      },
+      handleBlur () {
+        this.dispatch(&apos;iFormItem&apos;, &apos;on-form-blur&apos;, this.currentValue);
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre><p>Input &#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x7ED1;&#x5B9A;&#x5728; <code>&lt;input&gt;</code> &#x5143;&#x7D20;&#x4E0A;&#x7684;&#x539F;&#x751F;&#x4E8B;&#x4EF6; <code>@input</code>&#xFF0C;&#x6BCF;&#x5F53;&#x8F93;&#x5165;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x90FD;&#x4F1A;&#x8C03;&#x7528;&#x53E5;&#x67C4; <code>handleInput</code>&#xFF0C;&#x5E76;&#x901A;&#x8FC7; <code>dispatch</code> &#x65B9;&#x6CD5;&#x5411;&#x4E0A;&#x7EA7;&#x7684; FormItem &#x7EC4;&#x4EF6;&#x6D3E;&#x53D1;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6; <code>on-form-change</code>&#xFF1B;&#x540C;&#x7406;&#xFF0C;&#x7ED1;&#x5B9A;&#x7684;&#x539F;&#x751F;&#x4E8B;&#x4EF6; <code>@blur</code> &#x4F1A;&#x5728; input &#x5931;&#x7126;&#x65F6;&#x89E6;&#x53D1;&#xFF0C;&#x5E76;&#x4F20;&#x9012;&#x4E8B;&#x4EF6; <code>on-form-blur</code>&#x3002;</p>
+<p>&#x57FA;&#x7840;&#x7EC4;&#x4EF6;&#x6709;&#x4E86;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x8981;&#x505A;&#x7684;&#xFF0C;&#x662F;&#x5728; FormItem &#x4E2D;&#x76D1;&#x542C;&#x6765;&#x81EA; Input &#x7EC4;&#x4EF6;&#x6D3E;&#x53D1;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x4E8B;&#x4EF6;&#x3002;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x5728; mounted &#x4E2D;&#x76D1;&#x542C;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x7684;&#x624B;&#x901F;&#x8FDC;&#x8D76;&#x4E0D;&#x4E0A;&#x7EC4;&#x4EF6;&#x6E32;&#x67D3;&#x7684;&#x901F;&#x5EA6;&#xFF0C;&#x4E0D;&#x8FC7;&#x5728; created &#x4E2D;&#x76D1;&#x542C;&#x4E5F;&#x662F;&#x6CA1;&#x4EFB;&#x4F55;&#x95EE;&#x9898;&#x7684;&#x3002;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>// form-item.vue&#xFF0C;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x7701;&#x7565;
+export default {
+  methods: {
+    setRules () {
+      this.$on(&apos;on-form-blur&apos;, this.onFieldBlur);
+      this.$on(&apos;on-form-change&apos;, this.onFieldChange);
+    },
+  },
+  mounted () {
+    if (this.prop) {
+      this.dispatch(&apos;iForm&apos;, &apos;on-form-item-add&apos;, this);
+      this.setRules();
+    }
+  }
+}
+</code></pre><p>&#x901A;&#x8FC7;&#x8C03;&#x7528; <code>setRules</code> &#x65B9;&#x6CD5;&#xFF0C;&#x76D1;&#x542C;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x7684;&#x4E24;&#x4E2A;&#x4E8B;&#x4EF6;&#xFF0C;&#x5E76;&#x7ED1;&#x5B9A;&#x4E86;&#x53E5;&#x67C4;&#x51FD;&#x6570; <code>onFieldBlur</code> &#x548C; <code>onFieldChange</code>&#xFF0C;&#x5206;&#x522B;&#x5BF9;&#x5E94; blur &#x548C; change &#x4E24;&#x79CD;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#x3002;&#x5F53; onFieldBlur &#x6216; onFieldChange &#x51FD;&#x6570;&#x89E6;&#x53D1;&#x65F6;&#xFF0C;&#x5C31;&#x610F;&#x5473;&#x7740; FormItem &#x8981;&#x5BF9;<strong>&#x5F53;&#x524D;&#x7684;&#x6570;&#x636E;</strong>&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x6821;&#x9A8C;&#x3002;&#x5F53;&#x524D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6307;&#x7684;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x8868;&#x5355;&#x57DF; Form &#x4E2D;&#x5B9A;&#x4E49;&#x7684; props&#xFF1A;model&#xFF0C;&#x7ED3;&#x5408;&#x5F53;&#x524D; FormItem &#x5B9A;&#x4E49;&#x7684; props&#xFF1A;prop &#x6765;&#x786E;&#x5B9A;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x56DE;&#x987E;&#x4E0A;&#x6587;&#x5199;&#x8FC7;&#x7684;&#x7528;&#x4F8B;&#x3002;</p>
+<p>&#x56E0;&#x4E3A; FormItem &#x4E2D;&#x53EA;&#x5B9A;&#x4E49;&#x4E86;&#x6570;&#x636E;&#x6E90;&#x7684;&#x67D0;&#x4E2A; key &#x540D;&#x79F0;&#xFF08;&#x5373;&#x5C5E;&#x6027; prop&#xFF09;&#xFF0C;&#x8981;&#x62FF;&#x5230; Form &#x4E2D; model &#x91CC;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x5230;&#x7B2C; 3 &#x8282;&#x7684;&#x901A;&#x4FE1;&#x65B9;&#x6CD5; provide / inject&#x3002;&#x6240;&#x4EE5;&#x5728; Form &#x4E2D;&#xFF0C;&#x628A;&#x6574;&#x4E2A;&#x5B9E;&#x4F8B;&#xFF08;this&#xFF09;&#x5411;&#x4E0B;&#x63D0;&#x4F9B;&#xFF0C;&#x5E76;&#x5728; FormItem &#x4E2D;&#x6CE8;&#x5165;&#xFF1A;</p>
+<pre><code>// form.vue&#xFF0C;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x7701;&#x7565;
+export default {
+  provide() {
+    return {
+      form : this
+    };
+  }
+}
+</code></pre><pre><code>// form-item.vue&#xFF0C;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x7701;&#x7565;
+export default {
+  inject: [&apos;form&apos;]
+}
+</code></pre><p>&#x51C6;&#x5907;&#x597D;&#x8FD9;&#x4E9B;&#xFF0C;&#x63A5;&#x7740;&#x5C31;&#x662F;&#x6700;&#x6838;&#x5FC3;&#x7684;&#x6821;&#x9A8C;&#x529F;&#x80FD;&#x4E86;&#x3002;blur &#x548C; change &#x4E8B;&#x4EF6;&#x90FD;&#x4F1A;&#x89E6;&#x53D1;&#x6821;&#x9A8C;&#xFF0C;&#x5B83;&#x4EEC;&#x8C03;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x53EA;&#x662F;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#x3002;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>// form-item.vue&#xFF0C;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x7701;&#x7565;
+import AsyncValidator from &apos;async-validator&apos;;
+
+export default {
+  inject: [&apos;form&apos;],
+  props: {
+    prop: {
+      type: String
+    },
+  },
+  data () {
+    return {
+      validateState: &apos;&apos;,  // &#x6821;&#x9A8C;&#x72B6;&#x6001;
+      validateMessage: &apos;&apos;,  // &#x6821;&#x9A8C;&#x4E0D;&#x901A;&#x8FC7;&#x65F6;&#x7684;&#x63D0;&#x793A;&#x4FE1;&#x606F;
+    }
+  },
+  computed: {
+    // &#x4ECE; Form &#x7684; model &#x4E2D;&#x52A8;&#x6001;&#x5F97;&#x5230;&#x5F53;&#x524D;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x7684;&#x6570;&#x636E;
+    fieldValue () {
+      return this.form.model[this.prop];
+    }
+  },
+  methods: {
+    // &#x4ECE; Form &#x7684; rules &#x5C5E;&#x6027;&#x4E2D;&#xFF0C;&#x83B7;&#x53D6;&#x5F53;&#x524D; FormItem &#x7684;&#x6821;&#x9A8C;&#x89C4;&#x5219;
+    getRules () {
+      let formRules = this.form.rules;
+
+      formRules = formRules ? formRules[this.prop] : [];
+
+      return [].concat(formRules || []);
+    },
+    // &#x53EA;&#x652F;&#x6301; blur &#x548C; change&#xFF0C;&#x6240;&#x4EE5;&#x8FC7;&#x6EE4;&#x51FA;&#x7B26;&#x5408;&#x8981;&#x6C42;&#x7684; rule &#x89C4;&#x5219;
+    getFilteredRule (trigger) {
+      const rules = this.getRules();
+      return rules.filter(rule =&gt; !rule.trigger || rule.trigger.indexOf(trigger) !== -1);
+    },
+    /**
+     * &#x6821;&#x9A8C;&#x6570;&#x636E;
+     * @param trigger &#x6821;&#x9A8C;&#x7C7B;&#x578B;
+     * @param callback &#x56DE;&#x8C03;&#x51FD;&#x6570;
+     */
+    validate(trigger, callback = function () {}) {
+      let rules = this.getFilteredRule(trigger);
+
+      if (!rules || rules.length === 0) {
+        return true;
+      }
+
+      // &#x8BBE;&#x7F6E;&#x72B6;&#x6001;&#x4E3A;&#x6821;&#x9A8C;&#x4E2D;
+      this.validateState = &apos;validating&apos;;
+
+      // &#x4EE5;&#x4E0B;&#x4E3A; async-validator &#x5E93;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x6CD5;
+      let descriptor = {};
+      descriptor[this.prop] = rules;
+
+      const validator = new AsyncValidator(descriptor);
+      let model = {};
+
+      model[this.prop] = this.fieldValue;
+
+      validator.validate(model, { firstFields: true }, errors =&gt; {
+        this.validateState = !errors ? &apos;success&apos; : &apos;error&apos;;
+        this.validateMessage = errors ? errors[0].message : &apos;&apos;;
+
+        callback(this.validateMessage);
+      });
+    },
+    onFieldBlur() {
+      this.validate(&apos;blur&apos;);
+    },
+    onFieldChange() {
+      this.validate(&apos;change&apos;);
+    }
+  }
+}
+</code></pre><p>&#x5728; FormItem &#x7684; <code>validate()</code> &#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x6700;&#x7EC8;&#x505A;&#x4E86;&#x4E24;&#x4EF6;&#x4E8B;&#xFF1A;</p>
+<ol>
+<li>&#x8BBE;&#x7F6E;&#x4E86;&#x5F53;&#x524D;&#x7684;&#x6821;&#x9A8C;&#x72B6;&#x6001; <code>validateState</code> &#x548C;&#x6821;&#x9A8C;&#x4E0D;&#x901A;&#x8FC7;&#x63D0;&#x793A;&#x4FE1;&#x606F; <code>validateMessage</code>&#xFF08;&#x901A;&#x8FC7;&#x503C;&#x4E3A;&#x7A7A;&#xFF09;&#xFF1B;</li>
+<li>&#x5C06; validateMessage &#x901A;&#x8FC7;&#x56DE;&#x8C03; callback &#x4F20;&#x9012;&#x7ED9;&#x8C03;&#x7528;&#x8005;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x8C03;&#x7528;&#x8005;&#x662F; onFieldBlur &#x548C; onFieldChange&#xFF0C;&#x5B83;&#x4EEC;&#x53EA;&#x4F20;&#x5165;&#x4E86;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570; <code>trigger</code>&#xFF0C;callback &#x5E76;&#x672A;&#x4F20;&#x5165;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x56DE;&#x8C03;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x56DE;&#x8C03;&#x4E3B;&#x8981;&#x662F;&#x7ED9; Form &#x7528;&#x7684;&#xFF0C;&#x56E0;&#x4E3A; Form &#x4E2D;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x63D0;&#x4EA4;&#x6309;&#x94AE;&#x4E00;&#x6B21;&#x6027;&#x6821;&#x9A8C;&#x6240;&#x6709;&#x7684; FormItem&#xFF08;&#x540E;&#x6587;&#x4F1A;&#x4ECB;&#x7ECD;&#xFF09;&#x8FD9;&#x91CC;&#x53EA;&#x662F;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x89E6;&#x53D1;&#x4E8B;&#x4EF6;&#x65F6;&#xFF0C;&#x5BF9;&#x5F53;&#x524D; FormItem &#x505A;&#x6821;&#x9A8C;&#x3002;</li>
+</ol>
+<p>&#x9664;&#x4E86;&#x6821;&#x9A8C;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5BF9;&#x5F53;&#x524D;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x91CD;&#x7F6E;&#x3002;&#x91CD;&#x7F6E;&#x662F;&#x6307;&#x5C06;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x7684;&#x6570;&#x636E;&#x8FD8;&#x539F;&#x5230;&#x6700;&#x521D;&#x7ED1;&#x5B9A;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6E05;&#x7A7A;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x9884;&#x5148;&#x7F13;&#x5B58;&#x4E00;&#x4EFD;&#x521D;&#x59CB;&#x503C;&#x3002;&#x540C;&#x65F6;&#x6211;&#x4EEC;&#x5C06;&#x6821;&#x9A8C;&#x4FE1;&#x606F;&#x4E5F;&#x663E;&#x793A;&#x5728;&#x6A21;&#x677F;&#x4E2D;&#xFF0C;&#x5E76;&#x52A0;&#x4E00;&#x4E9B;&#x6837;&#x5F0F;&#x3002;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>&lt;!-- form-item.vue&#xFF0C;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x7701;&#x7565; --&gt;
+&lt;template&gt;
+  &lt;div&gt;
+    &lt;label v-if=&quot;label&quot; :class=&quot;{ &apos;i-form-item-label-required&apos;: isRequired }&quot;&gt;{{ label }}&lt;/label&gt;
+    &lt;div&gt;
+      &lt;slot&gt;&lt;/slot&gt;
+      &lt;div v-if=&quot;validateState === &apos;error&apos;&quot; class=&quot;i-form-item-message&quot;&gt;{{ validateMessage }}&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  export default {
+    props: {
+      label: {
+        type: String,
+        default: &apos;&apos;
+      },
+      prop: {
+        type: String
+      },
+    },
+    data () {
+      return {
+        isRequired: false,  // &#x662F;&#x5426;&#x4E3A;&#x5FC5;&#x586B;
+        validateState: &apos;&apos;,  // &#x6821;&#x9A8C;&#x72B6;&#x6001;
+        validateMessage: &apos;&apos;,  // &#x6821;&#x9A8C;&#x4E0D;&#x901A;&#x8FC7;&#x65F6;&#x7684;&#x63D0;&#x793A;&#x4FE1;&#x606F;
+      }
+    },
+    mounted () {
+      // &#x5982;&#x679C;&#x6CA1;&#x6709;&#x4F20;&#x5165; prop&#xFF0C;&#x5219;&#x65E0;&#x9700;&#x6821;&#x9A8C;&#xFF0C;&#x4E5F;&#x5C31;&#x65E0;&#x9700;&#x7F13;&#x5B58;
+      if (this.prop) {
+        this.dispatch(&apos;iForm&apos;, &apos;on-form-item-add&apos;, this);
+
+        // &#x8BBE;&#x7F6E;&#x521D;&#x59CB;&#x503C;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728;&#x91CD;&#x7F6E;&#x65F6;&#x6062;&#x590D;&#x9ED8;&#x8BA4;&#x503C;
+        this.initialValue = this.fieldValue;
+
+        this.setRules();
+      }
+    },
+    methods: {
+      setRules () {
+        let rules = this.getRules();
+        if (rules.length) {
+          rules.every((rule) =&gt; {
+            // &#x5982;&#x679C;&#x5F53;&#x524D;&#x6821;&#x9A8C;&#x89C4;&#x5219;&#x4E2D;&#x6709;&#x5FC5;&#x586B;&#x9879;&#xFF0C;&#x5219;&#x6807;&#x8BB0;&#x51FA;&#x6765;
+            this.isRequired = rule.required;
+          });
+        }
+
+        this.$on(&apos;on-form-blur&apos;, this.onFieldBlur);
+        this.$on(&apos;on-form-change&apos;, this.onFieldChange);
+      },
+      // &#x4ECE; Form &#x7684; rules &#x5C5E;&#x6027;&#x4E2D;&#xFF0C;&#x83B7;&#x53D6;&#x5F53;&#x524D; FormItem &#x7684;&#x6821;&#x9A8C;&#x89C4;&#x5219;
+      getRules () {
+        let formRules = this.form.rules;
+
+        formRules = formRules ? formRules[this.prop] : [];
+
+        return [].concat(formRules || []);
+      },
+      // &#x91CD;&#x7F6E;&#x6570;&#x636E;
+      resetField () {
+        this.validateState = &apos;&apos;;
+        this.validateMessage = &apos;&apos;;
+
+        this.form.model[this.prop] = this.initialValue;
+      },
+    }
+  }
+&lt;/script&gt;
+&lt;style&gt;
+  .i-form-item-label-required:before {
+    content: &apos;*&apos;;
+    color: red;
+  }
+  .i-form-item-message {
+    color: red;
+  }
+&lt;/style&gt;
+</code></pre><p>&#x81F3;&#x6B64;&#xFF0C;FormItem &#x4EE3;&#x7801;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#xFF0C;&#x4E0D;&#x8FC7;&#x5B83;&#x53EA;&#x5177;&#x6709;&#x5355;&#x72EC;&#x6821;&#x9A8C;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x53EA;&#x80FD;&#x5BF9;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x4E2A;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x9A8C;&#x8BC1;&#xFF0C;&#x4E0D;&#x80FD;&#x5BF9;&#x4E00;&#x4E2A;&#x8868;&#x5355;&#x57DF;&#x91CC;&#x7684;&#x6240;&#x6709;&#x7EC4;&#x4EF6;&#x4E00;&#x6B21;&#x6027;&#x5168;&#x90E8;&#x6821;&#x9A8C;&#x3002;&#x800C;&#x5B9E;&#x73B0;&#x5168;&#x90E8;&#x6821;&#x9A8C;&#x548C;&#x5168;&#x90E8;&#x91CD;&#x7F6E;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x8981;&#x5728; Form &#x4E2D;&#x5B8C;&#x6210;&#x3002;</p>
+<p>&#x4E0A;&#x6587;&#x5DF2;&#x7ECF;&#x4ECB;&#x7ECD;&#x5230;&#xFF0C;&#x5728; <code>Form</code> &#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x9884;&#x5148;&#x7F13;&#x5B58;&#x4E86;&#x5168;&#x90E8;&#x7684; FormItem &#x5B9E;&#x4F8B;&#xFF0C;&#x81EA;&#x7136;&#x4E5F;&#x80FD;&#x5728; Form &#x4E2D;&#x8C03;&#x7528;&#x5B83;&#x4EEC;&#x3002;&#x901A;&#x8FC7;&#x70B9;&#x51FB;&#x63D0;&#x4EA4;&#x6309;&#x94AE;&#x5168;&#x90E8;&#x6821;&#x9A8C;&#xFF0C;&#x6216;&#x70B9;&#x51FB;&#x91CD;&#x7F6E;&#x6309;&#x94AE;&#x5168;&#x90E8;&#x91CD;&#x7F6E;&#x6570;&#x636E;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x5728; Form &#x4E2D;&#xFF0C;&#x9010;&#x4E00;&#x8C03;&#x7528;&#x7F13;&#x5B58;&#x7684; FormItem &#x5B9E;&#x4F8B;&#x4E2D;&#x7684; <code>validate</code> &#x6216; <code>resetField</code> &#x65B9;&#x6CD5;&#x3002;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>// form.vue&#xFF0C;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x7701;&#x7565;
+export default {
+  data () {
+    return {
+      fields: []
+    };
+  },
+  methods: {
+    // &#x516C;&#x5F00;&#x65B9;&#x6CD5;&#xFF1A;&#x5168;&#x90E8;&#x91CD;&#x7F6E;&#x6570;&#x636E;
+    resetFields() {
+      this.fields.forEach(field =&gt; {
+        field.resetField();
+      });
+    },
+    // &#x516C;&#x5F00;&#x65B9;&#x6CD5;&#xFF1A;&#x5168;&#x90E8;&#x6821;&#x9A8C;&#x6570;&#x636E;&#xFF0C;&#x652F;&#x6301; Promise
+    validate(callback) {
+      return new Promise(resolve =&gt; {
+        let valid = true;
+        let count = 0;
+        this.fields.forEach(field =&gt; {
+          field.validate(&apos;&apos;, errors =&gt; {
+            if (errors) {
+              valid = false;
+            }
+            if (++count === this.fields.length) {
+              // &#x5168;&#x90E8;&#x5B8C;&#x6210;
+              resolve(valid);
+              if (typeof callback === &apos;function&apos;) {
+                callback(valid);
+              }
+            }
+          });
+        });
+      });
+    }
+  },
+}
+</code></pre><p>&#x867D;&#x7136;&#x8BF4; Vue.js &#x7684; API &#x53EA;&#x6765;&#x81EA; prop&#x3001;event&#x3001;slot &#x8FD9;&#x4E09;&#x4E2A;&#x90E8;&#x5206;&#xFF0C;&#x4F46;&#x4E00;&#x4E9B;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x9700;&#x8981;&#x901A;&#x8FC7; <code>ref</code> &#x6765;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF0C;&#x8C03;&#x7528;&#x5B83;&#x7684;&#x4E00;&#x4E9B;&#x5185;&#x7F6E;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#x4E0A;&#x9762;&#x7684; <code>validate</code> &#x548C; <code>resetFields</code> &#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x8005;&#x6765;&#x4E3B;&#x52A8;&#x8C03;&#x7528;&#x3002;</p>
+<p>resetFields &#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x5FAA;&#x73AF;&#x9010;&#x4E00;&#x8C03;&#x7528; FormItem &#x7684; resetField &#x65B9;&#x6CD5;&#x6765;&#x91CD;&#x7F6E;&#x6570;&#x636E;&#x3002;validate &#x7A0D;&#x663E;&#x590D;&#x6742;&#xFF0C;&#x5B83;&#x652F;&#x6301;&#x4E24;&#x79CD;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x666E;&#x901A;&#x7684;&#x56DE;&#x8C03;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;i-form ref=&quot;form&quot;&gt;&lt;/i-form&gt;
+    &lt;button @click=&quot;handleSubmit&quot;&gt;&#x63D0;&#x4EA4;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  export default {
+    methods: {
+      handleSubmit () {
+        this.$refs.form.validate((valid) =&gt; {
+          if (valid) {
+            window.alert(&apos;&#x63D0;&#x4EA4;&#x6210;&#x529F;&apos;);
+          } else {
+            window.alert(&apos;&#x8868;&#x5355;&#x6821;&#x9A8C;&#x5931;&#x8D25;&apos;);
+          }
+        })
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre><p>&#x540C;&#x65F6;&#x4E5F;&#x652F;&#x6301; Promise&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code>handleSubmit () {
+  const validate = this.$refs.form.validate();
+
+  validate.then((valid) =&gt; {
+    if (valid) {
+      window.alert(&apos;&#x63D0;&#x4EA4;&#x6210;&#x529F;&apos;);
+    } else {
+      window.alert(&apos;&#x8868;&#x5355;&#x6821;&#x9A8C;&#x5931;&#x8D25;&apos;);
+    }
+  })
+}
+</code></pre><p>&#x5728; Form &#x7EC4;&#x4EF6;&#x5B9A;&#x4E49;&#x7684; Promise &#x4E2D;&#xFF0C;&#x53EA;&#x8C03;&#x7528;&#x4E86; resolve(valid)&#xFF0C;&#x6CA1;&#x6709;&#x8C03;&#x7528; reject()&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4F7F;&#x7528; <code>.catch()</code> &#xFF0C;&#x4E0D;&#x8FC7;&#x806A;&#x660E;&#x7684;&#x4F60;&#x7A0D;&#x4F5C;&#x4FEE;&#x6539;&#xFF0C;&#x80AF;&#x5B9A;&#x80FD;&#x591F;&#x652F;&#x6301;&#x5230;&#xFF01;</p>
+<p>&#x5B8C;&#x6574;&#x7684;&#x7528;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;h3&gt;&#x5177;&#x6709;&#x6570;&#x636E;&#x6821;&#x9A8C;&#x529F;&#x80FD;&#x7684;&#x8868;&#x5355;&#x7EC4;&#x4EF6;&#x2014;&#x2014;Form&lt;/h3&gt;
+    &lt;i-form ref=&quot;form&quot; :model=&quot;formValidate&quot; :rules=&quot;ruleValidate&quot;&gt;
+      &lt;i-form-item label=&quot;&#x7528;&#x6237;&#x540D;&quot; prop=&quot;name&quot;&gt;
+        &lt;i-input v-model=&quot;formValidate.name&quot;&gt;&lt;/i-input&gt;
+      &lt;/i-form-item&gt;
+      &lt;i-form-item label=&quot;&#x90AE;&#x7BB1;&quot; prop=&quot;mail&quot;&gt;
+        &lt;i-input v-model=&quot;formValidate.mail&quot;&gt;&lt;/i-input&gt;
+      &lt;/i-form-item&gt;
+    &lt;/i-form&gt;
+    &lt;button @click=&quot;handleSubmit&quot;&gt;&#x63D0;&#x4EA4;&lt;/button&gt;
+    &lt;button @click=&quot;handleReset&quot;&gt;&#x91CD;&#x7F6E;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  import iForm from &apos;../components/form/form.vue&apos;;
+  import iFormItem from &apos;../components/form/form-item.vue&apos;;
+  import iInput from &apos;../components/input/input.vue&apos;;
+
+  export default {
+    components: { iForm, iFormItem, iInput },
+    data () {
+      return {
+        formValidate: {
+          name: &apos;&apos;,
+          mail: &apos;&apos;
+        },
+        ruleValidate: {
+          name: [
+            { required: true, message: &apos;&#x7528;&#x6237;&#x540D;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&apos;, trigger: &apos;blur&apos; }
+          ],
+          mail: [
+            { required: true, message: &apos;&#x90AE;&#x7BB1;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&apos;, trigger: &apos;blur&apos; },
+            { type: &apos;email&apos;, message: &apos;&#x90AE;&#x7BB1;&#x683C;&#x5F0F;&#x4E0D;&#x6B63;&#x786E;&apos;, trigger: &apos;blur&apos; }
+          ],
+        }
+      }
+    },
+    methods: {
+      handleSubmit () {
+        this.$refs.form.validate((valid) =&gt; {
+          if (valid) {
+            window.alert(&apos;&#x63D0;&#x4EA4;&#x6210;&#x529F;&apos;);
+          } else {
+            window.alert(&apos;&#x8868;&#x5355;&#x6821;&#x9A8C;&#x5931;&#x8D25;&apos;);
+          }
+        })
+      },
+      handleReset () {
+        this.$refs.form.resetFields();
+      }
+    }
+  }
+&lt;/script&gt;
+</code></pre><p>&#x8FD0;&#x884C;&#x6548;&#x679C;&#xFF1A;</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/30/166c3b8a77e382ec?w=1417&amp;h=550&amp;f=png&amp;s=60805" alt=""></p>
+<p>&#x5B8C;&#x6574;&#x7684;&#x793A;&#x4F8B;&#x6E90;&#x7801;&#x53EF;&#x901A;&#x8FC7; GitHub &#x67E5;&#x770B;&#xFF1A;</p>
+<p><a href="https://github.com/icarusion/vue-component-book" target="_blank">https://github.com/icarusion/vue-component-book</a></p>
+<blockquote>
+<p>&#x9879;&#x76EE;&#x57FA;&#x4E8E; Vue CLI 3 &#x6784;&#x5EFA;&#xFF0C;&#x4E0B;&#x8F7D;&#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x540E;&#xFF0C;&#x901A;&#x8FC7; npm run serve &#x53EF;&#x8BBF;&#x95EE;&#x3002;</p>
+</blockquote>
+<h2 id="&#x7ED3;&#x8BED;">&#x7ED3;&#x8BED;</h2>
+<p>&#x7EC4;&#x4EF6;&#x6700;&#x7EC8;&#x7684;&#x6548;&#x679C;&#x770B;&#x8D77;&#x6765;&#x6709;&#x70B9; &#x201C;low&#x201D;&#xFF0C;&#x4F46;&#x5B83;&#x5B9E;&#x73B0;&#x7684;&#x529F;&#x80FD;&#x5374;&#x4E0D;&#x7B80;&#x5355;&#x3002;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x5B9E;&#x6218;&#xFF0C;&#x4F60;&#x6216;&#x8BB8;&#x5DF2;&#x7ECF;&#x611F;&#x53D7;&#x5230;&#x672C;&#x5C0F;&#x518C;&#x4E00;&#x5F00;&#x59CB;&#x8BF4;&#x7684;&#xFF0C;&#x7EC4;&#x4EF6;&#x5199;&#x5230;&#x6700;&#x540E;&#xFF0C;&#x90FD;&#x662F;&#x5728;&#x62FC; JavaScript &#x529F;&#x5E95;&#x3002;&#x7684;&#x786E;&#xFF0C;Vue.js &#x7EC4;&#x4EF6;&#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x65B0;&#x7684;&#x4EE3;&#x7801;&#x7EC4;&#x7EC7;&#x5F62;&#x5F0F;&#xFF0C;&#x4F46;&#x5F52;&#x6839;&#x5230;&#x5E95;&#xFF0C;&#x662F;&#x79BB;&#x4E0D;&#x5F00; JS &#x7684;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x5B9E;&#x6218;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x5BF9;&#x72EC;&#x7ACB;&#x7EC4;&#x4EF6;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x7528;&#x6CD5;&#x6709;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x8BA4;&#x77E5;&#x4E86;&#x5427;&#xFF0C;&#x4E0D;&#x8FC7;&#xFF0C;&#x8FD9;&#x8FD8;&#x4E0D;&#x662F;&#x7EC4;&#x4EF6;&#x901A;&#x4FE1;&#x7684;&#x7EC8;&#x6781;&#x65B9;&#x6848;&#xFF0C;&#x4E0B;&#x4E00;&#x8282;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x6765;&#x770B;&#x770B;&#x9002;&#x7528;&#x4E8E;&#x4EFB;&#x4F55;&#x573A;&#x666F;&#x7684;&#x7EC4;&#x4EF6;&#x901A;&#x4FE1;&#x65B9;&#x6848;&#x3002;</p>
+<p>&#x6CE8;&#xFF1A;&#x672C;&#x8282;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x53C2;&#x8003; <a href="https://github.com/iview/iview/tree/2.0/src/components/form" target="_blank">iView</a>&#x3002;</p>
+<h2 id="&#x6269;&#x5C55;&#x9605;&#x8BFB;">&#x6269;&#x5C55;&#x9605;&#x8BFB;</h2>
+<ul>
+<li><a href="https://juejin.im/post/5bdec6e8e51d4505327a8952" target="_blank">&#x4E00;&#x4EFD;&#x8D85;&#x7EA7;&#x8BE6;&#x7EC6;&#x7684;Vue-cli3.0&#x4F7F;&#x7528;&#x6559;&#x7A0B;</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../03.Vue.js 组件精讲/03_组件的通信 2：派发与广播——自行实现 dispatch 和 broadcast 方法.html" class="navigation navigation-prev " aria-label="Previous page: 组件的通信 2"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../03.Vue.js 组件精讲/05_组件的通信 3：找到任意组件实例——findComponents 系列方法.html" class="navigation navigation-next " aria-label="Next page: 组件的通信 3"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"toggle-chapters":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book Introduction -->
+</html>

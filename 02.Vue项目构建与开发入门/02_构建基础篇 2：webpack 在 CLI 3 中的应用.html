@@ -1,0 +1,1506 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book Introduction -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>构建基础篇 2 | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../02.Vue项目构建与开发入门/03_构建基础篇 3：env 文件与环境设置.html" />
+    
+    
+    <link rel="prev" href="../02.Vue项目构建与开发入门/01_构建基础篇 1：你需要了解的包管理工具与配置项.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="2.2"
+        data-chapter-title="构建基础篇 2"
+        data-filepath="02.Vue项目构建与开发入门/02_构建基础篇 2：webpack 在 CLI 3 中的应用.md"
+        data-basepath=".."
+        data-revision="Mon Oct 21 2019 19:04:10 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        引言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01.React组合式开发/09_以史为鉴：前端开发的四个时代.html">
+            
+                
+                    <a href="../01.React组合式开发/09_以史为鉴：前端开发的四个时代.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        React组合式开发实践
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01.React组合式开发/08_似水流年：企业管理系统的前世今生.html">
+            
+                
+                    <a href="../01.React组合式开发/08_似水流年：企业管理系统的前世今生.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        似水流年
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01.React组合式开发/00_继往开来：可视化页面搭建工具.html">
+            
+                
+                    <a href="../01.React组合式开发/00_继往开来：可视化页面搭建工具.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        继往开来
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01.React组合式开发/01_实战篇 01：开发前准备.html">
+            
+                
+                    <a href="../01.React组合式开发/01_实战篇 01：开发前准备.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        实战篇 01
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01.React组合式开发/02_实战篇 02：项目脚手架.html">
+            
+                
+                    <a href="../01.React组合式开发/02_实战篇 02：项目脚手架.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        实战篇 02
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="01.React组合式开发/03_实战篇 03：页面布局方案.html">
+            
+                
+                    <a href="../01.React组合式开发/03_实战篇 03：页面布局方案.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        实战篇 03
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="01.React组合式开发/04_实战篇 04：权限管理机制.html">
+            
+                
+                    <a href="../01.React组合式开发/04_实战篇 04：权限管理机制.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        实战篇 04
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="01.React组合式开发/05_实战篇 05：菜单匹配逻辑.html">
+            
+                
+                    <a href="../01.React组合式开发/05_实战篇 05：菜单匹配逻辑.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        实战篇 05
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="01.React组合式开发/06_实战篇 06：消息通知设计.html">
+            
+                
+                    <a href="../01.React组合式开发/06_实战篇 06：消息通知设计.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        实战篇 06
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="01.React组合式开发/07_实战篇 07：多语言支持.html">
+            
+                
+                    <a href="../01.React组合式开发/07_实战篇 07：多语言支持.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        实战篇 07
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="01.React组合式开发/10_总结.html">
+            
+                
+                    <a href="../01.React组合式开发/10_总结.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02.Vue项目构建与开发入门/00_开篇：Vue CLI 3 项目构建基础.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/00_开篇：Vue CLI 3 项目构建基础.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Vue项目构建与开发入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02.Vue项目构建与开发入门/01_构建基础篇 1：你需要了解的包管理工具与配置项.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/01_构建基础篇 1：你需要了解的包管理工具与配置项.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        构建基础篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="02.Vue项目构建与开发入门/02_构建基础篇 2：webpack 在 CLI 3 中的应用.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/02_构建基础篇 2：webpack 在 CLI 3 中的应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        构建基础篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02.Vue项目构建与开发入门/03_构建基础篇 3：env 文件与环境设置.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/03_构建基础篇 3：env 文件与环境设置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        构建基础篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02.Vue项目构建与开发入门/04_构建实战篇 1：单页应用的基本配置.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/04_构建实战篇 1：单页应用的基本配置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        构建实战篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02.Vue项目构建与开发入门/05_构建实战篇 2：使用 pages 构建多页应用.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/05_构建实战篇 2：使用 pages 构建多页应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        构建实战篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="02.Vue项目构建与开发入门/06_构建实战篇 3：多页路由与模板解析.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/06_构建实战篇 3：多页路由与模板解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        构建实战篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="02.Vue项目构建与开发入门/07_构建实战篇 4：项目整合与优化.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/07_构建实战篇 4：项目整合与优化.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        构建实战篇 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="02.Vue项目构建与开发入门/08_开发拓展篇 1：扩充你的开发工具.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/08_开发拓展篇 1：扩充你的开发工具.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        开发拓展篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="02.Vue项目构建与开发入门/09_开发拓展篇 2：将 UI 界面交给第三方库.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/09_开发拓展篇 2：将 UI 界面交给第三方库.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        开发拓展篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="02.Vue项目构建与开发入门/10_开发拓展篇 3：尝试使用外部数据.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/10_开发拓展篇 3：尝试使用外部数据.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        开发拓展篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="02.Vue项目构建与开发入门/11_开发指南篇 1：从编码技巧与规范开始.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/11_开发指南篇 1：从编码技巧与规范开始.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        开发指南篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="02.Vue项目构建与开发入门/12_开发指南篇 2：学会编写可复用性模块.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/12_开发指南篇 2：学会编写可复用性模块.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        开发指南篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="02.Vue项目构建与开发入门/13_开发指南篇 3：合理划分容器组件与展示组件.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/13_开发指南篇 3：合理划分容器组件与展示组件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        开发指南篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="02.Vue项目构建与开发入门/14_开发指南篇 4：数据驱动与拼图游戏.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/14_开发指南篇 4：数据驱动与拼图游戏.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.14.</b>
+                        
+                        开发指南篇 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="02.Vue项目构建与开发入门/15_开发指南篇 5：Vue API 盲点解析.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/15_开发指南篇 5：Vue API 盲点解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                        开发指南篇 5
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="02.Vue项目构建与开发入门/16_总结篇：写在最后.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/16_总结篇：写在最后.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.16.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03.Vue.js 组件精讲/00_开篇：Vue.js 的精髓——组件.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/00_开篇：Vue.js 的精髓——组件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Vue.js 组件精讲
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03.Vue.js 组件精讲/01_基础：Vue.js 组件的三个 API：prop、event、slot.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/01_基础：Vue.js 组件的三个 API：prop、event、slot.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03.Vue.js 组件精讲/02_组件的通信 1：provide   inject.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/02_组件的通信 1：provide   inject.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        组件的通信 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03.Vue.js 组件精讲/03_组件的通信 2：派发与广播——自行实现 dispatch 和 broadcast 方法.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/03_组件的通信 2：派发与广播——自行实现 dispatch 和 broadcast 方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        组件的通信 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03.Vue.js 组件精讲/04_实战 1：具有数据校验功能的表单组件——Form.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/04_实战 1：具有数据校验功能的表单组件——Form.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        实战 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03.Vue.js 组件精讲/05_组件的通信 3：找到任意组件实例——findComponents 系列方法.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/05_组件的通信 3：找到任意组件实例——findComponents 系列方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        组件的通信 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="03.Vue.js 组件精讲/06_实战 2：组合多选框组件——CheckboxGroup &amp; Checkbox.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/06_实战 2：组合多选框组件——CheckboxGroup &amp; Checkbox.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        实战 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="03.Vue.js 组件精讲/07_Vue 的构造器——extend 与手动挂载——$mount.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/07_Vue 的构造器——extend 与手动挂载——$mount.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Vue 的构造器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="03.Vue.js 组件精讲/08_实战 3：动态渲染 .vue 文件的组件—— Display.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/08_实战 3：动态渲染 .vue 文件的组件—— Display.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        实战 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="03.Vue.js 组件精讲/09_实战 4：全局提示组件——$Alert.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/09_实战 4：全局提示组件——$Alert.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        实战 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="03.Vue.js 组件精讲/10_更灵活的组件：Render 函数与 Functional Render.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/10_更灵活的组件：Render 函数与 Functional Render.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        更灵活的组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="03.Vue.js 组件精讲/11_实战 5：可用 Render 自定义列的表格组件——Table.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/11_实战 5：可用 Render 自定义列的表格组件——Table.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                        实战 5
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="03.Vue.js 组件精讲/12_实战 6：可用 slot-scope 自定义列的表格组件——Table.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/12_实战 6：可用 slot-scope 自定义列的表格组件——Table.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.12.</b>
+                        
+                        实战 6
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="03.Vue.js 组件精讲/13_递归组件与动态组件.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/13_递归组件与动态组件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.13.</b>
+                        
+                        递归组件与动态组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="03.Vue.js 组件精讲/14_实战 7：树形控件——Tree.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/14_实战 7：树形控件——Tree.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.14.</b>
+                        
+                        实战 7
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="03.Vue.js 组件精讲/15_拓展：Vue.js 容易忽略的 API 详解.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/15_拓展：Vue.js 容易忽略的 API 详解.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.15.</b>
+                        
+                        拓展：Vue.js 容易忽略的 API 详解
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="03.Vue.js 组件精讲/16_拓展：Vue.js 面试、常见问题答疑.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/16_拓展：Vue.js 面试、常见问题答疑.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.16.</b>
+                        
+                        拓展：Vue.js 面试、常见问题答疑
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="03.Vue.js 组件精讲/17_拓展：如何做好一个开源项目（上篇）.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/17_拓展：如何做好一个开源项目（上篇）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.17.</b>
+                        
+                        拓展：如何做好一个开源项目（上篇）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18" data-path="03.Vue.js 组件精讲/18_拓展：如何做好一个开源项目（下篇）.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/18_拓展：如何做好一个开源项目（下篇）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.18.</b>
+                        
+                        拓展：如何做好一个开源项目（下篇）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19" data-path="03.Vue.js 组件精讲/19_写在最后.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/19_写在最后.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.19.</b>
+                        
+                        写在最后
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04.剖析 Vue.js 内部运行机制/00_Vue.js 运行机制全局概览.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/00_Vue.js 运行机制全局概览.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        剖析 Vue.js 内部运行机制
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04.剖析 Vue.js 内部运行机制/01_响应式系统的基本原理.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/01_响应式系统的基本原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        01_响应式系统的基本原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04.剖析 Vue.js 内部运行机制/02_响应式系统的依赖收集追踪原理.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/02_响应式系统的依赖收集追踪原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        02_响应式系统的依赖收集追踪原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04.剖析 Vue.js 内部运行机制/03_实现 Virtual DOM 下的一个 VNode 节点.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/03_实现 Virtual DOM 下的一个 VNode 节点.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        03_实现 Virtual DOM 下的一个 VNode 节点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04.剖析 Vue.js 内部运行机制/04_template 模板是怎样通过 Compile 编译的.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/04_template 模板是怎样通过 Compile 编译的.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        04_template 模板是怎样通过 Compile 编译的
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04.剖析 Vue.js 内部运行机制/05_数据状态更新时的差异 diff 及 patch 机制.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/05_数据状态更新时的差异 diff 及 patch 机制.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        05_数据状态更新时的差异 diff 及 patch 机制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04.剖析 Vue.js 内部运行机制/06_批量异步更新策略及 nextTick 原理.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/06_批量异步更新策略及 nextTick 原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        06_批量异步更新策略及 nextTick 原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04.剖析 Vue.js 内部运行机制/07_Vuex 状态管理的工作原理.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/07_Vuex 状态管理的工作原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        07_Vuex 状态管理的工作原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="04.剖析 Vue.js 内部运行机制/08_总结 &amp; 常见问题解答.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/08_总结 &amp; 常见问题解答.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        08_总结 &amp; 常见问题解答
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05.前端性能优化原理与实践/00_开篇：知识体系与小册格局.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/00_开篇：知识体系与小册格局.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        前端性能优化原理与实践
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05.前端性能优化原理与实践/01_网络篇 1：webpack 性能调优与 Gzip 原理.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/01_网络篇 1：webpack 性能调优与 Gzip 原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        网络篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05.前端性能优化原理与实践/02_网络篇 2：图片优化——质量与性能的博弈.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/02_网络篇 2：图片优化——质量与性能的博弈.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        网络篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05.前端性能优化原理与实践/03_存储篇 1：浏览器缓存机制介绍与缓存策略剖析.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/03_存储篇 1：浏览器缓存机制介绍与缓存策略剖析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        存储篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05.前端性能优化原理与实践/04_存储篇 2：本地存储——从 Cookie 到 Web Storage、IndexDB.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/04_存储篇 2：本地存储——从 Cookie 到 Web Storage、IndexDB.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        存储篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05.前端性能优化原理与实践/05_彩蛋篇：CDN 的缓存与回源机制解析.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/05_彩蛋篇：CDN 的缓存与回源机制解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        彩蛋篇
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05.前端性能优化原理与实践/06_渲染篇 1：服务端渲染的探索与实践.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/06_渲染篇 1：服务端渲染的探索与实践.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        渲染篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05.前端性能优化原理与实践/07_渲染篇 2：知己知彼——解锁浏览器背后的运行机制.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/07_渲染篇 2：知己知彼——解锁浏览器背后的运行机制.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        渲染篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05.前端性能优化原理与实践/08_渲染篇 3：对症下药——DOM 优化原理与基本实践.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/08_渲染篇 3：对症下药——DOM 优化原理与基本实践.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        渲染篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="05.前端性能优化原理与实践/09_渲染篇 4：千方百计——Event Loop 与异步更新策略.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/09_渲染篇 4：千方百计——Event Loop 与异步更新策略.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        渲染篇 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="05.前端性能优化原理与实践/10_渲染篇 5：最后一击——回流（Reflow）与重绘（Repaint）.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/10_渲染篇 5：最后一击——回流（Reflow）与重绘（Repaint）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        渲染篇 5
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="05.前端性能优化原理与实践/11_应用篇 1：优化首屏体验——Lazy-Load 初探.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/11_应用篇 1：优化首屏体验——Lazy-Load 初探.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        应用篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="05.前端性能优化原理与实践/12_应用篇 2：事件的节流（throttle）与防抖（debounce）.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/12_应用篇 2：事件的节流（throttle）与防抖（debounce）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                        应用篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="05.前端性能优化原理与实践/13_性能监测篇：Performance、LightHouse 与性能 API.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/13_性能监测篇：Performance、LightHouse 与性能 API.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.13.</b>
+                        
+                        性能监测篇
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="05.前端性能优化原理与实践/14_前方的路：希望以此为你的起点.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/14_前方的路：希望以此为你的起点.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.14.</b>
+                        
+                        前方的路
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x6784;&#x5EFA;&#x57FA;&#x7840;&#x7BC7;-2&#xFF1A;webpack-&#x5728;-cli-3-&#x4E2D;&#x7684;&#x5E94;&#x7528;">&#x6784;&#x5EFA;&#x57FA;&#x7840;&#x7BC7; 2&#xFF1A;webpack &#x5728; CLI 3 &#x4E2D;&#x7684;&#x5E94;&#x7528;</h1>
+<p>webpack &#x4F5C;&#x4E3A;&#x76EE;&#x524D;&#x6700;&#x6D41;&#x884C;&#x7684;&#x9879;&#x76EE;&#x6253;&#x5305;&#x5DE5;&#x5177;&#xFF0C;&#x88AB;&#x5E7F;&#x6CDB;&#x4F7F;&#x7528;&#x4E8E;&#x9879;&#x76EE;&#x7684;&#x6784;&#x5EFA;&#x548C;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5176;&#x5B9E;&#x8BF4;&#x5B83;&#x662F;&#x6253;&#x5305;&#x5DE5;&#x5177;&#x6709;&#x70B9;&#x5927;&#x6750;&#x5C0F;&#x7528;&#x4E86;&#xFF0C;&#x6211;&#x4E2A;&#x4EBA;&#x8BA4;&#x4E3A;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x96C6;&#x524D;&#x7AEF;&#x81EA;&#x52A8;&#x5316;&#x3001;&#x6A21;&#x5757;&#x5316;&#x3001;&#x7EC4;&#x4EF6;&#x5316;&#x4E8E;&#x4E00;&#x4F53;&#x7684;&#x53EF;&#x62D3;&#x5C55;&#x7CFB;&#x7EDF;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x9700;&#x8981;&#x6765;&#x8FDB;&#x884C;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x914D;&#x7F6E;&#x548C;&#x5B89;&#x88C5;&#xFF0C;&#x6700;&#x7EC8;&#x5B9E;&#x73B0;&#x4F60;&#x9700;&#x8981;&#x7684;&#x529F;&#x80FD;&#x5E76;&#x8FDB;&#x884C;&#x6253;&#x5305;&#x8F93;&#x51FA;&#x3002;</p>
+<p>&#x800C;&#x5728; Vue &#x7684;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;webpack &#x540C;&#x6837;&#x5145;&#x5F53;&#x7740;&#x4E3E;&#x8DB3;&#x8F7B;&#x91CD;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x6BD4;&#x5982;&#x6253;&#x5305;&#x538B;&#x7F29;&#x3001;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;&#x3001;&#x6A21;&#x5757;&#x5316;&#x7BA1;&#x7406;&#x7B49;&#x7B49;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4E86;&#x89E3; webpack &#x90A3;&#x4E48;&#x76F8;&#x4FE1;&#x672C;&#x6587;&#x4F1A;&#x8BA9;&#x4F60;&#x66F4;&#x4E86;&#x89E3;&#x5176;&#x5728; Vue &#x4E2D;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x662F;&#x4E00;&#x4E2A; webpack &#x5C0F;&#x767D;&#xFF0C;&#x90A3;&#x4E48;&#x4E5F;&#x6CA1;&#x4E8B;&#xFF0C;&#x76F8;&#x4FE1;&#x4F60;&#x4F1A;&#x5F88;&#x5BB9;&#x6613;&#x7684;&#x4E86;&#x89E3;&#x5B83;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x548C;&#x529F;&#x80FD;&#x3002;</p>
+<h2 id="webpack-&#x7684;&#x4F7F;&#x7528;">webpack &#x7684;&#x4F7F;&#x7528;</h2>
+<h3 id="1-&#x4E0E;-vuecli-2x-&#x7684;&#x5DEE;&#x5F02;">1. &#x4E0E; vue-cli 2.x &#x7684;&#x5DEE;&#x5F02;</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x8FC7; vue-cli 2.x&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5E94;&#x8BE5;&#x4E86;&#x89E3;&#x5176;&#x6784;&#x5EFA;&#x51FA;&#x7684;&#x76EE;&#x5F55;&#x4F1A;&#x5305;&#x542B;&#x76F8;&#x5E94;&#x7684; webpack &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x5728; vue-cli 3.x &#x4E2D;&#x4F60;&#x5374;&#x89C1;&#x4E0D;&#x5230;&#x4E00;&#x4EFD;&#x5173;&#x4E8E; webpack &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x96BE;&#x9053; 3.x &#x629B;&#x5F03;&#x4E86; webpack&#xFF1F;&#x5176;&#x5B9E;&#x4E0D;&#x7136;&#xFF0C;3.x &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5F00;&#x7BB1;&#x5373;&#x7528;&#x7684;&#x6A21;&#x5F0F;&#xFF0C;&#x5373;&#x4F60;&#x65E0;&#x9700;&#x914D;&#x7F6E; webpack &#x5C31;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x9879;&#x76EE;&#xFF0C;&#x5E76;&#x4E14;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A; vue.config.js &#x6587;&#x4EF6;&#x6765;&#x6EE1;&#x8DB3;&#x5F00;&#x53D1;&#x8005;&#x5BF9;&#x5176;&#x5C01;&#x88C5;&#x7684; webpack &#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x7684;&#x4FEE;&#x6539;&#x3002;&#x5982;&#x56FE;&#xFF1A;</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/7/22/164c05d8ad965059?w=797&amp;h=584&amp;f=png&amp;s=32393" alt=""></p>
+<h3 id="2-vueconfigjs-&#x7684;&#x914D;&#x7F6E;">2. vue.config.js &#x7684;&#x914D;&#x7F6E;</h3>
+<p>&#x901A;&#x8FC7;&#x4E0A;&#x65B9;&#x65B0;&#x8001;&#x7248;&#x672C;&#x7684;&#x5BF9;&#x6BD4;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6E05;&#x6670;&#x7684;&#x770B;&#x51FA; vue.config.js &#x7684;&#x914D;&#x7F6E;&#x9879;&#x7ED3;&#x6784;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x6784;&#x5EFA;&#x7684;&#x9879;&#x76EE;&#x4E2D;&#x6CA1;&#x6709;&#x8BE5;&#x6587;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x9700;&#x8981;&#x5728;&#x6839;&#x76EE;&#x5F55;&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x5B83;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5C31;&#x6765;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x5176;&#x5E38;&#x7528;&#x914D;&#x7F6E;&#x9879;&#x7684;&#x529F;&#x80FD;&#x548C;&#x7528;&#x9014;&#xFF1A;</p>
+<h3 id="a-baseurl">a. baseurl</h3>
+<p>&#x5728;&#x7B2C;&#x4E00;&#x8282;&#x300A;Vue CLI 3 &#x9879;&#x76EE;&#x6784;&#x5EFA;&#x57FA;&#x7840;&#x300B;&#x4E2D;&#x6211;&#x4EEC;&#x901A;&#x8FC7; vue-cli 3.x &#x6210;&#x529F;&#x6784;&#x5EFA;&#x5E76;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6253;&#x5F00; <code>http://localhost:8080/</code> &#x5C55;&#x793A;&#x4E86;&#x9879;&#x76EE;&#x9996;&#x9875;&#x3002;&#x5982;&#x679C;&#x73B0;&#x5728;&#x4F60;&#x60F3;&#x8981;&#x5C06;&#x9879;&#x76EE;&#x5730;&#x5740;&#x52A0;&#x4E00;&#x4E2A;&#x4E8C;&#x7EA7;&#x76EE;&#x5F55;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<code>http://localhost:8080/vue/</code>&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728; vue.config.js &#x91CC;&#x914D;&#x7F6E; baseurl &#x8FD9;&#x4E00;&#x9879;&#xFF1A;</p>
+<pre><code>// vue.config.js
+module.exports = {
+    ...
+
+    baseUrl: &apos;vue&apos;,
+
+    ...
+}
+</code></pre><p>&#x5176;&#x6539;&#x53D8;&#x7684;&#x5176;&#x5B9E;&#x662F; webpack &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D; output &#x7684; <code>publicPath</code> &#x9879;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x4F60;&#x91CD;&#x542F;&#x7EC8;&#x7AEF;&#x518D;&#x6B21;&#x6253;&#x5F00;&#x9875;&#x9762;&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x9996;&#x9875;&#x7684; url &#x5C31;&#x4F1A;&#x53D8;&#x6210;&#x5E26;&#x4E8C;&#x7EA7;&#x76EE;&#x5F55;&#x7684;&#x5F62;&#x5F0F;&#x3002;</p>
+<h3 id="b-outputdir">b. outputDir</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5C06;&#x6784;&#x5EFA;&#x597D;&#x7684;&#x6587;&#x4EF6;&#x6253;&#x5305;&#x8F93;&#x51FA;&#x5230; output &#x6587;&#x4EF6;&#x5939;&#x4E0B;&#xFF08;&#x9ED8;&#x8BA4;&#x662F; dist &#x6587;&#x4EF6;&#x5939;&#xFF09;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code>// vue.config.js
+module.exports = {
+    ...
+
+    outputDir: &apos;output&apos;,
+
+    ...
+}
+</code></pre><p>&#x7136;&#x540E;&#x8FD0;&#x884C;&#x547D;&#x4EE4; <code>yarn build</code> &#x8FDB;&#x884C;&#x6253;&#x5305;&#x8F93;&#x51FA;&#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x9879;&#x76EE;&#x8DDF;&#x76EE;&#x5F55;&#x4F1A;&#x521B;&#x5EFA; output &#x6587;&#x4EF6;&#x5939;&#xFF0C; &#x8FD9;&#x5176;&#x5B9E;&#x6539;&#x53D8;&#x4E86; webpack &#x914D;&#x7F6E;&#x4E2D; output &#x4E0B;&#x7684; <code>path</code> &#x9879;&#xFF0C;&#x4FEE;&#x6539;&#x4E86;&#x6587;&#x4EF6;&#x7684;&#x8F93;&#x51FA;&#x8DEF;&#x5F84;&#x3002;</p>
+<h3 id="c-productionsourcemap">c. productionSourceMap</h3>
+<p>&#x8BE5;&#x914D;&#x7F6E;&#x9879;&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x4E3A;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x6784;&#x5EFA;&#x751F;&#x6210; source map&#xFF0C;&#x4E00;&#x822C;&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E0B;&#x4E3A;&#x4E86;&#x5FEB;&#x901F;&#x5B9A;&#x4F4D;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x4F1A;&#x5F00;&#x542F; source map&#xFF1A;</p>
+<pre><code>// vue.config.js
+module.exports = {
+    ...
+
+    productionSourceMap: true,
+
+    ...
+}
+</code></pre><p>&#x8BE5;&#x914D;&#x7F6E;&#x4F1A;&#x4FEE;&#x6539; webpack &#x4E2D; <code>devtool</code> &#x9879;&#x7684;&#x503C;&#x4E3A; <code>source-map</code>&#x3002;</p>
+<p>&#x5F00;&#x542F; source map &#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x6253;&#x5305;&#x8F93;&#x51FA;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x4F1A;&#x5305;&#x542B; js &#x5BF9;&#x5E94;&#x7684; .map &#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x7528;&#x9014;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#xFF1A;<a href="http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html" target="_blank">JavaScript Source Map &#x8BE6;&#x89E3;</a></p>
+<h3 id="d-chainwebpack">d. chainWebpack</h3>
+<p>chainWebpack &#x914D;&#x7F6E;&#x9879;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x66F4;&#x7EC6;&#x7C92;&#x5EA6;&#x7684;&#x63A7;&#x5236; webpack &#x7684;&#x5185;&#x90E8;&#x914D;&#x7F6E;&#xFF0C;&#x5176;&#x96C6;&#x6210;&#x7684;&#x662F; <a href="https://github.com/mozilla-neutrino/webpack-chain" target="_blank">webpack-chain</a> &#x8FD9;&#x4E00;&#x63D2;&#x4EF6;&#xFF0C;&#x8BE5;&#x63D2;&#x4EF6;&#x53EF;&#x4EE5;&#x8BA9;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x94FE;&#x5F0F;&#x64CD;&#x4F5C;&#x6765;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code>// &#x7528;&#x4E8E;&#x505A;&#x76F8;&#x5E94;&#x7684;&#x5408;&#x5E76;&#x5904;&#x7406;
+const merge = require(&apos;webpack-merge&apos;);
+
+module.exports = {
+    ...
+
+    // config &#x53C2;&#x6570;&#x4E3A;&#x5DF2;&#x7ECF;&#x89E3;&#x6790;&#x597D;&#x7684; webpack &#x914D;&#x7F6E;
+    chainWebpack: config =&gt; {
+        config.module
+            .rule(&apos;images&apos;)
+            .use(&apos;url-loader&apos;)
+            .tap(options =&gt;
+                merge(options, {
+                  limit: 5120,
+                })
+            )
+    }
+
+    ...
+}
+</code></pre><p>&#x4EE5;&#x4E0A;&#x64CD;&#x4F5C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#x4FEE;&#x6539; webpack &#x4E2D; module &#x9879;&#x91CC;&#x914D;&#x7F6E; rules &#x89C4;&#x5219;&#x4E3A;&#x56FE;&#x7247;&#x4E0B;&#x7684; url-loader &#x503C;&#xFF0C;&#x5C06;&#x5176; limit &#x9650;&#x5236;&#x6539;&#x4E3A; 5M&#xFF0C;&#x4FEE;&#x6539;&#x540E;&#x7684; webpack &#x914D;&#x7F6E;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>{
+    ...
+
+    module: {
+        rules: [
+            {   
+                /* config.module.rule(&apos;images&apos;) */
+                test: /\.(png|jpe?g|gif|webp)(\?.*)?$/,
+                use: [
+                    /* config.module.rule(&apos;images&apos;).use(&apos;url-loader&apos;) */
+                    {
+                        loader: &apos;url-loader&apos;,
+                        options: {
+                            limit: 5120,
+                            name: &apos;img/[name].[hash:8].[ext]&apos;
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+
+    ...
+}
+</code></pre><p>&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86; webpack-merge &#x8FD9;&#x4E00;&#x63D2;&#x4EF6;&#xFF0C;&#x8BE5;&#x63D2;&#x4EF6;&#x7528;&#x4E8E;&#x505A; webpack &#x914D;&#x7F6E;&#x7684;&#x5408;&#x5E76;&#x5904;&#x7406;&#xFF0C;&#x8FD9;&#x6837; options &#x4E0B;&#x9762;&#x7684;&#x5176;&#x4ED6;&#x503C;&#x5C31;&#x4E0D;&#x4F1A;&#x88AB;&#x8986;&#x76D6;&#x6216;&#x6539;&#x53D8;&#x3002;</p>
+<p>&#x5173;&#x4E8E; webpack-chain &#x7684;&#x4F7F;&#x7528;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x5176; github &#x5B98;&#x65B9;&#x5730;&#x5740;&#xFF1A;<a href="https://github.com/mozilla-neutrino/webpack-chain" target="_blank">https://github.com/mozilla-neutrino/webpack-chain</a>&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x64CD;&#x4F5C;&#x7C7B;&#x4F3C; JavaScript Set &#x548C; Map &#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x4E00;&#x7CFB;&#x5217;&#x901F;&#x8BB0;&#x65B9;&#x6CD5;&#x3002;</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/10/30/166c58e690ddb43d?w=557&amp;h=398&amp;f=png&amp;s=59904" alt=""></p>
+<h3 id="e-configurewebpack">e. configureWebpack</h3>
+<p>&#x9664;&#x4E86;&#x4E0A;&#x8FF0;&#x4F7F;&#x7528; chainWebpack &#x6765;&#x6539;&#x53D8; webpack &#x5185;&#x90E8;&#x914D;&#x7F6E;&#x5916;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; configureWebpack &#x6765;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x4E24;&#x8005;&#x7684;&#x4E0D;&#x540C;&#x70B9;&#x5728;&#x4E8E; chainWebpack &#x662F;&#x94FE;&#x5F0F;&#x4FEE;&#x6539;&#xFF0C;&#x800C; configureWebpack &#x66F4;&#x503E;&#x5411;&#x4E8E;&#x6574;&#x4F53;&#x66FF;&#x6362;&#x548C;&#x4FEE;&#x6539;&#x3002;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>// vue.config.js
+module.exports = {
+    ...
+
+    // config &#x53C2;&#x6570;&#x4E3A;&#x5DF2;&#x7ECF;&#x89E3;&#x6790;&#x597D;&#x7684; webpack &#x914D;&#x7F6E;
+    configureWebpack: config =&gt; {
+        // config.plugins = []; // &#x8FD9;&#x6837;&#x4F1A;&#x76F4;&#x63A5;&#x5C06; plugins &#x7F6E;&#x7A7A;
+
+        // &#x4F7F;&#x7528; return &#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x4F1A;&#x901A;&#x8FC7; webpack-merge &#x8FDB;&#x884C;&#x5408;&#x5E76;&#xFF0C;plugins &#x4E0D;&#x4F1A;&#x7F6E;&#x7A7A;
+        return {
+            plugins: []
+        }
+    }
+
+    ...
+}
+</code></pre><p>configureWebpack &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5BF9;&#x8C61;&#x5B83;&#x4F1A;&#x76F4;&#x63A5;&#x4F7F;&#x7528; webpack-merge &#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x5408;&#x5E76;&#x5904;&#x7406;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x51FD;&#x6570;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x5176; config &#x53C2;&#x6570;&#x6765;&#x4FEE;&#x6539; webpack &#x4E2D;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x6216;&#x8005;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6765;&#x8FDB;&#x884C; merge &#x5904;&#x7406;&#x3002;</p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x9879;&#x76EE;&#x76EE;&#x5F55;&#x4E0B;&#x8FD0;&#x884C; <code>vue inspect</code> &#x6765;&#x67E5;&#x770B;&#x4F60;&#x4FEE;&#x6539;&#x540E;&#x7684; webpack &#x5B8C;&#x6574;&#x914D;&#x7F6E;&#xFF0C;&#x5F53;&#x7136;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x7F29;&#x5C0F;&#x5BA1;&#x67E5;&#x8303;&#x56F4;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code># &#x53EA;&#x67E5;&#x770B; plugins &#x7684;&#x5185;&#x5BB9;
+vue inspect plugins
+</code></pre><h3 id="f-devserver">f. devServer</h3>
+<p>vue.config.js &#x8FD8;&#x63D0;&#x4F9B;&#x4E86; devServer &#x9879;&#x7528;&#x4E8E;&#x914D;&#x7F6E; webpack-dev-server &#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x4F7F;&#x5F97;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5BF9;&#x672C;&#x5730;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x914D;&#x7F6E;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E2D;&#x8FD0;&#x884C;&#x7684; <code>yarn serve</code> &#x5BF9;&#x5E94;&#x7684;&#x547D;&#x4EE4; <code>vue-cli-service serve</code> &#x5176;&#x5B9E;&#x4FBF;&#x662F;&#x57FA;&#x4E8E; webpack-dev-server &#x5F00;&#x542F;&#x7684;&#x4E00;&#x4E2A;&#x672C;&#x5730;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5176;&#x5E38;&#x7528;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>// vue.config.js
+module.exports = {
+    ...
+
+    devServer: {
+        open: true, // &#x662F;&#x5426;&#x81EA;&#x52A8;&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;&#x9875;&#x9762;
+        host: &apos;0.0.0.0&apos;, // &#x6307;&#x5B9A;&#x4F7F;&#x7528;&#x4E00;&#x4E2A; host&#x3002;&#x9ED8;&#x8BA4;&#x662F; localhost
+        port: 8080, // &#x7AEF;&#x53E3;&#x5730;&#x5740;
+        https: false, // &#x4F7F;&#x7528;https&#x63D0;&#x4F9B;&#x670D;&#x52A1;
+        proxy: null, // string | Object &#x4EE3;&#x7406;&#x8BBE;&#x7F6E;
+
+        // &#x63D0;&#x4F9B;&#x5728;&#x670D;&#x52A1;&#x5668;&#x5185;&#x90E8;&#x7684;&#x5176;&#x4ED6;&#x4E2D;&#x95F4;&#x4EF6;&#x4E4B;&#x524D;&#x6267;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#x4E2D;&#x95F4;&#x4EF6;&#x7684;&#x80FD;&#x529B;
+        before: app =&gt; {
+          // `app` &#x662F;&#x4E00;&#x4E2A; express &#x5B9E;&#x4F8B;
+        }
+    }
+
+    ...
+}
+</code></pre><p>&#x5F53;&#x7136;&#x9664;&#x4E86;&#x4EE5;&#x4E0A;&#x53C2;&#x6570;&#xFF0C;&#x5176;&#x652F;&#x6301;&#x6240;&#x6709;&#x7684; webpack-dev-server &#x4E2D;&#x7684;&#x9009;&#x9879;&#xFF0C;&#x6BD4;&#x5982; <code>historyApiFallback</code> &#x7528;&#x4E8E;&#x91CD;&#x5199;&#x8DEF;&#x7531;&#xFF08;&#x4F1A;&#x5728;&#x540E;&#x7EED;&#x7684;&#x591A;&#x9875;&#x5E94;&#x7528;&#x914D;&#x7F6E;&#x4E2D;&#x8BB2;&#x89E3;&#xFF09;&#x3001;progress &#x5C06;&#x8FD0;&#x884C;&#x8FDB;&#x5EA6;&#x8F93;&#x51FA;&#x5230;&#x63A7;&#x5236;&#x53F0;&#x7B49;&#xFF0C;&#x5177;&#x4F53;&#x53EF;&#x53C2;&#x8003;&#xFF1A;<a href="https://www.webpackjs.com/configuration/dev-server/" target="_blank">devServer</a></p>
+<p>&#x4EE5;&#x4E0A;&#x8BB2;&#x89E3;&#x4E86; vue.config.js &#x4E2D;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x529F;&#x80FD;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x914D;&#x7F6E;&#x5B9E;&#x73B0;&#x9700;&#x8981;&#x7ED3;&#x5408;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x8FDB;&#x884C;&#xFF0C;&#x5B8C;&#x6574;&#x7684;&#x914D;&#x7F6E;&#x9879;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#xFF1A;<a href="https://github.com/vuejs/vue-cli/blob/ce3e2d475d63895cbb40f62425bb6b3237469bcd/docs/zh/config/README.md" target="_blank">vue.config.js</a></p>
+<h3 id="3-&#x9ED8;&#x8BA4;&#x63D2;&#x4EF6;&#x7B80;&#x4ECB;">3. &#x9ED8;&#x8BA4;&#x63D2;&#x4EF6;&#x7B80;&#x4ECB;</h3>
+<p>&#x901A;&#x8FC7;&#x5BF9; vue.config.js &#x7684;&#x4E86;&#x89E3;&#xFF0C;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x4E86; vue-cli 3.x &#x4E3A;&#x6211;&#x4EEC;&#x9ED8;&#x8BA4;&#x5C01;&#x88C5;&#x4E86;&#x9879;&#x76EE;&#x8FD0;&#x884C;&#x7684;&#x5E38;&#x7528; webpack &#x914D;&#x7F6E;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x7ED9;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x54EA;&#x4E9B;&#x9ED8;&#x8BA4;&#x63D2;&#x4EF6;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A; plugin &#x53C8;&#x6709;&#x7740;&#x600E;&#x6837;&#x7684;&#x7528;&#x9014;&#x5462;&#xFF1F;&#x9664;&#x4E86;&#x4F7F;&#x7528; <code>vue inspect plugins</code> &#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD0;&#x884C; <code>vue ui</code> &#x8FDB;&#x5165;&#x53EF;&#x89C6;&#x5316;&#x9875;&#x9762;&#x67E5;&#x770B;&#xFF0C;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x6253;&#x5F00;&#x53EF;&#x89C6;&#x5316;&#x9875;&#x9762;&#xFF0C;&#x70B9;&#x51FB;&#x5BF9;&#x5E94;&#x9879;&#x76EE;&#x8FDB;&#x5165;&#x7BA1;&#x7406;&#x9875;&#x9762;&#xFF08;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;&#x9879;&#x76EE;&#xFF0C;&#x9700;&#x8981;&#x5BFC;&#x5165;&#x6216;&#x65B0;&#x5EFA;&#xFF09;</li>
+<li>&#x70B9;&#x51FB;&#x4FA7;&#x8FB9;&#x680F; Tasks &#x9009;&#x9879;&#xFF0C;&#x518D;&#x70B9;&#x51FB;&#x4E8C;&#x7EA7;&#x680F; inspect &#x9009;&#x9879;</li>
+<li>&#x70B9;&#x51FB; Run task &#x6309;&#x94AE;&#x6267;&#x884C;&#x5BA1;&#x67E5;&#x547D;&#x4EE4;</li>
+</ul>
+<p>&#x5982;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/7/22/164c15d1f97432b5?w=924&amp;h=392&amp;f=png&amp;s=60624" alt=""></p>
+<p>&#x6700;&#x540E;&#x6211;&#x4EEC;&#x4ECE;&#x8F93;&#x51FA;&#x7684;&#x5185;&#x5BB9;&#x4E2D;&#x627E;&#x5230; plugins &#x6570;&#x7EC4;&#xFF0C;&#x5176;&#x5305;&#x542B;&#x4E86;&#x5982;&#x4E0B;&#x63D2;&#x4EF6;&#xFF08;&#x914D;&#x7F6E;&#x9879;&#x5DF2;&#x7ECF;&#x7701;&#x7565;&#xFF0C;&#x589E;&#x52A0;&#x4E86;&#x5B9A;&#x4E49;&#x63D2;&#x4EF6;&#x7684;&#x4EE3;&#x7801;&#xFF09;&#xFF1A;</p>
+<pre><code>// vue-loader&#x662F; webpack &#x7684;&#x52A0;&#x8F7D;&#x5668;&#xFF0C;&#x5141;&#x8BB8;&#x4F60;&#x4EE5;&#x5355;&#x6587;&#x4EF6;&#x7EC4;&#x4EF6;&#x7684;&#x683C;&#x5F0F;&#x7F16;&#x5199; Vue &#x7EC4;&#x4EF6;
+const VueLoaderPlugin = require(&apos;vue-loader/lib/plugin&apos;);
+
+// webpack &#x5185;&#x7F6E;&#x63D2;&#x4EF6;&#xFF0C;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x53EF;&#x4EE5;&#x914D;&#x7F6E;&#x7684;&#x5168;&#x5C40;&#x5E38;&#x91CF;
+const { DefinePlugin } = require(&apos;webpack&apos;);
+
+// &#x7528;&#x4E8E;&#x5F3A;&#x5236;&#x6240;&#x6709;&#x6A21;&#x5757;&#x7684;&#x5B8C;&#x6574;&#x8DEF;&#x5F84;&#x5FC5;&#x9700;&#x4E0E;&#x78C1;&#x76D8;&#x4E0A;&#x5B9E;&#x9645;&#x8DEF;&#x5F84;&#x7684;&#x786E;&#x5207;&#x5927;&#x5C0F;&#x5199;&#x76F8;&#x5339;&#x914D;
+const CaseSensitivePathsPlugin = require(&apos;case-sensitive-paths-webpack-plugin&apos;);
+
+// &#x8BC6;&#x522B;&#x67D0;&#x4E9B;&#x7C7B;&#x578B;&#x7684; webpack &#x9519;&#x8BEF;&#x5E76;&#x6574;&#x7406;&#xFF0C;&#x4EE5;&#x63D0;&#x4F9B;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x66F4;&#x597D;&#x7684;&#x4F53;&#x9A8C;&#x3002;
+const FriendlyErrorsPlugin = require(&apos;friendly-errors-webpack-plugin&apos;);
+
+// &#x5C06; CSS &#x63D0;&#x53D6;&#x5230;&#x5355;&#x72EC;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4E3A;&#x6BCF;&#x4E2A;&#x5305;&#x542B; CSS &#x7684; JS &#x6587;&#x4EF6;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; CSS &#x6587;&#x4EF6;
+const MiniCssExtractPlugin = require(&quot;mini-css-extract-plugin&quot;);
+
+// &#x7528;&#x4E8E;&#x5728; webpack &#x6784;&#x5EFA;&#x671F;&#x95F4;&#x4F18;&#x5316;&#x3001;&#x6700;&#x5C0F;&#x5316; CSS&#x6587;&#x4EF6;
+const OptimizeCssnanoPlugin = require(&apos;optimize-css-assets-webpack-plugin&apos;);
+
+// webpack &#x5185;&#x7F6E;&#x63D2;&#x4EF6;&#xFF0C;&#x7528;&#x4E8E;&#x6839;&#x636E;&#x6A21;&#x5757;&#x7684;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x751F;&#x6210; hash &#x4F5C;&#x4E3A;&#x6A21;&#x5757; id, &#x4E00;&#x822C;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x73AF;&#x5883;
+const { HashedModuleIdsPlugin } = require(&apos;webpack&apos;);
+
+// &#x7528;&#x4E8E;&#x6839;&#x636E;&#x6A21;&#x677F;&#x6216;&#x4F7F;&#x7528;&#x52A0;&#x8F7D;&#x5668;&#x751F;&#x6210; HTML &#x6587;&#x4EF6;
+const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;);
+
+// &#x7528;&#x4E8E;&#x5728;&#x4F7F;&#x7528; html-webpack-plugin &#x751F;&#x6210;&#x7684; html &#x4E2D;&#x6DFB;&#x52A0; &lt;link rel =&apos;preload&apos;&gt; &#x6216; &lt;link rel =&apos;prefetch&apos;&gt;&#xFF0C;&#x6709;&#x52A9;&#x4E8E;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;
+const PreloadPlugin = require(&apos;preload-webpack-plugin&apos;);
+
+// &#x7528;&#x4E8E;&#x5C06;&#x5355;&#x4E2A;&#x6587;&#x4EF6;&#x6216;&#x6574;&#x4E2A;&#x76EE;&#x5F55;&#x590D;&#x5236;&#x5230;&#x6784;&#x5EFA;&#x76EE;&#x5F55;
+const CopyWebpackPlugin = require(&apos;copy-webpack-plugin&apos;);
+
+module.exports = {
+    plugins: [
+        /* config.plugin(&apos;vue-loader&apos;) */
+        new VueLoaderPlugin(), 
+
+        /* config.plugin(&apos;define&apos;) */
+        new DefinePlugin(),
+
+        /* config.plugin(&apos;case-sensitive-paths&apos;) */
+        new CaseSensitivePathsPlugin(),
+
+        /* config.plugin(&apos;friendly-errors&apos;) */
+        new FriendlyErrorsWebpackPlugin(),
+
+        /* config.plugin(&apos;extract-css&apos;) */
+        new MiniCssExtractPlugin(),
+
+        /* config.plugin(&apos;optimize-css&apos;) */
+        new OptimizeCssnanoPlugin(),
+
+        /* config.plugin(&apos;hash-module-ids&apos;) */
+        new HashedModuleIdsPlugin(),
+
+        /* config.plugin(&apos;html&apos;) */
+        new HtmlWebpackPlugin(),
+
+        /* config.plugin(&apos;preload&apos;) */
+        new PreloadPlugin(),
+
+        /* config.plugin(&apos;copy&apos;) */
+        new CopyWebpackPlugin()
+    ]
+}
+</code></pre><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6BCF;&#x4E2A;&#x63D2;&#x4EF6;&#x4E0A;&#x65B9;&#x90FD;&#x6DFB;&#x52A0;&#x4E86;&#x4F7F;&#x7528; chainWebpack &#x8BBF;&#x95EE;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x540C;&#x65F6;&#x6211;&#x4E5F;&#x6DFB;&#x52A0;&#x4E86;&#x6BCF;&#x4E2A;&#x63D2;&#x4EF6;&#x76F8;&#x5E94;&#x7684;&#x7528;&#x9014;&#x6CE8;&#x91CA;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#x8981;&#x533A;&#x5206; webpack &#x5185;&#x7F6E;&#x63D2;&#x4EF6;&#x548C;&#x7B2C;&#x4E09;&#x65B9;&#x63D2;&#x4EF6;&#x7684;&#x533A;&#x522B;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5185;&#x7F6E;&#x63D2;&#x4EF6;&#x5219;&#x65E0;&#x9700;&#x5B89;&#x88C5;&#x4E0B;&#x8F7D;&#xFF0C;&#x800C;&#x5916;&#x90E8;&#x63D2;&#x4EF6;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#xFF1A;<a href="https://www.npmjs.com/" target="_blank">https://www.npmjs.com/</a> &#x641C;&#x7D22;&#x5BF9;&#x5E94;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x4E86;&#x89E3;&#x5176;&#x8BE6;&#x7EC6;&#x7684; api &#x8BBE;&#x7F6E;&#x3002;</p>
+<h2 id="&#x7ED3;&#x8BED;">&#x7ED3;&#x8BED;</h2>
+<p>&#x672C;&#x6587;&#x4E3B;&#x8981;&#x9610;&#x8FF0;&#x4E86; vue-cli 3.x &#x4E0B;&#x57FA;&#x4E8E; vue.config.js &#x914D;&#x7F6E; webpack &#x7684;&#x4E3B;&#x8981;&#x65B9;&#x6CD5;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x4ECB;&#x7ECD;&#x4E86;&#x5176;&#x9ED8;&#x8BA4;&#x7684; webpack &#x63D2;&#x4EF6;&#x4E0E;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#xFF0C;&#x76F8;&#x4FE1;&#x5927;&#x5BB6;&#x5728;&#x4E86;&#x89E3; webpack &#x7684;&#x77E5;&#x8BC6;&#x540E;&#x80FD;&#x591F;&#x66F4;&#x52A0;&#x8F7B;&#x677E;&#x7684;&#x5F00;&#x5C55;&#x540E;&#x7EED;&#x5185;&#x5BB9;&#x7684;&#x5B66;&#x4E60;&#xFF0C;&#x4E3A;&#x63A5;&#x4E0B;&#x6765;&#x9879;&#x76EE;&#x7684;&#x6784;&#x5EFA;&#x548C;&#x5F00;&#x53D1;&#x5960;&#x5B9A;&#x57FA;&#x7840;&#x3002;</p>
+<h2 id="&#x601D;&#x8003;--&#x4F5C;&#x4E1A;">&#x601D;&#x8003; &amp; &#x4F5C;&#x4E1A;</h2>
+<ul>
+<li><p>&#x9664;&#x4E86;&#x6587;&#x7AE0;&#x4E2D;&#x4ECB;&#x7ECD;&#x7684;&#x914D;&#x7F6E;&#x9879;&#xFF0C;<code>vue.config.js</code> &#x4E2D;&#x8FD8;&#x6709;&#x54EA;&#x4E9B;&#x989D;&#x5916;&#x7684;&#x914D;&#x7F6E;&#xFF1F;</p>
+</li>
+<li><p><code>webpack-merge</code> &#x7684;&#x5408;&#x5E76;&#x539F;&#x7406;&#x662F;&#x600E;&#x6837;&#x7684;&#xFF1F;</p>
+</li>
+<li><p>&#x4F7F;&#x7528; <code>chainWebpack</code> &#x83B7;&#x53D6;&#x5230; webpack &#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x63D2;&#x4EF6;&#x540E;&#xFF0C;&#x5982;&#x4F55;&#x4FEE;&#x6539;&#x5176;&#x914D;&#x7F6E;&#xFF1F;</p>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../02.Vue项目构建与开发入门/01_构建基础篇 1：你需要了解的包管理工具与配置项.html" class="navigation navigation-prev " aria-label="Previous page: 构建基础篇 1"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../02.Vue项目构建与开发入门/03_构建基础篇 3：env 文件与环境设置.html" class="navigation navigation-next " aria-label="Next page: 构建基础篇 3"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"toggle-chapters":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book Introduction -->
+</html>
