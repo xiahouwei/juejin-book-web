@@ -1,0 +1,2906 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book Introduction -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>分离代码文件 | Introduction</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../10.使用 webpack 定制前端开发环境/10_优化前端资源加载 3 - 进一步控制 JS 大小.html" />
+    
+    
+    <link rel="prev" href="../10.使用 webpack 定制前端开发环境/08_优化前端资源加载 1 - 图片加载优化和代码压缩.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="10.9"
+        data-chapter-title="分离代码文件"
+        data-filepath="10.使用 webpack 定制前端开发环境/09_优化前端资源加载 2 - 分离代码文件.md"
+        data-basepath=".."
+        data-revision="Wed Nov 27 2019 09:51:41 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        引言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01.React组合式开发/09_以史为鉴：前端开发的四个时代.html">
+            
+                
+                    <a href="../01.React组合式开发/09_以史为鉴：前端开发的四个时代.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        React组合式开发实践
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01.React组合式开发/08_似水流年：企业管理系统的前世今生.html">
+            
+                
+                    <a href="../01.React组合式开发/08_似水流年：企业管理系统的前世今生.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        似水流年
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01.React组合式开发/00_继往开来：可视化页面搭建工具.html">
+            
+                
+                    <a href="../01.React组合式开发/00_继往开来：可视化页面搭建工具.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        继往开来
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01.React组合式开发/01_实战篇 01：开发前准备.html">
+            
+                
+                    <a href="../01.React组合式开发/01_实战篇 01：开发前准备.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        实战篇 01
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01.React组合式开发/02_实战篇 02：项目脚手架.html">
+            
+                
+                    <a href="../01.React组合式开发/02_实战篇 02：项目脚手架.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        实战篇 02
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="01.React组合式开发/03_实战篇 03：页面布局方案.html">
+            
+                
+                    <a href="../01.React组合式开发/03_实战篇 03：页面布局方案.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        实战篇 03
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="01.React组合式开发/04_实战篇 04：权限管理机制.html">
+            
+                
+                    <a href="../01.React组合式开发/04_实战篇 04：权限管理机制.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        实战篇 04
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="01.React组合式开发/05_实战篇 05：菜单匹配逻辑.html">
+            
+                
+                    <a href="../01.React组合式开发/05_实战篇 05：菜单匹配逻辑.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        实战篇 05
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="01.React组合式开发/06_实战篇 06：消息通知设计.html">
+            
+                
+                    <a href="../01.React组合式开发/06_实战篇 06：消息通知设计.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        实战篇 06
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="01.React组合式开发/07_实战篇 07：多语言支持.html">
+            
+                
+                    <a href="../01.React组合式开发/07_实战篇 07：多语言支持.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        实战篇 07
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="01.React组合式开发/10_总结.html">
+            
+                
+                    <a href="../01.React组合式开发/10_总结.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02.Vue项目构建与开发入门/00_开篇：Vue CLI 3 项目构建基础.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/00_开篇：Vue CLI 3 项目构建基础.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Vue项目构建与开发入门
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02.Vue项目构建与开发入门/01_构建基础篇 1：你需要了解的包管理工具与配置项.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/01_构建基础篇 1：你需要了解的包管理工具与配置项.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        构建基础篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02.Vue项目构建与开发入门/02_构建基础篇 2：webpack 在 CLI 3 中的应用.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/02_构建基础篇 2：webpack 在 CLI 3 中的应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        构建基础篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02.Vue项目构建与开发入门/03_构建基础篇 3：env 文件与环境设置.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/03_构建基础篇 3：env 文件与环境设置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        构建基础篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02.Vue项目构建与开发入门/04_构建实战篇 1：单页应用的基本配置.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/04_构建实战篇 1：单页应用的基本配置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        构建实战篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="02.Vue项目构建与开发入门/05_构建实战篇 2：使用 pages 构建多页应用.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/05_构建实战篇 2：使用 pages 构建多页应用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        构建实战篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="02.Vue项目构建与开发入门/06_构建实战篇 3：多页路由与模板解析.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/06_构建实战篇 3：多页路由与模板解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        构建实战篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="02.Vue项目构建与开发入门/07_构建实战篇 4：项目整合与优化.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/07_构建实战篇 4：项目整合与优化.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        构建实战篇 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="02.Vue项目构建与开发入门/08_开发拓展篇 1：扩充你的开发工具.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/08_开发拓展篇 1：扩充你的开发工具.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        开发拓展篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="02.Vue项目构建与开发入门/09_开发拓展篇 2：将 UI 界面交给第三方库.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/09_开发拓展篇 2：将 UI 界面交给第三方库.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        开发拓展篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="02.Vue项目构建与开发入门/10_开发拓展篇 3：尝试使用外部数据.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/10_开发拓展篇 3：尝试使用外部数据.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        开发拓展篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="02.Vue项目构建与开发入门/11_开发指南篇 1：从编码技巧与规范开始.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/11_开发指南篇 1：从编码技巧与规范开始.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        开发指南篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="02.Vue项目构建与开发入门/12_开发指南篇 2：学会编写可复用性模块.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/12_开发指南篇 2：学会编写可复用性模块.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        开发指南篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="02.Vue项目构建与开发入门/13_开发指南篇 3：合理划分容器组件与展示组件.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/13_开发指南篇 3：合理划分容器组件与展示组件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        开发指南篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="02.Vue项目构建与开发入门/14_开发指南篇 4：数据驱动与拼图游戏.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/14_开发指南篇 4：数据驱动与拼图游戏.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.14.</b>
+                        
+                        开发指南篇 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="02.Vue项目构建与开发入门/15_开发指南篇 5：Vue API 盲点解析.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/15_开发指南篇 5：Vue API 盲点解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                        开发指南篇 5
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="02.Vue项目构建与开发入门/16_总结篇：写在最后.html">
+            
+                
+                    <a href="../02.Vue项目构建与开发入门/16_总结篇：写在最后.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.16.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03.Vue.js 组件精讲/00_开篇：Vue.js 的精髓——组件.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/00_开篇：Vue.js 的精髓——组件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Vue.js 组件精讲
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03.Vue.js 组件精讲/01_基础：Vue.js 组件的三个 API：prop、event、slot.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/01_基础：Vue.js 组件的三个 API：prop、event、slot.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03.Vue.js 组件精讲/02_组件的通信 1：provide   inject.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/02_组件的通信 1：provide   inject.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        组件的通信 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03.Vue.js 组件精讲/03_组件的通信 2：派发与广播——自行实现 dispatch 和 broadcast 方法.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/03_组件的通信 2：派发与广播——自行实现 dispatch 和 broadcast 方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        组件的通信 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03.Vue.js 组件精讲/04_实战 1：具有数据校验功能的表单组件——Form.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/04_实战 1：具有数据校验功能的表单组件——Form.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        实战 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03.Vue.js 组件精讲/05_组件的通信 3：找到任意组件实例——findComponents 系列方法.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/05_组件的通信 3：找到任意组件实例——findComponents 系列方法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        组件的通信 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="03.Vue.js 组件精讲/06_实战 2：组合多选框组件——CheckboxGroup &amp; Checkbox.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/06_实战 2：组合多选框组件——CheckboxGroup &amp; Checkbox.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        实战 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="03.Vue.js 组件精讲/07_Vue 的构造器——extend 与手动挂载——$mount.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/07_Vue 的构造器——extend 与手动挂载——$mount.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        Vue 的构造器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="03.Vue.js 组件精讲/08_实战 3：动态渲染 .vue 文件的组件—— Display.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/08_实战 3：动态渲染 .vue 文件的组件—— Display.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        实战 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="03.Vue.js 组件精讲/09_实战 4：全局提示组件——$Alert.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/09_实战 4：全局提示组件——$Alert.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        实战 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="03.Vue.js 组件精讲/10_更灵活的组件：Render 函数与 Functional Render.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/10_更灵活的组件：Render 函数与 Functional Render.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        更灵活的组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="03.Vue.js 组件精讲/11_实战 5：可用 Render 自定义列的表格组件——Table.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/11_实战 5：可用 Render 自定义列的表格组件——Table.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                        实战 5
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="03.Vue.js 组件精讲/12_实战 6：可用 slot-scope 自定义列的表格组件——Table.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/12_实战 6：可用 slot-scope 自定义列的表格组件——Table.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.12.</b>
+                        
+                        实战 6
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="03.Vue.js 组件精讲/13_递归组件与动态组件.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/13_递归组件与动态组件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.13.</b>
+                        
+                        递归组件与动态组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="03.Vue.js 组件精讲/14_实战 7：树形控件——Tree.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/14_实战 7：树形控件——Tree.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.14.</b>
+                        
+                        实战 7
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.15" data-path="03.Vue.js 组件精讲/15_拓展：Vue.js 容易忽略的 API 详解.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/15_拓展：Vue.js 容易忽略的 API 详解.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.15.</b>
+                        
+                        拓展：Vue.js 容易忽略的 API 详解
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.16" data-path="03.Vue.js 组件精讲/16_拓展：Vue.js 面试、常见问题答疑.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/16_拓展：Vue.js 面试、常见问题答疑.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.16.</b>
+                        
+                        拓展：Vue.js 面试、常见问题答疑
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.17" data-path="03.Vue.js 组件精讲/17_拓展：如何做好一个开源项目（上篇）.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/17_拓展：如何做好一个开源项目（上篇）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.17.</b>
+                        
+                        拓展：如何做好一个开源项目（上篇）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.18" data-path="03.Vue.js 组件精讲/18_拓展：如何做好一个开源项目（下篇）.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/18_拓展：如何做好一个开源项目（下篇）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.18.</b>
+                        
+                        拓展：如何做好一个开源项目（下篇）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.19" data-path="03.Vue.js 组件精讲/19_写在最后.html">
+            
+                
+                    <a href="../03.Vue.js 组件精讲/19_写在最后.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.19.</b>
+                        
+                        写在最后
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04.剖析 Vue.js 内部运行机制/00_Vue.js 运行机制全局概览.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/00_Vue.js 运行机制全局概览.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        剖析 Vue.js 内部运行机制
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="04.剖析 Vue.js 内部运行机制/01_响应式系统的基本原理.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/01_响应式系统的基本原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        01_响应式系统的基本原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04.剖析 Vue.js 内部运行机制/02_响应式系统的依赖收集追踪原理.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/02_响应式系统的依赖收集追踪原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        02_响应式系统的依赖收集追踪原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04.剖析 Vue.js 内部运行机制/03_实现 Virtual DOM 下的一个 VNode 节点.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/03_实现 Virtual DOM 下的一个 VNode 节点.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        03_实现 Virtual DOM 下的一个 VNode 节点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04.剖析 Vue.js 内部运行机制/04_template 模板是怎样通过 Compile 编译的.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/04_template 模板是怎样通过 Compile 编译的.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        04_template 模板是怎样通过 Compile 编译的
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="04.剖析 Vue.js 内部运行机制/05_数据状态更新时的差异 diff 及 patch 机制.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/05_数据状态更新时的差异 diff 及 patch 机制.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        05_数据状态更新时的差异 diff 及 patch 机制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="04.剖析 Vue.js 内部运行机制/06_批量异步更新策略及 nextTick 原理.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/06_批量异步更新策略及 nextTick 原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        06_批量异步更新策略及 nextTick 原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="04.剖析 Vue.js 内部运行机制/07_Vuex 状态管理的工作原理.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/07_Vuex 状态管理的工作原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        07_Vuex 状态管理的工作原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="04.剖析 Vue.js 内部运行机制/08_总结 &amp; 常见问题解答.html">
+            
+                
+                    <a href="../04.剖析 Vue.js 内部运行机制/08_总结 &amp; 常见问题解答.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        08_总结 &amp; 常见问题解答
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05.前端性能优化原理与实践/00_开篇：知识体系与小册格局.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/00_开篇：知识体系与小册格局.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        前端性能优化原理与实践
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05.前端性能优化原理与实践/01_网络篇 1：webpack 性能调优与 Gzip 原理.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/01_网络篇 1：webpack 性能调优与 Gzip 原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        网络篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05.前端性能优化原理与实践/02_网络篇 2：图片优化——质量与性能的博弈.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/02_网络篇 2：图片优化——质量与性能的博弈.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        网络篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05.前端性能优化原理与实践/03_存储篇 1：浏览器缓存机制介绍与缓存策略剖析.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/03_存储篇 1：浏览器缓存机制介绍与缓存策略剖析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        存储篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05.前端性能优化原理与实践/04_存储篇 2：本地存储——从 Cookie 到 Web Storage、IndexDB.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/04_存储篇 2：本地存储——从 Cookie 到 Web Storage、IndexDB.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        存储篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05.前端性能优化原理与实践/05_彩蛋篇：CDN 的缓存与回源机制解析.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/05_彩蛋篇：CDN 的缓存与回源机制解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        彩蛋篇
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="05.前端性能优化原理与实践/06_渲染篇 1：服务端渲染的探索与实践.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/06_渲染篇 1：服务端渲染的探索与实践.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        渲染篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="05.前端性能优化原理与实践/07_渲染篇 2：知己知彼——解锁浏览器背后的运行机制.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/07_渲染篇 2：知己知彼——解锁浏览器背后的运行机制.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        渲染篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="05.前端性能优化原理与实践/08_渲染篇 3：对症下药——DOM 优化原理与基本实践.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/08_渲染篇 3：对症下药——DOM 优化原理与基本实践.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        渲染篇 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="05.前端性能优化原理与实践/09_渲染篇 4：千方百计——Event Loop 与异步更新策略.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/09_渲染篇 4：千方百计——Event Loop 与异步更新策略.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        渲染篇 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.10" data-path="05.前端性能优化原理与实践/10_渲染篇 5：最后一击——回流（Reflow）与重绘（Repaint）.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/10_渲染篇 5：最后一击——回流（Reflow）与重绘（Repaint）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.10.</b>
+                        
+                        渲染篇 5
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.11" data-path="05.前端性能优化原理与实践/11_应用篇 1：优化首屏体验——Lazy-Load 初探.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/11_应用篇 1：优化首屏体验——Lazy-Load 初探.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.11.</b>
+                        
+                        应用篇 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.12" data-path="05.前端性能优化原理与实践/12_应用篇 2：事件的节流（throttle）与防抖（debounce）.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/12_应用篇 2：事件的节流（throttle）与防抖（debounce）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.12.</b>
+                        
+                        应用篇 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.13" data-path="05.前端性能优化原理与实践/13_性能监测篇：Performance、LightHouse 与性能 API.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/13_性能监测篇：Performance、LightHouse 与性能 API.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.13.</b>
+                        
+                        性能监测篇
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.14" data-path="05.前端性能优化原理与实践/14_前方的路：希望以此为你的起点.html">
+            
+                
+                    <a href="../05.前端性能优化原理与实践/14_前方的路：希望以此为你的起点.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.14.</b>
+                        
+                        前方的路
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06.Web前端面试指南与高频考题解析/00_准备：简历编写和面试前准备.html">
+            
+                
+                    <a href="../06.Web前端面试指南与高频考题解析/00_准备：简历编写和面试前准备.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Web前端面试指南与高频考题解析
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06.Web前端面试指南与高频考题解析/01_一面 1：ES 基础知识点与高频考题解析.html">
+            
+                
+                    <a href="../06.Web前端面试指南与高频考题解析/01_一面 1：ES 基础知识点与高频考题解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        一面 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06.Web前端面试指南与高频考题解析/02_一面 2：JS-Web-API 知识点与高频考题解析.html">
+            
+                
+                    <a href="../06.Web前端面试指南与高频考题解析/02_一面 2：JS-Web-API 知识点与高频考题解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        一面 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06.Web前端面试指南与高频考题解析/03_一面 3：CSS-HTML 知识点与高频考题解析.html">
+            
+                
+                    <a href="../06.Web前端面试指南与高频考题解析/03_一面 3：CSS-HTML 知识点与高频考题解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        一面 3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06.Web前端面试指南与高频考题解析/04_一面 4：从容应对算法题目.html">
+            
+                
+                    <a href="../06.Web前端面试指南与高频考题解析/04_一面 4：从容应对算法题目.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        一面 4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="06.Web前端面试指南与高频考题解析/05_一面 5：浏览器相关知识点与高频考题解析.html">
+            
+                
+                    <a href="../06.Web前端面试指南与高频考题解析/05_一面 5：浏览器相关知识点与高频考题解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        一面 5
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="06.Web前端面试指南与高频考题解析/06_一面 6：开发环境相关知识点与高频考题解析.html">
+            
+                
+                    <a href="../06.Web前端面试指南与高频考题解析/06_一面 6：开发环境相关知识点与高频考题解析.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        一面 6
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="06.Web前端面试指南与高频考题解析/07_二面 1：如何回答常见的软技能问题.html">
+            
+                
+                    <a href="../06.Web前端面试指南与高频考题解析/07_二面 1：如何回答常见的软技能问题.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        二面 1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="06.Web前端面试指南与高频考题解析/08_二面 2：如何介绍项目及应对项目细节追问.html">
+            
+                
+                    <a href="../06.Web前端面试指南与高频考题解析/08_二面 2：如何介绍项目及应对项目细节追问.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        二面 2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="06.Web前端面试指南与高频考题解析/09_HR 面：谈钱不伤感情.html">
+            
+                
+                    <a href="../06.Web前端面试指南与高频考题解析/09_HR 面：谈钱不伤感情.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        HR 面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="06.Web前端面试指南与高频考题解析/10_其他：面试注意事项.html">
+            
+                
+                    <a href="../06.Web前端面试指南与高频考题解析/10_其他：面试注意事项.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        其他
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="06.Web前端面试指南与高频考题解析/11_总结与补充说明.html">
+            
+                
+                    <a href="../06.Web前端面试指南与高频考题解析/11_总结与补充说明.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.11.</b>
+                        
+                        总结与补充
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07.大厂H5开发实战手册/00_大厂H5开发概述.html">
+            
+                
+                    <a href="../07.大厂H5开发实战手册/00_大厂H5开发概述.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        大厂H5开发实战手册
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07.大厂H5开发实战手册/01_基础页面开发.html">
+            
+                
+                    <a href="../07.大厂H5开发实战手册/01_基础页面开发.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        基础页面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07.大厂H5开发实战手册/02_响应式页面开发.html">
+            
+                
+                    <a href="../07.大厂H5开发实战手册/02_响应式页面开发.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        响应式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07.大厂H5开发实战手册/03_滑屏应用开发.html">
+            
+                
+                    <a href="../07.大厂H5开发实战手册/03_滑屏应用开发.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        滑屏应用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="07.大厂H5开发实战手册/04_动效开发 1：让它动起来.html">
+            
+                
+                    <a href="../07.大厂H5开发实战手册/04_动效开发 1：让它动起来.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        动效开发1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="07.大厂H5开发实战手册/05_动效开发 2：聊一聊 3D.html">
+            
+                
+                    <a href="../07.大厂H5开发实战手册/05_动效开发 2：聊一聊 3D.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        动效开发2
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="07.大厂H5开发实战手册/06_动效开发 3：补间动画.html">
+            
+                
+                    <a href="../07.大厂H5开发实战手册/06_动效开发 3：补间动画.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        动效开发3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="07.大厂H5开发实战手册/07_动效开发 4：逐帧动画.html">
+            
+                
+                    <a href="../07.大厂H5开发实战手册/07_动效开发 4：逐帧动画.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        动效开发4
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="07.大厂H5开发实战手册/08_动效开发 5：SVG 动画.html">
+            
+                
+                    <a href="../07.大厂H5开发实战手册/08_动效开发 5：SVG 动画.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        动效开发5
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="07.大厂H5开发实战手册/09_动效开发 6：动效之效.html">
+            
+                
+                    <a href="../07.大厂H5开发实战手册/09_动效开发 6：动效之效.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        动效开发6
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="07.大厂H5开发实战手册/10_总结.html">
+            
+                
+                    <a href="../07.大厂H5开发实战手册/10_总结.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="08.基于 JavaScript 开发灵活的数据应用/00_基于 JavaScript 的数据应用开发概述.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/00_基于 JavaScript 的数据应用开发概述.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        基于JavaScript开发灵活的数据应用
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="08.基于 JavaScript 开发灵活的数据应用/01_基本数据处理 · 字符串和数字.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/01_基本数据处理 · 字符串和数字.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        字符串和数字
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="08.基于 JavaScript 开发灵活的数据应用/02_基本数据处理 · 对象字面量.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/02_基本数据处理 · 对象字面量.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        对象字面量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="08.基于 JavaScript 开发灵活的数据应用/03_基本数据处理 · 数组.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/03_基本数据处理 · 数组.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        数组
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="08.基于 JavaScript 开发灵活的数据应用/04_基本数据处理 · 基本统计.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/04_基本数据处理 · 基本统计.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        基本统计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="08.基于 JavaScript 开发灵活的数据应用/05_复杂数据处理 · 使用序列.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/05_复杂数据处理 · 使用序列.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        使用序列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="08.基于 JavaScript 开发灵活的数据应用/06_复杂数据处理 · 树形.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/06_复杂数据处理 · 树形.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        树形
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.7" data-path="08.基于 JavaScript 开发灵活的数据应用/07_复杂数据处理 · 关系图谱.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/07_复杂数据处理 · 关系图谱.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.7.</b>
+                        
+                        关系图谱
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.8" data-path="08.基于 JavaScript 开发灵活的数据应用/08_复杂数据处理 · 结构转换（上）.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/08_复杂数据处理 · 结构转换（上）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.8.</b>
+                        
+                        结构转换（上）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.9" data-path="08.基于 JavaScript 开发灵活的数据应用/09_复杂数据处理 · 结构转换（下）.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/09_复杂数据处理 · 结构转换（下）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.9.</b>
+                        
+                        结构转换（下）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.10" data-path="08.基于 JavaScript 开发灵活的数据应用/10_基于ECharts 的基础表达性统计图表 · 散点图与折线图.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/10_基于ECharts 的基础表达性统计图表 · 散点图与折线图.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.10.</b>
+                        
+                        散点图与折线图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.11" data-path="08.基于 JavaScript 开发灵活的数据应用/11_基于ECharts 的基础表达性统计图表 · 柱状图与饼图.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/11_基于ECharts 的基础表达性统计图表 · 柱状图与饼图.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.11.</b>
+                        
+                        柱状图与饼图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.12" data-path="08.基于 JavaScript 开发灵活的数据应用/12_复杂数据图表 · 箱线图.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/12_复杂数据图表 · 箱线图.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.12.</b>
+                        
+                        箱线图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.13" data-path="08.基于 JavaScript 开发灵活的数据应用/13_复杂数据图表 · 关系图谱.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/13_复杂数据图表 · 关系图谱.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.13.</b>
+                        
+                        关系图谱
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.14" data-path="08.基于 JavaScript 开发灵活的数据应用/14_复杂数据图表 · 树形图.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/14_复杂数据图表 · 树形图.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.14.</b>
+                        
+                        树形图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.15" data-path="08.基于 JavaScript 开发灵活的数据应用/15_数据分析师的好帮手 · 辅助线.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/15_数据分析师的好帮手 · 辅助线.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.15.</b>
+                        
+                        辅助线
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.16" data-path="08.基于 JavaScript 开发灵活的数据应用/16_更高维度的数据可视化图表.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/16_更高维度的数据可视化图表.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.16.</b>
+                        
+                        数据可视化图表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.17" data-path="08.基于 JavaScript 开发灵活的数据应用/17_动态数据应用-用数据流概念重新理解数据转换.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/17_动态数据应用-用数据流概念重新理解数据转换.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.17.</b>
+                        
+                        数据转换
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.18" data-path="08.基于 JavaScript 开发灵活的数据应用/18_动态数据应用 · 使用 Vue.js 为数据流添加动态转换过滤器.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/18_动态数据应用 · 使用 Vue.js 为数据流添加动态转换过滤器.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.18.</b>
+                        
+                        动态转换过滤器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.19" data-path="08.基于 JavaScript 开发灵活的数据应用/19_动态数据应用 · 应用高大上的动态数据流（上）.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/19_动态数据应用 · 应用高大上的动态数据流（上）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.19.</b>
+                        
+                        动态数据流1
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.20" data-path="08.基于 JavaScript 开发灵活的数据应用/20_动态数据应用 · 应用高大上的动态数据流（下）.html">
+            
+                
+                    <a href="../08.基于 JavaScript 开发灵活的数据应用/20_动态数据应用 · 应用高大上的动态数据流（下）.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.20.</b>
+                        
+                        动态数据流2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="09.如何使用 Canvas 制作出炫酷的网页背景特效/00_什么是 Canvas .html">
+            
+                
+                    <a href="../09.如何使用 Canvas 制作出炫酷的网页背景特效/00_什么是 Canvas .html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Canvas 制作
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="09.如何使用 Canvas 制作出炫酷的网页背景特效/01_Canvas 的应用场景.html">
+            
+                
+                    <a href="../09.如何使用 Canvas 制作出炫酷的网页背景特效/01_Canvas 的应用场景.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        Canvas 的应用场景
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="09.如何使用 Canvas 制作出炫酷的网页背景特效/02_手摸手带你入门 Canvas.html">
+            
+                
+                    <a href="../09.如何使用 Canvas 制作出炫酷的网页背景特效/02_手摸手带你入门 Canvas.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        手摸手带你入门 Canvas
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="09.如何使用 Canvas 制作出炫酷的网页背景特效/03_炫酷背景特效的通性.html">
+            
+                
+                    <a href="../09.如何使用 Canvas 制作出炫酷的网页背景特效/03_炫酷背景特效的通性.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        炫酷背景特效的通性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="09.如何使用 Canvas 制作出炫酷的网页背景特效/04_怎么实现随机粒子.html">
+            
+                
+                    <a href="../09.如何使用 Canvas 制作出炫酷的网页背景特效/04_怎么实现随机粒子.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        怎么实现随机粒子
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="09.如何使用 Canvas 制作出炫酷的网页背景特效/05_使你的随机粒子动起来.html">
+            
+                
+                    <a href="../09.如何使用 Canvas 制作出炫酷的网页背景特效/05_使你的随机粒子动起来.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        随机粒子动起来
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="09.如何使用 Canvas 制作出炫酷的网页背景特效/06_使你的鼠标和屏幕互动.html">
+            
+                
+                    <a href="../09.如何使用 Canvas 制作出炫酷的网页背景特效/06_使你的鼠标和屏幕互动.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.6.</b>
+                        
+                        鼠标和屏幕互动
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="09.如何使用 Canvas 制作出炫酷的网页背景特效/07_制作属于你自己的特效.html">
+            
+                
+                    <a href="../09.如何使用 Canvas 制作出炫酷的网页背景特效/07_制作属于你自己的特效.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.7.</b>
+                        
+                        属于你自己的特效
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="09.如何使用 Canvas 制作出炫酷的网页背景特效/08_使你的 Canvas 更加优雅.html">
+            
+                
+                    <a href="../09.如何使用 Canvas 制作出炫酷的网页背景特效/08_使你的 Canvas 更加优雅.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.8.</b>
+                        
+                        使你的 Canvas 更加优雅
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="10.使用 webpack 定制前端开发环境/00_webpack 的概念和基础使用.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/00_webpack 的概念和基础使用.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        使用 webpack 定制前端开发环境
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="10.使用 webpack 定制前端开发环境/01_搭建基本的前端开发环境.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/01_搭建基本的前端开发环境.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        搭建基本环境
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="10.使用 webpack 定制前端开发环境/02_webpack 如何解析代码模块路径.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/02_webpack 如何解析代码模块路径.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        解析代码模块路径
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="10.使用 webpack 定制前端开发环境/03_配置 loader.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/03_配置 loader.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.3.</b>
+                        
+                        配置loader
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="10.使用 webpack 定制前端开发环境/04_使用 plugin.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/04_使用 plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.4.</b>
+                        
+                        使用plugin
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="10.使用 webpack 定制前端开发环境/05_更好地使用 webpack-dev-server.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/05_更好地使用 webpack-dev-server.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.5.</b>
+                        
+                        webpack-dev-server
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="10.使用 webpack 定制前端开发环境/06_开发和生产环境的构建配置差异.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/06_开发和生产环境的构建配置差异.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.6.</b>
+                        
+                        开发和生产环境的差异
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.7" data-path="10.使用 webpack 定制前端开发环境/07_用 HMR 提高开发效率.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/07_用 HMR 提高开发效率.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.7.</b>
+                        
+                        用HMR提高开发效率
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.8" data-path="10.使用 webpack 定制前端开发环境/08_优化前端资源加载 1 - 图片加载优化和代码压缩.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/08_优化前端资源加载 1 - 图片加载优化和代码压缩.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.8.</b>
+                        
+                        图片加载优化和代码压缩
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="10.9" data-path="10.使用 webpack 定制前端开发环境/09_优化前端资源加载 2 - 分离代码文件.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/09_优化前端资源加载 2 - 分离代码文件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.9.</b>
+                        
+                        分离代码文件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.10" data-path="10.使用 webpack 定制前端开发环境/10_优化前端资源加载 3 - 进一步控制 JS 大小.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/10_优化前端资源加载 3 - 进一步控制 JS 大小.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.10.</b>
+                        
+                        控制JS大小
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.11" data-path="10.使用 webpack 定制前端开发环境/11_提升 webpack 的构建速度.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/11_提升 webpack 的构建速度.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.11.</b>
+                        
+                        提升构建速度
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.12" data-path="10.使用 webpack 定制前端开发环境/12_探究 webpack 内部工作流程.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/12_探究 webpack 内部工作流程.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.12.</b>
+                        
+                        探究内部工作流程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.13" data-path="10.使用 webpack 定制前端开发环境/13_创建自己的 loader.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/13_创建自己的 loader.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.13.</b>
+                        
+                        创建自己的loader
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.14" data-path="10.使用 webpack 定制前端开发环境/14_创建自己的 plugin.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/14_创建自己的 plugin.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.14.</b>
+                        
+                        创建自己的plugin
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.15" data-path="10.使用 webpack 定制前端开发环境/15_总结.html">
+            
+                
+                    <a href="../10.使用 webpack 定制前端开发环境/15_总结.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.15.</b>
+                        
+                        总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/00_开篇：微信小程序概述.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/00_开篇：微信小程序概述.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        使用 webpack 定制前端开发环境
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/01_基础篇 1：小程序开发基础知识.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/01_基础篇 1：小程序开发基础知识.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.1.</b>
+                        
+                        小程序开发基础知识
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/02_基础篇 2：小程序云开发基础知识.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/02_基础篇 2：小程序云开发基础知识.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.2.</b>
+                        
+                        小程序云开发基础知识
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/03_基础篇 3：小程序架构及其实现机制.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/03_基础篇 3：小程序架构及其实现机制.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.3.</b>
+                        
+                        小程序架构及其实现机制
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/04_实战篇 1：小程序开发环境搭建.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/04_实战篇 1：小程序开发环境搭建.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.4.</b>
+                        
+                        小程序开发环境搭建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/05_实战篇 2：新鲜天气小程序简介.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/05_实战篇 2：新鲜天气小程序简介.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.5.</b>
+                        
+                        新鲜天气小程序简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.6" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/06_实战篇 3：天气页面样式布局开发.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/06_实战篇 3：天气页面样式布局开发.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.6.</b>
+                        
+                        天气页面样式布局开发
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.7" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/07_实战篇 4：天气页面数据获取和交互实现.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/07_实战篇 4：天气页面数据获取和交互实现.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.7.</b>
+                        
+                        天气页面数据获取和交互实现
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.8" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/08_实战篇 5：为天气页面制作雨雪效果的粒子系统.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/08_实战篇 5：为天气页面制作雨雪效果的粒子系统.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.8.</b>
+                        
+                        为天气页面制作雨雪效果的粒子系统
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.9" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/09_实战篇 6：心情签到页面开发.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/09_实战篇 6：心情签到页面开发.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.9.</b>
+                        
+                        心情签到页面开发
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.10" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/10_实战篇 7：对小程序进行优化.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/10_实战篇 7：对小程序进行优化.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.10.</b>
+                        
+                        对小程序进行优化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.11" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/11_实战篇 8：小程序调试技巧和上线发布.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/11_实战篇 8：小程序调试技巧和上线发布.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.11.</b>
+                        
+                        小程序调试技巧和上线发布
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11.12" data-path="11.微信小程序开发入门：从 0 到 1 实现天气小程序/12_总结与拓展.html">
+            
+                
+                    <a href="../11.微信小程序开发入门：从 0 到 1 实现天气小程序/12_总结与拓展.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.12.</b>
+                        
+                        总结与拓展
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="12.用 npm script 打造超溜的前端工作流/00_为什么选择 npm script.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/00_为什么选择 npm script.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        用 npm script 打造超溜的前端工作流
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.1" data-path="12.用 npm script 打造超溜的前端工作流/01_入门篇 01：创建并运行 npm script 命令.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/01_入门篇 01：创建并运行 npm script 命令.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.1.</b>
+                        
+                        入门篇 01
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.2" data-path="12.用 npm script 打造超溜的前端工作流/02_入门篇 02：运行多个 npm script 的各种姿势.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/02_入门篇 02：运行多个 npm script 的各种姿势.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                        入门篇 02
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="12.用 npm script 打造超溜的前端工作流/03_入门篇 03：给 npm script 传递参数和添加注释.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/03_入门篇 03：给 npm script 传递参数和添加注释.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.3.</b>
+                        
+                        入门篇 03
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.4" data-path="12.用 npm script 打造超溜的前端工作流/04_进阶篇 01：使用 npm script 的钩子.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/04_进阶篇 01：使用 npm script 的钩子.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.4.</b>
+                        
+                        进阶篇 01
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.5" data-path="12.用 npm script 打造超溜的前端工作流/05_进阶篇 02：在 npm script 中使用环境变量.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/05_进阶篇 02：在 npm script 中使用环境变量.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.5.</b>
+                        
+                        进阶篇 02
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.6" data-path="12.用 npm script 打造超溜的前端工作流/06_进阶篇 03：实现 npm script 命令自动补全.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/06_进阶篇 03：实现 npm script 命令自动补全.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.6.</b>
+                        
+                        进阶篇 03
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.7" data-path="12.用 npm script 打造超溜的前端工作流/07_高阶篇 01：实现 npm script 跨平台兼容.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/07_高阶篇 01：实现 npm script 跨平台兼容.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.7.</b>
+                        
+                        高阶篇 01
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.8" data-path="12.用 npm script 打造超溜的前端工作流/08_高阶篇 02：把庞大的 npm script 拆到单独文件中.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/08_高阶篇 02：把庞大的 npm script 拆到单独文件中.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.8.</b>
+                        
+                        高阶篇 02
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.9" data-path="12.用 npm script 打造超溜的前端工作流/09_高阶篇 03：用 node.js 脚本替代复杂的 npm script.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/09_高阶篇 03：用 node.js 脚本替代复杂的 npm script.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.9.</b>
+                        
+                        高阶篇 03
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.10" data-path="12.用 npm script 打造超溜的前端工作流/10_实战篇 01：监听文件变化并自动运行 npm script.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/10_实战篇 01：监听文件变化并自动运行 npm script.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.10.</b>
+                        
+                        实战篇 01
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.11" data-path="12.用 npm script 打造超溜的前端工作流/11_实战篇 02：结合 live-reload 实现自动刷新.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/11_实战篇 02：结合 live-reload 实现自动刷新.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.11.</b>
+                        
+                        实战篇 02
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.12" data-path="12.用 npm script 打造超溜的前端工作流/12_实战篇 03：在 git hooks 中运行 npm script.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/12_实战篇 03：在 git hooks 中运行 npm script.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.12.</b>
+                        
+                        实战篇 03
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.13" data-path="12.用 npm script 打造超溜的前端工作流/13_实战篇 04：用 npm script 实现构建流水线.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/13_实战篇 04：用 npm script 实现构建流水线.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.13.</b>
+                        
+                        实战篇 04
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.14" data-path="12.用 npm script 打造超溜的前端工作流/14_实战篇 05：用 npm script 实现服务自动化运维.html">
+            
+                
+                    <a href="../12.用 npm script 打造超溜的前端工作流/14_实战篇 05：用 npm script 实现服务自动化运维.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.14.</b>
+                        
+                        实战篇 05
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Introduction</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x4F18;&#x5316;&#x524D;&#x7AEF;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;-2--&#x5206;&#x79BB;&#x4EE3;&#x7801;&#x6587;&#x4EF6;">&#x4F18;&#x5316;&#x524D;&#x7AEF;&#x8D44;&#x6E90;&#x52A0;&#x8F7D; 2 - &#x5206;&#x79BB;&#x4EE3;&#x7801;&#x6587;&#x4EF6;</h1>
+<p>&#x4E0A;&#x4E00;&#x5C0F;&#x8282;&#x4ECB;&#x7ECD;&#x4E86;&#x5982;&#x4F55;&#x505A;&#x56FE;&#x7247;&#x52A0;&#x8F7D;&#x76F8;&#x5173;&#x7684;&#x4F18;&#x5316;&#x4EE5;&#x53CA;&#x538B;&#x7F29;&#x4EE3;&#x7801;&#xFF0C;&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x4F1A;&#x7A0D;&#x5FAE;&#x6DF1;&#x5165;&#x70B9;&#xFF0C;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x5229;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x7F13;&#x5B58;&#x4EE5;&#x53CA;&#x5728; webpack &#x4E2D;&#x5B9E;&#x73B0;&#x6309;&#x9700;&#x52A0;&#x8F7D;&#x4EE3;&#x7801;&#x3002;</p>
+<h2 id="&#x5206;&#x79BB;&#x4EE3;&#x7801;&#x6587;&#x4EF6;">&#x5206;&#x79BB;&#x4EE3;&#x7801;&#x6587;&#x4EF6;</h2>
+<p>&#x5173;&#x4E8E;&#x5206;&#x79BB; CSS &#x6587;&#x4EF6;&#x8FD9;&#x4E2A;&#x4E3B;&#x9898;&#xFF0C;&#x4E4B;&#x524D;&#x5728;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x642D;&#x5EFA;&#x57FA;&#x672C;&#x7684;&#x524D;&#x7AEF;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x65F6;&#x6709;&#x63D0;&#x53CA;&#xFF0C;&#x5728; webpack &#x4E2D;&#x4F7F;&#x7528; <a href="https://doc.webpack-china.org/plugins/extract-text-webpack-plugin" target="_blank">extract-text-webpack-plugin</a> &#x63D2;&#x4EF6;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x5148;&#x7B80;&#x5355;&#x89E3;&#x91CA;&#x4E00;&#x4E0B;&#x4E3A;&#x4F55;&#x8981;&#x628A; CSS &#x6587;&#x4EF6;&#x5206;&#x79BB;&#x51FA;&#x6765;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x76F4;&#x63A5;&#x4E00;&#x8D77;&#x6253;&#x5305;&#x5728; JS &#x4E2D;&#x3002;&#x6700;&#x4E3B;&#x8981;&#x7684;&#x539F;&#x56E0;&#x662F;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x66F4;&#x597D;&#x5730;&#x5229;&#x7528;&#x7F13;&#x5B58;&#x3002;</p>
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x539F;&#x672C;&#x9875;&#x9762;&#x7684;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x90FD;&#x6253;&#x5305;&#x6210;&#x4E00;&#x4E2A; JS &#x6587;&#x4EF6;&#xFF0C;&#x52A0;&#x8F7D;&#x9875;&#x9762;&#x65F6;&#x867D;&#x7136;&#x53EA;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x4E00;&#x4E2A; JS &#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x4EE3;&#x7801;&#x4E00;&#x65E6;&#x6539;&#x53D8;&#x4E86;&#xFF0C;&#x7528;&#x6237;&#x8BBF;&#x95EE;&#x65B0;&#x7684;&#x9875;&#x9762;&#x65F6;&#x5C31;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x4E00;&#x4E2A;&#x65B0;&#x7684; JS &#x6587;&#x4EF6;&#x3002;&#x6709;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x662F;&#x5355;&#x72EC;&#x4FEE;&#x6539;&#x4E86;&#x6837;&#x5F0F;&#xFF0C;&#x8FD9;&#x6837;&#x4E5F;&#x8981;&#x91CD;&#x65B0;&#x52A0;&#x8F7D;&#x6574;&#x4E2A;&#x5E94;&#x7528;&#x7684; JS &#x6587;&#x4EF6;&#xFF0C;&#x76F8;&#x5F53;&#x4E0D;&#x5212;&#x7B97;&#x3002;</p>
+<p>&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x662F;&#x6211;&#x4EEC;&#x6709;&#x591A;&#x4E2A;&#x9875;&#x9762;&#xFF0C;&#x5B83;&#x4EEC;&#x90FD;&#x53EF;&#x4EE5;&#x5171;&#x7528;&#x4E00;&#x90E8;&#x5206;&#x6837;&#x5F0F;&#xFF08;&#x8FD9;&#x662F;&#x5F88;&#x5E38;&#x89C1;&#x7684;&#xFF0C;CSS Reset&#x3001;&#x57FA;&#x7840;&#x7EC4;&#x4EF6;&#x6837;&#x5F0F;&#x7B49;&#x57FA;&#x672C;&#x90FD;&#x662F;&#x8DE8;&#x9875;&#x9762;&#x901A;&#x7528;&#xFF09;&#xFF0C;&#x5982;&#x679C;&#x6BCF;&#x4E2A;&#x9875;&#x9762;&#x90FD;&#x5355;&#x72EC;&#x6253;&#x5305;&#x4E00;&#x4E2A; JS &#x6587;&#x4EF6;&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x6B21;&#x8BBF;&#x95EE;&#x9875;&#x9762;&#x90FD;&#x4F1A;&#x91CD;&#x590D;&#x52A0;&#x8F7D;&#x539F;&#x672C;&#x53EF;&#x4EE5;&#x5171;&#x4EAB;&#x7684;&#x90A3;&#x4E9B; CSS &#x4EE3;&#x7801;&#x3002;&#x5982;&#x679C;&#x5206;&#x79BB;&#x5F00;&#x6765;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x9875;&#x9762;&#x5C31;&#x6709;&#x4E86; CSS &#x6587;&#x4EF6;&#x7684;&#x7F13;&#x5B58;&#xFF0C;&#x8BBF;&#x95EE;&#x901F;&#x5EA6;&#x81EA;&#x7136;&#x4F1A;&#x52A0;&#x5FEB;&#x3002;&#x867D;&#x7136;&#x5BF9;&#x7B2C;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x6765;&#x8BF4;&#x591A;&#x4E86;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x968F;&#x540E;&#x7684;&#x9875;&#x9762;&#x6765;&#x8BF4;&#xFF0C;&#x7F13;&#x5B58;&#x5E26;&#x6765;&#x7684;&#x901F;&#x5EA6;&#x63D0;&#x5347;&#x76F8;&#x5BF9;&#x66F4;&#x52A0;&#x53EF;&#x89C2;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#x5F53;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x66F4;&#x597D;&#x5730;&#x5229;&#x7528;&#x7F13;&#x5B58;&#x6765;&#x52A0;&#x901F;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x8BBF;&#x95EE;&#x65F6;&#xFF0C;&#x4F1A;&#x5C1D;&#x8BD5;&#x628A;&#x4E00;&#x4E9B;&#x516C;&#x5171;&#x8D44;&#x6E90;&#x5355;&#x72EC;&#x5206;&#x79BB;&#x5F00;&#x6765;&#xFF0C;&#x5229;&#x7528;&#x7F13;&#x5B58;&#x52A0;&#x901F;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x91CD;&#x590D;&#x7684;&#x52A0;&#x8F7D;&#x3002;&#x9664;&#x4E86;&#x516C;&#x5171;&#x7684; CSS &#x6587;&#x4EF6;&#x6216;&#x8005;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x7B49;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x7684; JS &#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x8FC7;&#x5927;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x62C6;&#x5206;&#x7684;&#x529E;&#x6CD5;&#x6765;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x5982;&#x4F55;&#x4F7F;&#x7528; webpack &#x6765;&#x628A;&#x4EE3;&#x7801;&#x4E2D;&#x516C;&#x5171;&#x4F7F;&#x7528;&#x7684;&#x90E8;&#x5206;&#x5206;&#x79BB;&#x6210;&#x4E3A;&#x72EC;&#x7ACB;&#x7684;&#x6587;&#x4EF6;&#x5462;&#xFF1F;&#x7531;&#x4E8E; webpack 4.x &#x548C; webpack 3.x &#x5728;&#x4EE3;&#x7801;&#x5206;&#x79BB;&#x8FD9;&#x4E00;&#x5757;&#x7684;&#x5185;&#x5BB9;&#x5DEE;&#x522B;&#x6BD4;&#x8F83;&#x5927;&#xFF0C;&#x56E0;&#x800C;&#x6211;&#x4EEC;&#x5206;&#x522B;&#x90FD;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x3002;</p>
+<p>3.x &#x4EE5;&#x524D;&#x7684;&#x7248;&#x672C;&#x662F;&#x4F7F;&#x7528; CommonsChunkPlugin &#x6765;&#x505A;&#x4EE3;&#x7801;&#x5206;&#x79BB;&#x7684;&#xFF0C;&#x800C; webpack 4.x &#x5219;&#x662F;&#x628A;&#x76F8;&#x5173;&#x7684;&#x529F;&#x80FD;&#x5305;&#x5230;&#x4E86; <code>optimize.splitChunks</code> &#x4E2D;&#xFF0C;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x8BE5;&#x914D;&#x7F6E;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x5206;&#x79BB;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5148;&#x4ECB;&#x7ECD;&#x5728; webpack 4.x &#x4E2D;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x6765;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x5206;&#x79BB;&#x3002;</p>
+<h2 id="webpack-4x-&#x7684;-optimization">webpack 4.x &#x7684; optimization</h2>
+<p>webpack &#x7684;&#x4F5C;&#x8005;&#x63A8;&#x8350;&#x76F4;&#x63A5;&#x8FD9;&#x6837;&#x7B80;&#x5355;&#x5730;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code>module.exports = {
+  // ... webpack &#x914D;&#x7F6E;
+
+  optimization: {
+    splitChunks: {
+      chunks: &quot;all&quot;, // &#x6240;&#x6709;&#x7684; chunks &#x4EE3;&#x7801;&#x516C;&#x5171;&#x7684;&#x90E8;&#x5206;&#x5206;&#x79BB;&#x51FA;&#x6765;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x6587;&#x4EF6;
+    },
+  },
+}
+</code></pre><p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728; HTML &#x4E2D;&#x5F15;&#x7528;&#x4E24;&#x4E2A;&#x6784;&#x5EFA;&#x51FA;&#x6765;&#x7684; JS &#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x4E14; commons.js &#x9700;&#x8981;&#x5728;&#x5165;&#x53E3;&#x4EE3;&#x7801;&#x4E4B;&#x524D;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>&lt;script src=&quot;commons.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;entry.bundle.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+</code></pre><p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x4E86; html-webpack-plugin&#xFF0C;&#x90A3;&#x4E48;&#x5BF9;&#x5E94;&#x9700;&#x8981;&#x7684; JS &#x6587;&#x4EF6;&#x90FD;&#x4F1A;&#x5728; HTML &#x6587;&#x4EF6;&#x4E2D;&#x6B63;&#x786E;&#x5F15;&#x7528;&#xFF0C;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x9700;&#x8981;&#x4ECE; <code>stats</code> &#x7684; <code>entrypoints</code> &#x5C5E;&#x6027;&#x6765;&#x83B7;&#x53D6;&#x5165;&#x53E3;&#x5E94;&#x8BE5;&#x5F15;&#x7528;&#x54EA;&#x4E9B; JS &#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003; <a href="https://doc.webpack-china.org/api/node/" target="_blank">Node API</a> &#x4E86;&#x89E3;&#x5982;&#x4F55;&#x4ECE; <code>stats</code> &#x4E2D;&#x83B7;&#x53D6;&#x4FE1;&#x606F;&#xFF0C;&#x6216;&#x8005;&#x5F00;&#x53D1;&#x4E00;&#x4E2A; plugin &#x6765;&#x5904;&#x7406;&#x6B63;&#x786E;&#x5F15;&#x7528; JS &#x6587;&#x4EF6;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x7B2C; 15 &#x5C0F;&#x8282;&#x4F1A;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x5F00;&#x53D1; webpack plugin&#xFF0C;plugin &#x63D0;&#x4F9B;&#x7684; API &#x4E5F;&#x53EF;&#x4EE5;&#x6B63;&#x786E;&#x83B7;&#x53D6;&#x5230; <code>stats</code> &#x4E2D;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x63D0;&#x5230;&#x62C6;&#x5206;&#x6587;&#x4EF6;&#x662F;&#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x5730;&#x5229;&#x7528;&#x7F13;&#x5B58;&#xFF0C;&#x5206;&#x79BB;&#x516C;&#x5171;&#x7C7B;&#x5E93;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x591A;&#x9875;&#x9762;&#x5229;&#x7528;&#x7F13;&#x5B58;&#xFF0C;&#x4ECE;&#x800C;&#x51CF;&#x5C11;&#x4E0B;&#x8F7D;&#x7684;&#x4EE3;&#x7801;&#x91CF;&#xFF0C;&#x540C;&#x65F6;&#xFF0C;&#x4E5F;&#x6709;&#x4EE3;&#x7801;&#x53D8;&#x66F4;&#x65F6;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x7F13;&#x5B58;&#x51CF;&#x5C11;&#x4E0B;&#x8F7D;&#x4EE3;&#x7801;&#x91CF;&#x7684;&#x597D;&#x5904;&#x3002;&#x4ECE;&#x8FD9;&#x4E2A;&#x89D2;&#x5EA6;&#x51FA;&#x53D1;&#xFF0C;&#x7B14;&#x8005;&#x5EFA;&#x8BAE;&#x5C06;&#x516C;&#x5171;&#x4F7F;&#x7528;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x7C7B;&#x5E93;&#x663E;&#x5F0F;&#x5730;&#x914D;&#x7F6E;&#x4E3A;&#x516C;&#x5171;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x800C;&#x4E0D;&#x662F; webpack &#x81EA;&#x5DF1;&#x53BB;&#x5224;&#x65AD;&#x5904;&#x7406;&#x3002;&#x56E0;&#x4E3A;&#x516C;&#x5171;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x7C7B;&#x5E93;&#x901A;&#x5E38;&#x5347;&#x7EA7;&#x9891;&#x7387;&#x76F8;&#x5BF9;&#x4F4E;&#x4E00;&#x4E9B;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x56E0;&#x516C;&#x5171; chunk &#x7684;&#x9891;&#x7E41;&#x53D8;&#x66F4;&#x800C;&#x5BFC;&#x81F4;&#x7F13;&#x5B58;&#x5931;&#x6548;&#x3002;</p>
+<p>&#x663E;&#x5F0F;&#x914D;&#x7F6E;&#x5171;&#x4EAB;&#x7C7B;&#x5E93;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x64CD;&#x4F5C;&#xFF1A;</p>
+<pre><code>module.exports = {
+  entry: {
+    vendor: [&quot;react&quot;, &quot;lodash&quot;, &quot;angular&quot;, ...], // &#x6307;&#x5B9A;&#x516C;&#x5171;&#x4F7F;&#x7528;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x7C7B;&#x5E93;
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          chunks: &quot;initial&quot;,
+          test: &quot;vendor&quot;,
+          name: &quot;vendor&quot;, // &#x4F7F;&#x7528; vendor &#x5165;&#x53E3;&#x4F5C;&#x4E3A;&#x516C;&#x5171;&#x90E8;&#x5206;
+          enforce: true,
+        },
+      },
+    },
+  },
+  // ... &#x5176;&#x4ED6;&#x914D;&#x7F6E;
+}
+
+// &#x6216;&#x8005;
+module.exports = {
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /react|angluar|lodash/, // &#x76F4;&#x63A5;&#x4F7F;&#x7528; test &#x6765;&#x505A;&#x8DEF;&#x5F84;&#x5339;&#x914D;
+          chunks: &quot;initial&quot;,
+          name: &quot;vendor&quot;,
+          enforce: true,
+        },
+      },
+    },
+  },
+}
+
+// &#x6216;&#x8005;
+module.exports = {
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          chunks: &quot;initial&quot;,
+          test: path.resolve(__dirname, &quot;node_modules&quot;) // &#x8DEF;&#x5F84;&#x5728; node_modules &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x90FD;&#x4F5C;&#x4E3A;&#x516C;&#x5171;&#x90E8;&#x5206;
+          name: &quot;vendor&quot;, // &#x4F7F;&#x7528; vendor &#x5165;&#x53E3;&#x4F5C;&#x4E3A;&#x516C;&#x5171;&#x90E8;&#x5206;
+          enforce: true,
+        },
+      },
+    },
+  },
+}
+</code></pre><p>&#x4E0A;&#x8FF0;&#x7B2C;&#x4E00;&#x79CD;&#x505A;&#x6CD5;&#x662F;&#x663E;&#x793A;&#x6307;&#x5B9A;&#x54EA;&#x4E9B;&#x7C7B;&#x5E93;&#x4F5C;&#x4E3A;&#x516C;&#x5171;&#x90E8;&#x5206;&#xFF0C;&#x7B2C;&#x4E8C;&#x79CD;&#x505A;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;&#x529F;&#x80FD;&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x53EA;&#x662F;&#x5229;&#x7528;&#x4E86; <code>test</code> &#x6765;&#x505A;&#x6A21;&#x5757;&#x8DEF;&#x5F84;&#x7684;&#x5339;&#x914D;&#xFF0C;&#x7B2C;&#x4E09;&#x79CD;&#x505A;&#x6CD5;&#x662F;&#x628A;&#x6240;&#x6709;&#x5728; node_modules &#x4E0B;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x5373;&#x4F5C;&#x4E3A;&#x4F9D;&#x8D56;&#x5B89;&#x88C5;&#x7684;&#xFF0C;&#x90FD;&#x4F5C;&#x4E3A;&#x516C;&#x5171;&#x90E8;&#x5206;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x9488;&#x5BF9;&#x9879;&#x76EE;&#x60C5;&#x51B5;&#xFF0C;&#x9009;&#x62E9;&#x6700;&#x5408;&#x9002;&#x7684;&#x505A;&#x6CD5;&#x3002;</p>
+<h2 id="webpack-3x-&#x7684;-commonschunkplugin">webpack 3.x &#x7684; CommonsChunkPlugin</h2>
+<p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x5728; webpack 3.x &#x4E2D;&#x5982;&#x4F55;&#x914D;&#x7F6E;&#x4EE3;&#x7801;&#x5206;&#x79BB;&#x3002;webpack 3.x &#x4EE5;&#x4E0B;&#x7684;&#x7248;&#x672C;&#x9700;&#x8981;&#x7528;&#x5230; webpack &#x81EA;&#x8EAB;&#x63D0;&#x4F9B;&#x7684; CommonsChunkPlugin &#x63D2;&#x4EF6;&#x3002;&#x6211;&#x4EEC;&#x5148;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x6700;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>module.exports = {
+  // ...
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: &quot;commons&quot;, // &#x516C;&#x5171;&#x4F7F;&#x7528;&#x7684; chunk &#x7684;&#x540D;&#x79F0;
+      filename: &quot;commons.js&quot;, // &#x516C;&#x5171; chunk &#x7684;&#x751F;&#x6210;&#x6587;&#x4EF6;&#x540D;
+      minChunks: 3, // &#x516C;&#x5171;&#x7684;&#x90E8;&#x5206;&#x5FC5;&#x987B;&#x88AB; 3 &#x4E2A; chunk &#x5171;&#x4EAB;
+    }),
+  ],
+}
+</code></pre><p>chunk &#x5728;&#x8FD9;&#x91CC;&#x662F;&#x6784;&#x5EFA;&#x7684;&#x4E3B;&#x5E72;&#xFF0C;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7406;&#x89E3;&#x4E3A;&#x4E00;&#x4E2A;&#x5165;&#x53E3;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A; chunk&#x3002;</p>
+<p>&#x4EE5;&#x4E0A;&#x63D2;&#x4EF6;&#x914D;&#x7F6E;&#x5728;&#x6784;&#x5EFA;&#x540E;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A; commons.js &#x6587;&#x4EF6;&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x5C31;&#x662F;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x516C;&#x5171;&#x90E8;&#x5206;&#x3002;&#x4E0A;&#x9762;&#x7684;&#x914D;&#x7F6E;&#x4E2D; <code>minChunks</code> &#x5B57;&#x6BB5;&#x4E3A; 3&#xFF0C;&#x8BE5;&#x5B57;&#x6BB5;&#x7684;&#x610F;&#x601D;&#x662F;&#x5F53;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x88AB; 3 &#x4E2A;&#x4EE5;&#x4E0A;&#x7684; chunk &#x4F9D;&#x8D56;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x5C31;&#x4F1A;&#x88AB;&#x5212;&#x5206;&#x5230; <code>commons</code> chunk &#x4E2D;&#x53BB;&#x3002;&#x5355;&#x4ECE;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x7684;&#x89D2;&#x5EA6;&#x4E0A;&#x8BB2;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5E76;&#x6CA1;&#x6709; 4.x &#x7684; <code>chunks: &quot;all&quot;</code> &#x90A3;&#x4E48;&#x65B9;&#x4FBF;&#x3002;</p>
+<p>CommonsChunkPlugin &#x4E5F;&#x662F;&#x652F;&#x6301;&#x663E;&#x5F0F;&#x914D;&#x7F6E;&#x5171;&#x4EAB;&#x7C7B;&#x5E93;&#x7684;&#xFF1A;</p>
+<pre><code>module.exports = {
+  entry: {
+    vendor: [&apos;react&apos;, &apos;react-redux&apos;], // &#x6307;&#x5B9A;&#x516C;&#x5171;&#x4F7F;&#x7528;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x7C7B;&#x5E93;
+    app: &apos;./src/entry&apos;,
+    // ...
+  },
+  // ...
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: &apos;vendor&apos; // &#x4F7F;&#x7528; vendor &#x5165;&#x53E3;&#x4F5C;&#x4E3A;&#x516C;&#x5171;&#x90E8;&#x5206;
+      filename: &quot;vendor.js&quot;, 
+      minChunks: Infinity, // &#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x4F1A;&#x8BA9; webpack &#x4E0D;&#x518D;&#x81EA;&#x52A8;&#x62BD;&#x79BB;&#x516C;&#x5171;&#x6A21;&#x5757;
+    }),
+  ],
+}
+</code></pre><p>&#x4E0A;&#x8FF0;&#x914D;&#x7F6E;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; vendor.js &#x7684;&#x5171;&#x4EAB;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#xFF0C;&#x91CC;&#x9762;&#x5305;&#x542B;&#x4E86; React &#x548C; React-Redux &#x5E93;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x7ED9;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5165;&#x53E3;&#x4EE3;&#x7801;&#x4F7F;&#x7528;&#x3002;&#x8FD9;&#x91CC;&#x7684; <code>minChunks</code> &#x5B57;&#x6BB5;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86; <code>Infinity</code>&#xFF0C;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A; webpack &#x4E0D;&#x81EA;&#x52A8;&#x62BD;&#x79BB;&#x516C;&#x5171;&#x6A21;&#x5757;&#x3002;&#x5982;&#x679C;&#x8FD9;&#x91CC;&#x548C;&#x4E4B;&#x524D;&#x4E00;&#x6837;&#x4F9D;&#x65E7;&#x8BBE;&#x7F6E;&#x4E3A; 3&#xFF0C;&#x90A3;&#x4E48;&#x88AB; 3 &#x4E2A;&#x4EE5;&#x4E0A;&#x7684; chunk &#x4F9D;&#x8D56;&#x7684;&#x6A21;&#x5757;&#x4F1A;&#x548C; React&#x3001;React-Redux &#x4E00;&#x540C;&#x6253;&#x5305;&#x8FDB; vendor&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x5931;&#x53BB;&#x663E;&#x5F0F;&#x6307;&#x5B9A;&#x7684;&#x610F;&#x4E49;&#x4E86;&#x3002;</p>
+<p><code>minChunks</code> &#x5176;&#x5B9E;&#x8FD8;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code>minChunks: (module, count) =&gt; {
+  console.log(module, count);
+  return true;
+},
+</code></pre><p>&#x8BE5;&#x51FD;&#x6570;&#x5728;&#x5206;&#x6790;&#x6BCF;&#x4E00;&#x4E2A;&#x4F9D;&#x8D56;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x4F20;&#x5165;&#x5F53;&#x524D;&#x4F9D;&#x8D56;&#x6A21;&#x5757;&#x7684;&#x4FE1;&#x606F; <code>module</code>&#xFF0C;&#x4EE5;&#x53CA;&#x5DF2;&#x7ECF;&#x88AB;&#x4F5C;&#x4E3A;&#x516C;&#x5171;&#x6A21;&#x5757;&#x7684;&#x6570;&#x91CF; <code>count</code>&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x51FD;&#x6570;&#x4E2D;&#x9488;&#x5BF9;&#x6BCF;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x505A;&#x66F4;&#x52A0;&#x7CBE;&#x7EC6;&#x5316;&#x7684;&#x63A7;&#x5236;&#x3002;&#x770B;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code>minChunks: (module, count) =&gt; {
+  return module.context &amp;&amp; module.context.includes(&quot;node_modules&quot;); 
+  // node_modules &#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6A21;&#x5757;&#x90FD;&#x4F5C;&#x4E3A;&#x516C;&#x5171;&#x90E8;&#x5206;&#xFF0C;&#x6548;&#x679C;&#x5C31;&#x5982;&#x540C; webpack 4.x &#x4E2D;&#x7684; test: path.resolve(__dirname, &quot;node_modules&quot;)
+},
+</code></pre><p>&#x66F4;&#x591A;&#x4F7F;&#x7528; CommonsChunkPlugin &#x7684;&#x914D;&#x7F6E;&#x53C2;&#x8003;&#x5B98;&#x65B9;&#x6587;&#x6863; <a href="https://doc.webpack-china.org/plugins/commons-chunk-plugin/#-" target="_blank">commons-chunk-plugin</a>&#x3002;</p>
+<p>&#x800C;&#x5173;&#x4E8E; webpack 4.x &#x7684; splitChunks &#x914D;&#x7F6E;&#xFF0C;&#x7B14;&#x8005;&#x5199;&#x8FD9;&#x4E00;&#x90E8;&#x5206;&#x7684;&#x65F6;&#x5019;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x8FD8;&#x6CA1;&#x6709;&#x66F4;&#x65B0;&#x51FA;&#x6765;&#xFF0C;&#x4E0A;&#x8FF0;&#x914D;&#x7F6E;&#x9884;&#x4F30;&#x53EF;&#x4EE5;&#x6EE1;&#x8DB3;&#x5927;&#x90E8;&#x5206;&#x9879;&#x76EE;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x66F4;&#x52A0;&#x8BE6;&#x7EC6;&#x7684;&#x5185;&#x5BB9;&#x8FD8;&#x8BF7;&#x7B49;&#x5F85;&#x5B98;&#x65B9;&#x6587;&#x6863;&#x66F4;&#x65B0;&#x540E;&#x67E5;&#x9605;&#x3002;</p>
+<h2 id="&#x5C0F;&#x7ED3;">&#x5C0F;&#x7ED3;</h2>
+<p>&#x672C;&#x5C0F;&#x8282;&#x662F;&#x4F18;&#x5316;&#x524D;&#x7AEF;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x8FD9;&#x4E2A;&#x4E3B;&#x9898;&#x7684;&#x7B2C;&#x4E8C;&#x90E8;&#x5206;&#xFF0C;&#x4E3B;&#x8981;&#x5206;&#x522B;&#x4ECB;&#x7ECD;&#x4E86;&#x5728; webpack 4.x &#x7248;&#x672C;&#x548C; 3.x &#x7248;&#x672C;&#x4E2D;&#xFF0C;&#x5982;&#x4F55;&#x914D;&#x7F6E;&#x5206;&#x79BB;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x6765;&#x66F4;&#x52A0;&#x9AD8;&#x6548;&#x5730;&#x5229;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x7F13;&#x5B58;&#x3002;webpack &#x4E24;&#x4E2A;&#x7248;&#x672C;&#x5173;&#x4E8E;&#x5206;&#x79BB;&#x4EE3;&#x7801;&#x8FD9;&#x4E00;&#x5757;&#x7684;&#x4F7F;&#x7528;&#x5DEE;&#x5F02;&#x6BD4;&#x8F83;&#x5927;&#xFF0C;&#x7B14;&#x8005;&#x8FD8;&#x662F;&#x63A8;&#x8350;&#x4F7F;&#x7528; 4.x &#x7248;&#x672C;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x7684;&#x914D;&#x7F6E;&#x76F8;&#x5BF9;&#x6765;&#x8BF4;&#x8981;&#x66F4;&#x52A0;&#x7B80;&#x5355;&#x4E00;&#x4E9B;&#x3002;&#x63A5;&#x4E0B;&#x6765;&#x7B2C; 11 &#x5C0F;&#x8282;&#x4F1A;&#x4ECB;&#x7ECD;&#x4F18;&#x5316;&#x524D;&#x7AEF;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x90E8;&#x5206;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<h2 id="&#x4F8B;&#x5B50;">&#x4F8B;&#x5B50;</h2>
+<p>&#x672C;&#x5C0F;&#x8282;&#x63D0;&#x53CA;&#x7684;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x7684; Demo &#x53EF;&#x4EE5;&#x5728; <a href="https://github.com/teabyii/webpack-examples" target="_blank">webpack-examples</a> &#x627E;&#x5230;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../10.使用 webpack 定制前端开发环境/08_优化前端资源加载 1 - 图片加载优化和代码压缩.html" class="navigation navigation-prev " aria-label="Previous page: 图片加载优化和代码压缩"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../10.使用 webpack 定制前端开发环境/10_优化前端资源加载 3 - 进一步控制 JS 大小.html" class="navigation navigation-next " aria-label="Next page: 控制JS大小"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"toggle-chapters":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book Introduction -->
+</html>
