@@ -57,7 +57,7 @@
         data-chapter-title="动效开发5"
         data-filepath="07.大厂H5开发实战手册/08_动效开发 5：SVG 动画.md"
         data-basepath=".."
-        data-revision="Wed Nov 27 2019 10:29:42 GMT+0800 (中国标准时间)"
+        data-revision="Wed Nov 27 2019 15:19:36 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -2270,7 +2270,7 @@
                         
                             <b>11.</b>
                         
-                        使用 webpack 定制前端开发环境
+                        微信小程序开发入门
                     </a>
             
             
@@ -2730,13 +2730,13 @@
 <p>CSS3 &#x52A8;&#x753B;&#x5DF2;&#x7136;&#x8DB3;&#x591F;&#x5F3A;&#x5927;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD8;&#x662F;&#x6709;&#x4E00;&#x4E9B;&#x5B83;&#x505A;&#x4E0D;&#x5230;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x4F8B;&#x5982;&#x8F68;&#x8FF9;&#xFF08;&#x8DEF;&#x5F84;&#xFF09;&#x52A8;&#x753B;&#x7684;&#x5B9E;&#x73B0;&#x3002;&#x914D;&#x5408; SVG&#xFF0C;&#x53EF;&#x4EE5;&#x8BA9; Web &#x52A8;&#x6548;&#x6709;&#x66F4;&#x591A;&#x7684;&#x53EF;&#x80FD;&#x6027;&#x3002;</p>
 <h2 id="&#x6848;&#x4F8B;&#x5B9E;&#x6218;--&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x8D2D;&#x7269;&#x888B;&#x7684;-loading-&#x52A8;&#x6548;">&#x6848;&#x4F8B;&#x5B9E;&#x6218; - &#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x8D2D;&#x7269;&#x888B;&#x7684; loading &#x52A8;&#x6548;</h2>
 <p>&#x4E0B;&#x9762;&#x4EE5;&#x4E00;&#x4E2A;&#x8D2D;&#x7269;&#x888B;&#x7684; loading &#x52A8;&#x6548;&#x4E3A;&#x793A;&#x4F8B;&#xFF0C;&#x5E26;&#x9886;&#x5927;&#x5BB6;&#x4E0A;&#x624B; SVG &#x52A8;&#x753B;&#x3002;</p>
-<p><img src="https://user-gold-cdn.xitu.io/2018/2/22/161be0fc40cc3301?w=301&amp;h=233&amp;f=gif&amp;s=60669" alt="&#x6548;&#x679C;"></p>
+<p><img src="img/08/01" alt="&#x6548;&#x679C;"></p>
 <p>&#x5176;&#x4E2D;&#x65CB;&#x8F6C;&#x901A;&#x8FC7; CSS &#x6765;&#x5B8C;&#x6210;&#xFF0C;&#x4F46;&#x662F;&#x65CB;&#x8F6C;&#x4E4B;&#x540E;&#x5706;&#x5F27;&#x7F29;&#x77ED;&#x53D8;&#x6210;&#x7B11;&#x8138;&#x7684;&#x5634;&#x5DF4;&#x9700;&#x8981;&#x501F;&#x52A9; SVG &#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
 <h3 id="&#x6B65;&#x9AA4;-1--&#x58F0;&#x660E;-svg-&#x89C6;&#x7A97;">&#x6B65;&#x9AA4; 1 - &#x58F0;&#x660E; SVG &#x89C6;&#x7A97;</h3>
 <pre><code>&lt;svg width=&quot;100&quot; height=&#x201C;100&#x201D;&gt;&lt;/svg&gt;
 </code></pre><p>&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5BBD;&#x9AD8;&#x90FD;&#x4E3A; 100 &#x50CF;&#x7D20;&#x7684;&#x533A;&#x57DF;&#xFF0C;<code>width=&quot;100&quot;</code> &#x548C; <code>width=&quot;100px&quot;</code> &#x662F;&#x7B49;&#x4EF7;&#x7684;&#xFF0C;&#x5F53;&#x7136;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x7684;&#x5408;&#x6CD5;&#x5355;&#x4F4D;&#xFF0C;&#x4F8B;&#x5982; cm&#x3001;mm&#x3001;em &#x7B49;&#x3002;</p>
 <p>&#x9605;&#x8BFB;&#x5668;&#x4F1A;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x5750;&#x6807;&#x7CFB;&#x7EDF;&#xFF0C;&#x89C1;&#x4E0B;&#x56FE;&#xFF1A;&#x5DE6;&#x4E0A;&#x89D2;&#x4E3A;&#x539F;&#x70B9;&#xFF0C;&#x5176;&#x4E2D;&#x6C34;&#x5E73;&#xFF08;x&#xFF09;&#x5750;&#x6807;&#x5411;&#x53F3;&#x9012;&#x589E;&#xFF0C;&#x5782;&#x76F4;&#xFF08;y&#xFF09;&#x5750;&#x6807;&#x5411;&#x4E0B;&#x9012;&#x589E;&#x3002;</p>
-<p><img src="https://user-gold-cdn.xitu.io/2018/2/22/161be10cc3f5fc0e?w=359&amp;h=276&amp;f=png&amp;s=8037" alt="&#x5750;&#x6807;&#x7CFB;&#x7EDF;"></p>
+<p><img src="img/08/02" alt="&#x5750;&#x6807;&#x7CFB;&#x7EDF;"></p>
 <p>&#x5728;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6240;&#x6709;&#x6570;&#x503C;&#x7684;&#x9ED8;&#x8BA4;&#x5355;&#x4F4D;&#x90FD;&#x662F;&#x50CF;&#x7D20;&#x3002;</p>
 <h3 id="&#x6B65;&#x9AA4;-2--&#x7ED8;&#x5236;&#x8D2D;&#x7269;&#x888B;">&#x6B65;&#x9AA4; 2 - &#x7ED8;&#x5236;&#x8D2D;&#x7269;&#x888B;</h3>
 <p>&#x8D2D;&#x7269;&#x888B;&#x7531;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF0C;&#x5148;&#x753B;&#x4E0B;&#x9762;&#x7684;&#x4E3B;&#x4F53;&#xFF1A;</p>
@@ -2764,17 +2764,17 @@
 <li>&#x4EE5;&#x8D1F;&#x89D2;&#x5EA6;&#x7ED8;&#x5236;&#x4E3A; 0&#xFF0C;&#x5426;&#x5219;&#x4E3A; 1</li>
 <li>&#x7EC8;&#x70B9;&#x7684;x&#x3001;y&#x5750;&#x6807;</li>
 </ol>
-<p><img src="https://user-gold-cdn.xitu.io/2018/2/22/161be16aaf4efee4?w=335&amp;h=289&amp;f=png&amp;s=8581" alt="&#x56FE;&#x7247;"></p>
+<p><img src="img/08/03" alt="&#x56FE;&#x7247;"></p>
 <p>&#x63A5;&#x4E0B;&#x6765;&#x7ED8;&#x5236;&#x8D2D;&#x7269;&#x888B;&#x4E0A;&#x9762;&#x7684;&#x90E8;&#x5206;&#xFF1A;</p>
 <pre><code>&lt;path d=&quot;M 35 40 A 15 15 180 1 1 65 40&quot; style=&quot;fill: none; stroke: #e9e8ee; stroke-width: 5;&#x201D; /&gt;
 </code></pre><p>&#x4E0A;&#x9762;&#x7684;&#x90E8;&#x5206;&#x662F;&#x4E00;&#x4E2A;&#x534A;&#x5706;&#x5F27;&#xFF0C;&#x540C;&#x6837;&#x7528;&#x8DEF;&#x5F84;&#x6765;&#x753B;&#x51FA;&#xFF0C;&#x5F53;&#x7136;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x57FA;&#x7840;&#x5F62;&#x72B6;&#x6765;&#x5B8C;&#x6210;&#x3002;</p>
 <p>&#x6837;&#x5F0F;&#x4E2D;&#x7684; <code>stoke</code> &#x548C; <code>stroke-width</code> &#x5206;&#x522B;&#x7528;&#x6765;&#x8BBE;&#x7F6E;&#x63CF;&#x8FB9;&#x8272;&#x548C;&#x63CF;&#x8FB9;&#x7684;&#x5BBD;&#x5EA6;&#x3002;</p>
-<p><img src="https://user-gold-cdn.xitu.io/2018/2/22/161be172ffcd05d7?w=305&amp;h=286&amp;f=png&amp;s=9394" alt="&#x56FE;&#x7247;"></p>
+<p><img src="img/08/04" alt="&#x56FE;&#x7247;"></p>
 <h3 id="&#x6B65;&#x9AA4;-3--&#x7ED8;&#x5236;&#x773C;&#x775B;">&#x6B65;&#x9AA4; 3 - &#x7ED8;&#x5236;&#x773C;&#x775B;</h3>
 <pre><code>&lt;circle cx=&#x201C;40&quot; cy=&quot;60&quot; r=&quot;2.5&quot; style=&quot;fill: #fff;&quot; /&gt;
 &lt;circle cx=&quot;60&quot; cy=&quot;60&quot; r=&quot;2.5&quot; style=&quot;fill: #fff;&quot; /&gt;
 </code></pre><p>&#x4F7F;&#x7528;&#x57FA;&#x7840;&#x5F62;&#x72B6;&#xFF0C;&#x753B;&#x4E24;&#x4E2A;&#x5C0F;&#x5706;&#x70B9;&#x3002;&#x56DB;&#x4E2A;&#x5C5E;&#x6027;&#x5206;&#x522B;&#x662F;&#x4F4D;&#x7F6E;&#x5750;&#x6807;&#x3001;&#x534A;&#x5F84;&#x548C;&#x586B;&#x5145;&#x989C;&#x8272;&#x3002;</p>
-<p><img src="https://user-gold-cdn.xitu.io/2018/2/22/161be17aa1fd5568?w=297&amp;h=287&amp;f=png&amp;s=9577" alt="&#x7ED8;&#x5236;&#x773C;&#x775B;"></p>
+<p><img src="img/08/05" alt="&#x7ED8;&#x5236;&#x773C;&#x775B;"></p>
 <h3 id="&#x6B65;&#x9AA4;-4--&#x7ED8;&#x5236;&#x5634;&#x5DF4;">&#x6B65;&#x9AA4; 4 - &#x7ED8;&#x5236;&#x5634;&#x5DF4;</h3>
 <pre><code>&lt;circle cx=&quot;50&quot; cy=&quot;70&quot; r=&quot;15&quot; style=&quot;fill: none; stroke: #fff; stroke-width: 5; stroke-linecap: round;transform: rotate(280deg); transform-origin: 50% 50%; stroke-dashoffset: -23; stroke-dasharray: 42, 95;&#x201D;&gt;
 </code></pre><p>&#x5634;&#x5DF4;&#x662F;&#x4E00;&#x6BB5;&#x5706;&#x5F27;&#xFF0C;&#x6211;&#x7ED8;&#x5236;&#x4E86;&#x4E00;&#x4E2A;&#x5706;&#xFF0C;&#x7136;&#x540E;&#x63CF;&#x8FB9;&#x4E86;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x6BB5;&#xFF0C;&#x5E76;&#x4E14;&#x505A;&#x4E86;&#x4E00;&#x4E2A;&#x65CB;&#x8F6C;&#xFF0C;&#x6765;&#x8BA9;&#x5B83;&#x7684;&#x89D2;&#x5EA6;&#x5904;&#x4E8E;&#x6B63;&#x786E;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
@@ -2785,7 +2785,7 @@
 <li><code>stroke-dashoffset</code>&#xFF1A;&#x8BBE;&#x7F6E;&#x865A;&#x7EBF;&#x4F4D;&#x7F6E;&#x7684;&#x8D77;&#x59CB;&#x504F;&#x79FB;&#x503C;&#xFF0C;&#x5728;&#x4E0B;&#x4E00;&#x4E2A;&#x6B65;&#x9AA4;&#x91CC;&#xFF0C;&#x5B83;&#x4F1A;&#x548C; <code>stroke-dasharray</code> &#x4E00;&#x8D77;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x52A8;&#x6548;</li>
 </ol>
 </blockquote>
-<p><img src="https://user-gold-cdn.xitu.io/2018/2/22/161be1948afec303?w=314&amp;h=285&amp;f=png&amp;s=10645" alt="&#x7ED8;&#x5236;&#x5634;&#x5DF4;"></p>
+<p><img src="img/08/06" alt="&#x7ED8;&#x5236;&#x5634;&#x5DF4;"></p>
 <h3 id="&#x6B65;&#x9AA4;-5--&#x7ED9;&#x5634;&#x5DF4;&#x90E8;&#x5206;&#x6DFB;&#x52A0;&#x52A8;&#x6548;">&#x6B65;&#x9AA4; 5 - &#x7ED9;&#x5634;&#x5DF4;&#x90E8;&#x5206;&#x6DFB;&#x52A0;&#x52A8;&#x6548;</h3>
 <pre><code>@keyframes mouth {
  0% {
@@ -2810,7 +2810,7 @@
 <li>&#x65CB;&#x8F6C;&#x4E4B;&#x540E;&#x7F29;&#x77ED;&#x53D8;&#x5F62;</li>
 </ol>
 <p>&#x5728;&#x4E00;&#x4E2A;&#x5FAA;&#x73AF;&#x91CC;&#xFF0C;&#x6700;&#x540E;&#x7559;&#x6709; 30% &#x7684;&#x65F6;&#x95F4;&#x4FDD;&#x6301;&#x4E00;&#x4E2A;&#x505C;&#x7559;&#x72B6;&#x6001;&#x3002;</p>
-<p><img src="https://user-gold-cdn.xitu.io/2018/2/22/161be1af387d088a?w=354&amp;h=282&amp;f=gif&amp;s=76664" alt="&#x5634;&#x5DF4;&#x52A8;&#x753B;"></p>
+<p><img src="img/08/07" alt="&#x5634;&#x5DF4;&#x52A8;&#x753B;"></p>
 <h3 id="&#x6B65;&#x9AA4;-6--&#x7ED9;&#x773C;&#x775B;&#x6DFB;&#x52A0;&#x52A8;&#x753B;">&#x6B65;&#x9AA4; 6 - &#x7ED9;&#x773C;&#x775B;&#x6DFB;&#x52A0;&#x52A8;&#x753B;</h3>
 <p>&#x4E24;&#x53EA;&#x773C;&#x775B;&#x90FD;&#x662F;&#x6CBF;&#x7740;&#x5706;&#x5F27;&#x8FD0;&#x52A8; &#xFF0C;&#x4F8B;&#x5982;&#x5DE6;&#x773C;&#xFF0C;&#x9996;&#x5148;&#x7528;&#x4E00;&#x4E2A;&#x8DEF;&#x5F84;&#x6765;&#x89C4;&#x5B9A;&#x5B83;&#x7684;&#x8FD0;&#x52A8;&#x8F68;&#x8FF9;&#xFF1A;</p>
 <pre><code>&lt;path id=&quot;eyeright&quot; d=&quot;M 40 60 A 15 15 180 0 1 60 60&quot; style=&quot;fill: none; stroke-width: 0;&quot; /&gt;
@@ -2835,13 +2835,13 @@
 <li><code>mpath</code>&#xFF1A;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x5B9A;&#x4E49;&#x7684;&#x8DEF;&#x5F84;</li>
 </ol>
 </blockquote>
-<p><img src="https://user-gold-cdn.xitu.io/2018/2/22/161be1c4cccfb106?w=354&amp;h=282&amp;f=gif&amp;s=62795" alt="&#x773C;&#x775B;&#x52A8;&#x753B;"></p>
+<p><img src="img/08/08" alt="&#x773C;&#x775B;&#x52A8;&#x753B;"></p>
 <h3 id="&#x6B65;&#x9AA4;-7--&#x5C06;&#x4E0D;&#x540C;&#x90E8;&#x4F4D;&#x7684;&#x52A8;&#x753B;&#x7EC4;&#x5408;&#x5230;&#x4E00;&#x8D77;">&#x6B65;&#x9AA4; 7 - &#x5C06;&#x4E0D;&#x540C;&#x90E8;&#x4F4D;&#x7684;&#x52A8;&#x753B;&#x7EC4;&#x5408;&#x5230;&#x4E00;&#x8D77;</h3>
 <ul>
 <li>&#x773C;&#x775B;&#x7684;&#x52A8;&#x753B;&#x662F;&#x4ECE;&#x5634;&#x5DF4;&#x65CB;&#x8F6C;&#x5B8C;&#x6210;&#x5F00;&#x59CB;&#xFF0C;&#x5230;&#x5634;&#x5DF4;&#x53D8;&#x5F62;&#x5B8C;&#x6210;&#x7ED3;&#x675F;&#xFF0C;&#x56E0;&#x6B64;&#x548C;&#x5634;&#x5DF4;&#x7684;&#x52A8;&#x753B;&#x4E00;&#x6837;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E86;&#x56DB;&#x4E2A;&#x5BF9;&#x5E94;&#x7684;&#x5173;&#x952E;&#x65F6;&#x95F4;&#x70B9;&#x3002;</li>
 <li>&#x4E3A;&#x4E86;&#x8BA9;&#x8854;&#x63A5;&#x66F4;&#x987A;&#x7545;&#xFF0C;&#x773C;&#x775B;&#x7684;&#x52A8;&#x753B;&#x5F00;&#x59CB;&#x6BD4;&#x5634;&#x5DF4;&#x53D8;&#x5F62;&#x5F00;&#x59CB;&#x7A0D;&#x5FAE;&#x63D0;&#x524D;&#x4E86;&#x4E00;&#x70B9;&#x70B9;&#x3002;</li>
 </ul>
-<p><img src="https://user-gold-cdn.xitu.io/2018/2/22/161be1d04dfd4f3a?w=354&amp;h=282&amp;f=gif&amp;s=101961" alt="&#x6700;&#x7EC8;&#x6548;&#x679C;"></p>
+<p><img src="img/08/09" alt="&#x6700;&#x7EC8;&#x6548;&#x679C;"></p>
 <p>Bingo&#xFF01;&#x5C0F;&#x529F;&#x544A;&#x6210;&#xFF01;<a href="http://jdc.jd.com/demo/simba/loading/index.html" target="_blank">&#x67E5;&#x770B; DEMO</a></p>
 <h2 id="&#x521D;&#x63A2;-smil">&#x521D;&#x63A2; SMIL</h2>
 <p><a href="https://www.w3.org/TR/REC-smil/" target="_blank">SMIL</a> &#x7684;&#x5168;&#x79F0;&#x4E3A; Synchronized Multimedia Integration Language&#xFF08;&#x540C;&#x6B65;&#x591A;&#x5A92;&#x4F53;&#x96C6;&#x6210;&#x8BED;&#x8A00;&#xFF09;&#xFF0C;&#x6309;&#x7167; W3C &#x89C4;&#x8303;&#x5BF9; SMIL &#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x79CD;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x5728;&#x7F51;&#x9875;&#x4E0A;&#x5B9A;&#x4E49;&#x53EF;&#x4EA4;&#x4E92;&#x591A;&#x5A92;&#x4F53;&#x5185;&#x5BB9;&#x7684; XML &#x8BED;&#x8A00;&#xFF0C;&#x53EF;&#x7ED3;&#x5408; XHTML &#x548C; SVG &#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x7F51;&#x9875;&#x52A8;&#x6001;&#x6548;&#x679C;&#x3002;</p>
@@ -2853,7 +2853,7 @@
 </ul>
 <h3 id="smil-&#x7684;&#x517C;&#x5BB9;&#x6027;">SMIL &#x7684;&#x517C;&#x5BB9;&#x6027;</h3>
 <p>&#x9664;&#x4E86;&#x5FAE;&#x8F6F;&#x7CFB;&#x6D4F;&#x89C8;&#x5668; &#x53CA; Opera Mini &#x5916;&#xFF0C;&#x5176;&#x4ED6;&#x4E3B;&#x6D41;&#x6D4F;&#x89C8;&#x5668;&#x5747;&#x652F;&#x6301; SMIL&#x3002;</p>
-<p><img src="https://user-gold-cdn.xitu.io/2018/3/14/1622414dfb24f7ff?w=1200&amp;h=257&amp;f=jpeg&amp;s=49621" alt="SMIL CAN I USE"></p>
+<p><img src="img/08/10" alt="SMIL CAN I USE"></p>
 <p><em>&#xFF08;&#x6570;&#x636E;&#x6765;&#x6E90;&#xFF1A;<a href="https://caniuse.com/#search=SMIL" target="_blank">caniuse.com</a>&#xFF0C;&#x622A;&#x81F3; 2018 &#x5E74; 3 &#x6708; 14 &#x65E5;&#xFF09;</em></p>
 <blockquote>
 <p>Chrome 45 &#x7248;&#x672C;&#x66FE;&#x58F0;&#x79F0;&#x51C6;&#x5907;&#x5F03;&#x7528; SMIL &#xFF0C;&#x4F46;&#x968F;&#x540E;&#x64A4;&#x56DE;&#x4E86;&#x5F03;&#x7528;&#x8BA1;&#x5212;&#x3002;</p>
